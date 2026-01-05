@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- User Cover and Profile img-->
     <header>
         <div class="cover-container">
@@ -27,82 +28,84 @@
         <hr>
     </header>
 
-    <!-- Navigation Sidebar -->
-    <aside>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <span class="material-symbols-outlined">dashboard</span>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="material-symbols-outlined">assignment</span>
-                        <span>Task</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="material-symbols-outlined">timer</span>
-                        <span>Study Timer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="material-symbols-outlined">ent</span>
-                        <span>Notes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="material-symbols-outlined">event</span>
-                        <span>Planner</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+    <!-- App Layout -->
+    <div class="app-layout">
+        <!-- Navigation Sidebar -->
+        <aside class="sidebar expanded" id="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">assignment</span>
+                            <span>Task</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">timer</span>
+                            <span>Study Timer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">ent</span>
+                            <span>Notes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">event</span>
+                            <span>Planner</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <!-- Dashboard Section -->
-        <section class="dashboard">
-            <div class="left-dash">
-                <h1>Dashboard</h1>
-                <p>Today's focus:<span id="randomFocus"><!-- Random Focus here -->Be consistent and ship your work</span></p>
-            </div>
-            <div class="right-dash">
-                <p>Overview for today</p>
-                <div class="boxes">
-                    <div class="box task-box">
-                        <a href="index.html">
-                            <span class="material-symbols-outlined">task</span>
-                            <span id="taskCount"><!-- task count here -->0 / 0</span>
-                            <span>tasks</span>
-                        </a>
-                    </div>
-                    <div class="box time-box">
-                        <a href="index.html">
-                            <span class="material-symbols-outlined">alarm_on</span>
-                            <span>pomodoro</span>
-                        </a>
-                    </div>
-                    <div class="box time-box">
-                        <a href="index.html">
-                            <span class="material-symbols-outlined">book_5</span>
-                            <span>IT / College Mode</span>
-                        </a>
+        <main>
+            <!-- Dashboard Section -->
+            <section class="dashboard">
+                <div class="left-dash">
+                    <h1>Dashboard</h1>
+                    <p>Today's focus:<span id="randomFocus"><!-- Random Focus here -->Be consistent and ship your work</span></p>
+                </div>
+                <div class="right-dash">
+                    <p>Overview for today</p>
+                    <div class="boxes">
+                        <div class="box task-box">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">task</span>
+                                <span id="taskCount"><!-- task count here -->0 / 0</span>
+                                <span>tasks</span>
+                            </a>
+                        </div>
+                        <div class="box time-box">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">alarm_on</span>
+                                <span>pomodoro</span>
+                            </a>
+                        </div>
+                        <div class="box time-box">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">book_5</span>
+                                <span>IT / College Mode</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="random-quote">
-                <span id="randomQuoteText"><!-- Random quote here -->“The future depends on what you do today.” - Mahatma Gandhi</span>
-            </div>
-        </section>
-    </main>
+                <div class="random-quote">
+                    <span id="randomQuoteText"><!-- Random quote here -->“The future depends on what you do today.” - Mahatma Gandhi</span>
+                </div>
+            </section>
+        </main>
 
-    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
