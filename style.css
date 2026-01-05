@@ -143,12 +143,12 @@ header hr {
 }
 
 .nav-icon {
-    font-size: 26px;
+    font-size: 25px;
     min-width: 24px;
 }
 
 .nav-label {
-    font-size: 18px;
+    font-size: 16px;
     min-width: 24px;
     font-weight: 400;
     white-space: nowrap;
