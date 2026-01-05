@@ -20,13 +20,13 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Inter, "Crimson Text";
     background-color: var(--bg-color);
     color: var(--primary-text-color);
-    width: 100vw;
-    height: calc(100vh - 270px);
-    align-items: center;
-    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 a {
@@ -41,7 +41,6 @@ ul {
 header {
     position: relative;
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .cover-container {
@@ -99,9 +98,70 @@ header hr {
     height: 3px;
 }
 
-main {
+.app-layout {
+    display: flex;
     width: 100%;
-    padding: 0 130px;
+    min-height: calc(100vh - 64px);
 }
 
-.
+main {
+    width: 100%;
+    padding: 0 70px;
+}
+
+.sidebar {
+    height: calc(100vh);
+    background: var(--bg-color);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    border-right: 2px solid #e5e7eb;
+}
+
+.sidebar.expanded {
+    width: 250px;
+}
+
+.sidebar.collapsed {
+    width: 50px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px;
+    color: var(--primary-text-color);
+    align-items: center;
+}
+
+.sidebar nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.nav-icon {
+    font-size: 26px;
+    min-width: 24px;
+}
+
+.nav-label {
+    font-size: 18px;
+    min-width: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar.collapsed .nav-label {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.main-content {}
