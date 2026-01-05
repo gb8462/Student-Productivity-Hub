@@ -37,6 +37,7 @@ ul {
     list-style: none;
 }
 
+/* Header Styles */
 header {
     position: relative;
     width: 100%;
@@ -97,12 +98,14 @@ header hr {
     height: 3px;
 }
 
+/* Main Layout */
 .app-layout {
     display: flex;
     width: 100%;
     min-height: calc(100vh - 64px);
 }
 
+/* Sidebar Styles */
 .sidebar {
     position: sticky;
     top: 0;
@@ -169,6 +172,7 @@ header hr {
     overflow-y: auto;
 }
 
+/* Dashboard Styles */
 .dashboard {
     display: flex;
     align-items: flex-start;
