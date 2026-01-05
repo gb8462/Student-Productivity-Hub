@@ -25,7 +25,6 @@ body {
     font-family: Inter, "Crimson Text";
     background-color: var(--bg-color);
     color: var(--primary-text-color);
-    min-width: 100vw;
     min-height: 100vh;
 }
 
@@ -104,13 +103,10 @@ header hr {
     min-height: calc(100vh - 64px);
 }
 
-main {
-    width: 100%;
-    padding: 0 70px;
-}
-
 .sidebar {
-    height: calc(100vh);
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 64px);
     background: var(--bg-color);
     transition: width 0.3s ease;
     overflow: hidden;
@@ -128,7 +124,7 @@ main {
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    padding: 30px 16px;
+    padding: 30px 40px;
     color: var(--primary-text-color);
     align-items: center;
 }
@@ -164,4 +160,10 @@ main {
     pointer-events: none;
 }
 
-.main-content {}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+    overflow-y: auto;
+}
