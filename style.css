@@ -385,3 +385,10 @@ ul {
     border-radius: 5px;
     background: #E5E7EB;
 }
+
+.progress-fill {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    background: #46E563;
+}
