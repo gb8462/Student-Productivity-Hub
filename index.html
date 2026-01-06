@@ -109,6 +109,41 @@
                     <span id="randomQuoteText"><!-- Random quote here -->“The future depends on what you do today.” - Mahatma Gandhi</span>
                 </div>
             </section>
+
+            <!-- Tasks Section -->
+            <section class="tasks">
+                <header class="task-header">
+                    <h1>Tasks/Todos</h1>
+
+                    <div class="action-buttons">
+                        <h2>Task for today</h2>
+                        <button id="newTaskButton">New</button>
+                        <button id="editTaskButton">Task</button>
+                        <button id="deleteTaskButton">Delete</button>
+                    </div>
+                </header>
+                <div class="task-progress">
+                    <span>0 out of 0 done</span>
+                    <div class="progress-bar"></div>
+                </div>
+                <table class="task-content">
+                    <thead>
+                        <tr>
+                            <th>Complete</th>
+                            <th>+</th>
+                            <!-- Add column for task details -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <!-- Task items will be dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
         </main>
 
     </div>
