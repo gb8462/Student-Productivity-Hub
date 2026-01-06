@@ -136,9 +136,10 @@ ul {
 }
 
 /* App Header Styles */
-.app-layout header {
+.main-header {
     position: relative;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .cover-container {
@@ -170,9 +171,9 @@ ul {
     border-radius: 50%;
 }
 
-.main-head {
+.main-info {
     display: flex;
-    margin-top: 70px;
+    margin: 70px 0 5px 0;
     padding: 0 130px;
     text-align: center;
     align-items: center;
@@ -180,22 +181,23 @@ ul {
     justify-content: space-between;
 }
 
-.main-head h1 {
+.main-info h1 {
     font-family: "Crimson Text";
     font-size: 3rem;
     font-weight: 800;
 }
 
-.main-head span {
+.main-info span {
     font-size: 1.1rem;
     font-weight: 300;
 }
 
-header hr {
+.main-header hr {
     background: #7E7E7E;
     height: 3px;
 }
 
+/* Main Content Styles */
 .main-content {
     flex: 1;
     display: flex;
