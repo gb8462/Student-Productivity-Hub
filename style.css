@@ -42,7 +42,7 @@ ul {
 .sidebar {
     position: sticky;
     top: 0;
-    height: calc(100vh - 64px);
+    height: 100vh;
     background: var(--bg-color);
     transition: width 0.3s ease;
     overflow: hidden;
@@ -124,4 +124,13 @@ ul {
 .sidebar.collapsed .nav-label {
     opacity: 0;
     pointer-events: none;
+}
+
+/* Main Layout */
+.app-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    min-height: 100vh;
 }
