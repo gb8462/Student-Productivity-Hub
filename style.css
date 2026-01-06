@@ -369,12 +369,19 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 27px;
+    margin: 4px 0;
 }
 
 .task-progress span {
-    display: flex;
-    justify-self: center;
-    width: 70px;
+    text-align: end;
     font-size: 15px;
     font-weight: 400;
+}
+
+.progress-bar {
+    position: relative;
+    flex: 1;
+    height: 10px;
+    border-radius: 5px;
+    background: #E5E7EB;
 }
