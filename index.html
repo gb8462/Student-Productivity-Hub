@@ -11,62 +11,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- User Cover and Profile img-->
-    <header>
-        <div class="cover-container">
-            <img src="assets/pfp-imgs/c52181f5212108d03720d77bdc81955a.jpg" alt="cover" class="image-cover">
-        </div>
-        <div class="pfp-container">
-            <img src="assets/pfp-imgs/9f5d6243f740afb5e7fad88a2a4b6476.jpg" alt="profile" class="image-pfp">
-        </div>
-
-        <div class="main-head">
-            <h1>Student Productivity Hub</h1>
-            <span id="currentDate"><!-- Current Date here -->Sunday, January 4</span>
-        </div>
-        <hr>
-    </header>
+    <!-- Navigation Sidebar -->
+    <aside class="sidebar expanded" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined nav-icon">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined nav-icon">assignment</span>
+                        <span class="nav-label">Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined nav-icon">timer</span>
+                        <span class="nav-label">Study Timer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined nav-icon">ent</span>
+                        <span class="nav-label">Notes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined nav-icon">event</span>
+                        <span class="nav-label">Planner</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 
     <!-- App Layout -->
     <div class="app-layout">
-        <!-- Navigation Sidebar -->
-        <aside class="sidebar expanded" id="sidebar">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span class="material-symbols-outlined nav-icon">dashboard</span>
-                            <span class="nav-label">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <span class="material-symbols-outlined nav-icon">assignment</span>
-                            <span class="nav-label">Task</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <span class="material-symbols-outlined nav-icon">timer</span>
-                            <span class="nav-label">Study Timer</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <span class="material-symbols-outlined nav-icon">ent</span>
-                            <span class="nav-label">Notes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <span class="material-symbols-outlined nav-icon">event</span>
-                            <span class="nav-label">Planner</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        <!-- User Cover and Profile img-->
+        <header>
+            <div class="cover-container">
+                <img src="assets/pfp-imgs/c52181f5212108d03720d77bdc81955a.jpg" alt="cover" class="image-cover">
+            </div>
+            <div class="pfp-container">
+                <img src="assets/pfp-imgs/9f5d6243f740afb5e7fad88a2a4b6476.jpg" alt="profile" class="image-pfp">
+            </div>
+
+            <div class="main-head">
+                <h1>Student Productivity Hub</h1>
+                <span id="currentDate"><!-- Current Date here -->Sunday, January 4</span>
+            </div>
+            <hr>
+        </header>
 
         <main class="main-content">
             <!-- Dashboard Section -->
