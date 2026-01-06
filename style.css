@@ -369,7 +369,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 27px;
-    margin: 4px 0;
+    margin: 10px 0;
 }
 
 .task-progress span {
@@ -391,4 +391,64 @@ ul {
     height: 100%;
     border-radius: 5px;
     background: #46E563;
+}
+
+.task-content {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 14px;
+}
+
+.task-content thead th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    color: #555;
+}
+
+.task-content thead button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+}
+
+.task-content tbody tr {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.task-content tbody td {
+    padding: 8px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.task-content th:first-child,
+.task-content td:first-child {
+    width: 80px;
+    text-align: center;
+}
+
+.task-content th.add-column,
+.task-content td.add-column {
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: #888;
+}
+
+.task-content th.add-column {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4CAF50;
+    user-select: none;
+}
+
+.task-content th.add-column:hover {
+    background-color: #F5F5F5;
 }
