@@ -60,9 +60,13 @@ ul {
 .sidebar nav header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: flex-end;
     margin-bottom: 20px;
+}
+
+.sidebar nav header .logo-title {
+    display: flex;
+    align-items: center;
 }
 
 .sidebar nav header img {
@@ -72,7 +76,7 @@ ul {
 }
 
 .sidebar nav header h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
 }
 
