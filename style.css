@@ -338,5 +338,28 @@ ul {
 }
 
 .action-buttons button {
-    
+    display: flex;
+    width: 53px;
+    height: 33px;
+    padding: 8px 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--tertiary-text-color);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.new-btn {
+    background: #46E563;
+}
+
+.task-btn {
+    background: #E5AD46;
+}
+
+.delete-btn {
+    background: #E55346;
 }
