@@ -57,8 +57,30 @@ ul {
     width: 50px;
 }
 
-.sidebar nav button {
-    
+.sidebar nav header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav header img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.sidebar nav header h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sidebar nav header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .sidebar nav {
