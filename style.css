@@ -363,3 +363,18 @@ ul {
 .delete-btn {
     background: #E55346;
 }
+
+.task-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+}
+
+.task-progress span {
+    display: flex;
+    justify-self: center;
+    width: 70px;
+    font-size: 15px;
+    font-weight: 400;
+}
