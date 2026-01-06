@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-text-color);
     min-height: 100vh;
+    overflow-y: auto;
 }
 
 a {
