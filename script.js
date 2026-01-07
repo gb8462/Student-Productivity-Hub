@@ -5,6 +5,7 @@
 // Sidebar Navigation
 const sidebar = document.getElementById('sidebar');
 const toggleSideBar = document.getElementById('toggleSideBar');
+const navLinks = document.querySelector('.nav-link')
 
 // User Info
 const randomGreeting = document.getElementById('randomGreeting');
@@ -41,7 +42,16 @@ toggleSideBar.addEventListener('click', () => {
         toggleSideBar.classList.remove('deactive-toggle');
         sidebar.classList.add('expanded');
         sidebar.classList.remove('collapsed');
-        
+
         toggle = false;
     }
+});
+
+// Navigation Link Active
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+    })
+
+    navLinks.classList.add('active');
 });
