@@ -46,7 +46,7 @@ ul {
     background: #353535;
     transition: width 0.3s ease;
     overflow: hidden;
-    border-right: 2px solid #e5e7eb;
+    box-shadow: var(--box-shadow);
 }
 
 .sidebar.expanded {
@@ -81,11 +81,18 @@ ul {
     font-weight: 700;
 }
 
-.sidebar nav header button {
-    background: none;
+.toggle-sidebar {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 30px;
+    height: 30px;
+    background: var(--bg-color);
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
 }
 
 .sidebar nav {
