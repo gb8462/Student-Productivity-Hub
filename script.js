@@ -89,6 +89,14 @@ function randomQuoteGenerator() {
     fetch("https://api.quotable.io/random")
         .then(response => response.json())
         .then(data => {
-
+            randomQuoteText.textContent = `"${data.content}"`;
+            quoteAuthor.textContent = `— ${data.author}`;
         })
+        .catch(error => {
+            randomQuoteText.textContent = "Failed to load";
+            quoteAuthor.textContent = "";
+            console.error(error)
+        });
 };
+
+randomQuoteGenerator()
