@@ -54,7 +54,7 @@ ul {
 }
 
 .sidebar.collapsed {
-    width: 50px;
+    width: 60px;
 }
 
 .sidebar nav header {
@@ -114,7 +114,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 11px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .nav-icon {
@@ -128,17 +128,23 @@ ul {
     transition: opacity 0.2s ease;
 }
 
-.sidebar.collapsed .nav-label {
-    opacity: 0;
-    pointer-events: none;
-}
-
 .sidebar nav .nav-link.active {
     border-radius: 5px;
     background: var(--special-bg-color);
     border: 3px solid var(--special-bg-color);
     color: var(--primary-text-color);
     font-weight: 700;
+}
+
+/* Sidebar Collapsed Style */
+.sidebar.collapsed .nav-label,
+.sidebar.collapsed nav header h2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.sidebar.collapsed .toggle-sidebar {
+    left: 15px;
 }
 
 
