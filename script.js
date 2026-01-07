@@ -27,6 +27,7 @@ const deleteTaskButton = document.getElementById('deleteTaskButton');
 const addTableButton = document.getElementById('addTableButton');
 
 
+// Side Navigation Bar Section
 // Sidebar Toggle Function
 toggle = false;
 toggleSideBar.addEventListener('click', () => {
@@ -55,3 +56,9 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
+
+
+// User Info Section
+// User Info Functions
+
+// Date Function
