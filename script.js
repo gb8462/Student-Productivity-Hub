@@ -26,16 +26,22 @@ const deleteTaskButton = document.getElementById('deleteTaskButton');
 const addTableButton = document.getElementById('addTableButton');
 
 
-// Sidebar Function
+// Sidebar Toggle Function
 toggle = false;
 toggleSideBar.addEventListener('click', () => {
     if (!toggle) {
+        toggleSideBar.classList.remove('active-toggle');
+        toggleSideBar.classList.add('deactive-toggle');
         sidebar.classList.remove('expanded');
         sidebar.classList.add('collapsed');
+
         toggle = true;
     } else {
+        toggleSideBar.classList.add('active-toggle');
+        toggleSideBar.classList.remove('deactive-toggle');
         sidebar.classList.add('expanded');
         sidebar.classList.remove('collapsed');
+        
         toggle = false;
     }
 });
