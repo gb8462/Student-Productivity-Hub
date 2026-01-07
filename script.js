@@ -33,9 +33,11 @@ toggleSideBar.addEventListener('click', () => {
         sidebar.classList.remove('expanded');
         sidebar.classList.add('collapsed');
         toggle = true;
+        toggleSideBar.style.left = '50px';
     } else {
         sidebar.classList.add('expanded');
         sidebar.classList.remove('collapsed');
         toggle = false;
+        toggleSideBar.style.left = '205px';
     }
 });
