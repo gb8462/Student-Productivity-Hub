@@ -390,7 +390,8 @@ ul {
     background: #F9FAFB;
 }
 
-.random-quote span {
+.random-quote blockquote,
+.random-quote p {
     color: #555;
     font-size: 15px;
     font-weight: 400;
