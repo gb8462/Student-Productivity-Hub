@@ -139,6 +139,13 @@ ul {
     align-items: center;
 }
 
+/* LI Hover */
+.sidebar nav ul li:hover {
+    border-radius: 5px;
+    background: var(--secondary-text-color);
+    color: var(--primary-text-color);
+}
+
 /* Toggle Button For Sidebar */
 .toggle-sidebar {
     position: absolute;
@@ -153,6 +160,7 @@ ul {
     transition: all 0.3s ease;
 }
 
+/* Sidebar Active/Deactive */
 .toggle-sidebar.active-toggle {
     left: 205px;
     background: var(--bg-color);
