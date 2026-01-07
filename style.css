@@ -78,20 +78,6 @@ ul {
     font-weight: 700;
 }
 
-.toggle-sidebar {
-    position: absolute;
-    top: 50px;
-    left: 205px;
-    width: 30px;
-    height: 30px;
-    background: var(--bg-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-    box-shadow: var(--box-shadow);
-}
-
 .sidebar nav {
     display: flex;
     flex-direction: column;
@@ -152,6 +138,32 @@ ul {
 
 .sidebar.collapsed ul {
     align-items: center;
+}
+
+/* Toggle Button For Sidebar */
+.toggle-sidebar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+}
+
+.toggle-sidebar.active-toggle {
+    top: 50px;
+    left: 205px;
+    background: var(--bg-color);
+}
+
+.toggle-sidebar.deactive-toggle {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: var(--primary-text-color);
+    color: var(--tertiary-text-color);
 }
 
 /* Main Layout */
