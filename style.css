@@ -143,6 +143,7 @@ ul {
 /* Toggle Button For Sidebar */
 .toggle-sidebar {
     position: absolute;
+    top: 55px;
     width: 30px;
     height: 30px;
     border: none;
@@ -150,18 +151,17 @@ ul {
     border-radius: 50%;
     z-index: 10;
     box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
 }
 
 .toggle-sidebar.active-toggle {
-    top: 50px;
     left: 205px;
     background: var(--bg-color);
 }
 
 .toggle-sidebar.deactive-toggle {
-    position: absolute;
-    top: 50px;
-    left: 5px;
+    left: 50px;
+    transform: rotate(-180);
     background: var(--primary-text-color);
     color: var(--tertiary-text-color);
 }
