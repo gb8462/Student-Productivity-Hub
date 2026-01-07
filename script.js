@@ -24,3 +24,18 @@ const newTaskButton = document.getElementById('newTaskButton');
 const editTaskButton = document.getElementById('editTaskButton');
 const deleteTaskButton = document.getElementById('deleteTaskButton');
 const addTableButton = document.getElementById('addTableButton');
+
+
+// Sidebar Function
+toggle = false;
+toggleSideBar.addEventListener('click', () => {
+    if (!toggle) {
+        sidebar.classList.remove('expanded');
+        sidebar.classList.add('collapsed');
+        toggle = true;
+    } else {
+        sidebar.classList.add('expanded');
+        sidebar.classList.remove('collapsed');
+        toggle = false;
+    }
+});
