@@ -79,4 +79,7 @@ function dateToday() {
     currentDate.innerText = `${dayName}, ${monthName} ${date}`;
 };
 
+
+// Dashboard Section
+// Random Quote Generator
 dateToday();
