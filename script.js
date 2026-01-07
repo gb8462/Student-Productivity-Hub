@@ -18,3 +18,9 @@ const taskCount = document.getElementById('taskCount');
 const timeBox = document.getElementById('timeBox');
 const modeBox = document.getElementById('modeBox');
 const randomQuoteText = document.getElementById('randomQuoteText');
+
+// Task List Section
+const newTaskButton = document.getElementById('newTaskButton');
+const editTaskButton = document.getElementById('editTaskButton');
+const deleteTaskButton = document.getElementById('deleteTaskButton');
+const addTableButton = document.getElementById('addTableButton');
