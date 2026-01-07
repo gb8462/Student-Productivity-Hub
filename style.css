@@ -209,13 +209,20 @@ ul {
     justify-content: space-between;
 }
 
-.main-info h1 {
+.username {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.username h1,
+.username .user-greet {
     font-family: "Crimson Text";
     font-size: 3rem;
     font-weight: 800;
 }
 
-.main-info span {
+.current-date {
     font-size: 1.1rem;
     font-weight: 300;
 }
