@@ -62,7 +62,7 @@ ul {
     gap: 10px;
 }
 
-.sidebar nav header .logo-title {
+.logo-title {
     display: flex;
     align-items: center;
 }
@@ -73,12 +73,12 @@ ul {
     object-fit: cover;
 }
 
-.sidebar nav header h2 {
+.nav-title {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px;
     font-size: 22px;
     font-weight: 700;
-    transition: 
-        opacity 0.2s ease,
-        transform 0.2s ease;
 }
 
 .sidebar nav {
@@ -96,14 +96,11 @@ ul {
     gap: 20px;
 }
 
-.sidebar nav .nav-link {
+.nav-link {
     display: flex;
     align-items: center;
     gap: 11px;
     font-weight: 500;
-    transition: 
-        opacity 0.2s ease,
-        transform 0.2s ease;
 }
 
 .nav-icon {
@@ -114,10 +111,11 @@ ul {
 .nav-label {
     font-size: 15px;
     white-space: nowrap;
-    transition: opacity 0.2s ease;
+    overflow: hidden;
+    max-width: 150px;
 }
 
-.sidebar nav .nav-link.active {
+.nav-link.active {
     border-radius: 5px;
     background: var(--special-bg-color);
     border: 3px solid var(--special-bg-color);
@@ -128,13 +126,6 @@ ul {
 /* Sidebar Collapsed Style */
 .sidebar.collapsed {
     width: 70px;
-}
-
-.sidebar.collapsed .nav-label,
-.sidebar.collapsed nav header h2 {
-    opacity: 0;
-    display: none;
-    pointer-events: none;
 }
 
 .sidebar.collapsed nav {
@@ -167,7 +158,6 @@ ul {
 
 .toggle-sidebar.deactive-toggle {
     left: 50px;
-    transform: rotate(-180);
     background: var(--primary-text-color);
     color: var(--tertiary-text-color);
 }
@@ -181,12 +171,40 @@ ul {
     transform: rotate(180deg);
 }
 
-.toggle-sidebar.deactive-toggle .nav-link {
+.sidebar.collapsed .nav-label,
+.sidebar.collapsed .nav-title {
     max-width: 0;
     opacity: 0;
     transform: translateX(-8px);
     pointer-events: none;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
 }
+
+.sidebar.expanded .nav-label,
+.sidebar.expanded .nav-title {
+    max-width: 150px;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
+}
+
+.sidebar.collapsed .nav-link.active {
+    border-radius: 5px;
+    background: var(--special-bg-color);
+    border: 3px solid var(--special-bg-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+
+/* Sidebar Hover */
+
 
 /* Main Layout */
 .app-layout {
