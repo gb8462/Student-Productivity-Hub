@@ -5,7 +5,7 @@
 // Sidebar Navigation
 const sidebar = document.getElementById('sidebar');
 const toggleSideBar = document.getElementById('toggleSideBar');
-const navLinks = document.querySelector('.nav-link')
+const navLinks = document.querySelectorAll('.nav-link')
 
 // User Info
 const randomGreeting = document.getElementById('randomGreeting');
@@ -51,7 +51,7 @@ toggleSideBar.addEventListener('click', () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navLinks.forEach(l => l.classList.remove('active'));
-    })
 
-    navLinks.classList.add('active');
+        link.classList.add('active');
+    });
 });
