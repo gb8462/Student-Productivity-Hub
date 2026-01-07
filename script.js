@@ -19,6 +19,7 @@ const taskCount = document.getElementById('taskCount');
 const timeBox = document.getElementById('timeBox');
 const modeBox = document.getElementById('modeBox');
 const randomQuoteText = document.getElementById('randomQuoteText');
+const quoteAuthor = document.getElementById('quoteAuthor');
 
 // Task List Section
 const newTaskButton = document.getElementById('newTaskButton');
@@ -84,9 +85,10 @@ dateToday();
 
 // Dashboard Section
 // Random Quote Generator
-fetch('https://api.quotify.top/random')
-    .then(response => response.json())
-    .then(quote => {
-    console.log(`"${quote.text}" - ${quote.author}`);
-    })
-    .catch(error => console.error('Error:', error));
+function randomQuoteGenerator() {
+    fetch("https://api.quotable.io/random")
+        .then(response => response.json())
+        .then(data => {
+
+        })
+};
