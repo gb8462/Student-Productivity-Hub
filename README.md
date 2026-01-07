@@ -3,6 +3,7 @@
 A simple and functional productivity website built for students to manage tasks, study time, and notes efficiently.
 
 ## 🚀 Features
+
 - 📋 To-Do List with task completion tracking
 - ⏱️ Pomodoro Study Timer
 - 📝 Notes section for quick ideas
@@ -14,12 +15,15 @@ A simple and functional productivity website built for students to manage tasks,
 - 🎯 Streak counter (days studied)
 
 ## 🛠️ Built With
+
 - HTML
 - CSS
 - Vanilla JavaScript
 
 ## 🎯 Purpose
+
 This project was created as a student-level web development project to practice:
+
 - DOM manipulation
 - JavaScript logic
 - UI/UX design
@@ -27,11 +31,14 @@ This project was created as a student-level web development project to practice:
 - Local storage handling
 
 ## 👥 Team
+
 - Developer 1: JavaScript & Logic
 - Developer 2: UI & Styling
 
 ## Project Folder Structure
-```
+
+```text
+
 student-productivity-hub/
 │
 ├── index.html
@@ -46,12 +53,15 @@ student-productivity-hub/
 ```
 
 ## 📸 Screenshots
+
 (Add screenshots here)
 
 ## 🌐 Live Demo
+
 (Add GitHub Pages / Vercel link here)
 
 ## 📌 Future Improvements
+
 - User accounts
 - Cloud storage
 - Mobile app version
