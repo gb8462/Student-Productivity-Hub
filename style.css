@@ -46,6 +46,7 @@ ul {
     height: 100vh;
     background: #353535;
     transition: width 0.3s ease;
+    align-items: flex-start;
     overflow: hidden;
     box-shadow: var(--box-shadow);
 }
@@ -57,7 +58,7 @@ ul {
 .sidebar nav header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 20px;
     gap: 10px;
 }
@@ -84,7 +85,7 @@ ul {
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    padding: 7px 30px;
+    padding: 7px 10px;
     color: var(--tertiary-text-color);
     align-items: center;
 }
@@ -101,6 +102,8 @@ ul {
     align-items: center;
     gap: 11px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav-icon {
@@ -110,8 +113,7 @@ ul {
 
 .nav-label {
     font-size: 15px;
-    white-space: nowrap;
-    overflow: hidden;
+    flex-shrink: 0;
     max-width: 150px;
 }
 
@@ -171,8 +173,14 @@ ul {
     transform: rotate(180deg);
 }
 
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    gap: 0;
+}
+
 .sidebar.collapsed .nav-label,
 .sidebar.collapsed .nav-title {
+    justify-content: center;
     max-width: 0;
     opacity: 0;
     transform: translateX(-8px);
@@ -196,11 +204,7 @@ ul {
 }
 
 .sidebar.collapsed .nav-link.active {
-    border-radius: 5px;
-    background: var(--special-bg-color);
-    border: 3px solid var(--special-bg-color);
-    color: var(--primary-text-color);
-    font-weight: 700;
+    justify-content: center;
 }
 
 /* Sidebar Hover */
