@@ -62,3 +62,20 @@ navLinks.forEach(link => {
 // User Info Functions
 
 // Date Function
+function dateToday() {
+    // Date Const
+    const dateToday = new Date();
+
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const months = ["January", "February", "March", "April", "May", "June", 
+                    "July", "August", "September", "October", "November", 
+                    "December"]
+
+    const dayName = days[dateToday.getDay() + 1];
+    const monthName = months[dateToday.getMonth() + 1];
+    const date = dateToday.getDate();
+
+    currentDate.innerText = `${dayName}, ${monthName} ${date}`;
+};
+
+dateToday();
