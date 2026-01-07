@@ -85,18 +85,17 @@ dateToday();
 
 // Dashboard Section
 // Random Quote Generator
-function randomQuoteGenerator() {
-    fetch("https://api.quotable.io/random")
-        .then(response => response.json())
-        .then(data => {
-            randomQuoteText.textContent = `"${data.content}"`;
-            quoteAuthor.textContent = `— ${data.author}`;
-        })
-        .catch(error => {
-            randomQuoteText.textContent = "Failed to load";
-            quoteAuthor.textContent = "";
-            console.error(error)
-        });
-};
+async function randomQuoteGenerator() {
+    try {
+        const proxyUrl = "https://api.allorigins.win/get?url=";
+        const targetUrl = encodeURIComponent("https://zenquotes.io/api/random");
+        const response = await fetch(proxyUrl + targetUrl);
+        const result = await response.json();
+        const data = JSON.parse(result.contents); // ZenQuotes JSON is inside "contents"
+        console.log(`${data[0].q} — ${data[0].a}`);
+    } catch (error) {
+        console.error("Error fetching the quote:", error);
+    }
+}
 
-randomQuoteGenerator()
+randomQuoteGenerator();
