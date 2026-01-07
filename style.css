@@ -84,7 +84,7 @@ ul {
 .toggle-sidebar {
     position: absolute;
     top: 50px;
-    left: 200px;
+    left: 205px;
     width: 30px;
     height: 30px;
     background: var(--bg-color);
