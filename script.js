@@ -84,4 +84,9 @@ dateToday();
 
 // Dashboard Section
 // Random Quote Generator
-
+fetch('https://api.quotify.top/random')
+    .then(response => response.json())
+    .then(quote => {
+    console.log(`"${quote.text}" - ${quote.author}`);
+    })
+    .catch(error => console.error('Error:', error));
