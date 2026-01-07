@@ -95,7 +95,7 @@ ul {
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    padding: 5px 30px;
+    padding: 7px 30px;
     color: var(--tertiary-text-color);
     align-items: center;
 }
