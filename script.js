@@ -79,6 +79,11 @@ function dateToday() {
 
 dateToday();
 
+// User Images
+coverAddPhotoButton.addEventListener('click', () => {
+    coverImageInput.click();
+});
+
 // Cover/Pfp Buttons
 coverPhotoButton.addEventListener('click', () => {
     coverOption.classList.toggle('active');
