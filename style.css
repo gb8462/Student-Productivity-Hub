@@ -289,7 +289,7 @@ ul {
     background: #353535;
     gap: 10px;
     border-radius: 10px;
-    padding: 10px 7px;
+    padding: 10px 17px;
     width: 200px;
     top: 169px;
     right: 90px;
@@ -300,7 +300,7 @@ ul {
 .cover-option button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 11px;
     color: var(--tertiary-text-color);
     background: none;
@@ -308,6 +308,7 @@ ul {
     cursor: pointer;
     font-weight: 400;
     font-size: 15px;
+    font-variation-settings: 'FILL' 25;
 }
 
 .pfp-btn {
@@ -326,11 +327,31 @@ ul {
     justify-content: center;
 }
 
+
+
 .pfp-option {
     display: flex;
     flex-direction: column;
     justify-self: center;
     width: 250px;
+    background: #353535;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px 17px;
+}
+
+.pfp-option button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    color: var(--tertiary-text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    font-variation-settings: 'FILL' 25;
 }
 
 
