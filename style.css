@@ -279,6 +279,7 @@ ul {
     font-weight: 600;
     font-size: 15px;
     background: var(--bg-color);
+    font-variation-settings: 'FILL' 35;
 }
     
 .cover-option {
@@ -309,7 +310,21 @@ ul {
     font-size: 15px;
 }
 
-
+.pfp-btn {
+    position: absolute;
+    display: flex;
+    background: #353535;
+    color: var(--tertiary-text-color);
+    font-variation-settings: 'FILL' 35;
+    top: 80px;
+    right: 0;
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
