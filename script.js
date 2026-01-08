@@ -12,6 +12,10 @@ const randomGreeting = document.getElementById('randomGreeting');
 const username = document.getElementById('username');
 const currentDate = document.getElementById('currentDate');
 
+// Cover/Pfp Button
+const coverPhotoButton = document.getElementById('coverPhotoButton');
+const pfpPhotoButton = document.getElementById('pfpPhotoButton');
+
 
 // Side Navigation Bar Section
 // Sidebar Toggle Function
@@ -66,3 +70,5 @@ function dateToday() {
 };
 
 dateToday();
+
+// Cover/Pfp Buttons
