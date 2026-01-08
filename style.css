@@ -242,7 +242,8 @@ ul {
 }
 
 .cover-container {
-    background: #303030;
+    position: relative;
+    background: #3b3b3b;
     width: 100%;
     height: 180px;
     overflow: hidden;
@@ -254,6 +255,8 @@ ul {
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: inherit;
+    transform: scale(1.01);
 }
 /* 
 .cover-container::after {
