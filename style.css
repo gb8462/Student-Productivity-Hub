@@ -273,9 +273,12 @@ ul {
 }
 
 .cover-btn {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 125px;
+    right: 90;
     padding: 10px 11px;
     gap: 11px;
     border-radius: 10px;
@@ -285,16 +288,22 @@ ul {
     font-size: 15px;
     background: var(--bg-color);
 }
-
+    
 .cover-option {
-    display: flex;
+    display: fle x;
     flex-direction: column;
-    width: 100%;
+    background: var(--primary-text-color);
+    border-radius: 10px;
+    width: 200px;
+    justify-content: flex-end;
     /* opacity: 0;
     pointer-events: none; */
 }
 
-.cover-option 
+.cover-btn button {
+    background: none;
+    border: none;
+}
 
 
 
