@@ -326,6 +326,12 @@ ul {
     justify-content: center;
 }
 
+.pfp-option {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 250px;
+}
 
 
 .main-info {
