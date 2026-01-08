@@ -264,21 +264,13 @@ ul {
 }
 
 /* Cover / Pfp Buttons */
-.cover-button-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 125px;
-    right: 90px;
-}
-
 .cover-btn {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 125px;
-    right: 90;
+    right: 90px;
     padding: 10px 11px;
     gap: 11px;
     border-radius: 10px;
@@ -290,19 +282,30 @@ ul {
 }
     
 .cover-option {
-    display: fle x;
+    position: absolute;
+    display: flex;
     flex-direction: column;
     background: var(--primary-text-color);
     border-radius: 10px;
     width: 200px;
-    justify-content: flex-end;
+    top: 169px;
+    right: 90px;
     /* opacity: 0;
     pointer-events: none; */
 }
 
-.cover-btn button {
+.cover-option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding: 5px 7px;
+    color: var(--tertiary-text-color);
     background: none;
     border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 
