@@ -353,11 +353,6 @@ ul {
     transition: opacity 0.3s ease;
 }
 
-.pfp-option.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .pfp-option button {
     display: flex;
     align-items: center;
@@ -379,6 +374,16 @@ ul {
 
 .pfp-btn:hover {
     background: #585858;
+}
+
+#coverOption.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#pfpOption.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Users Info */
