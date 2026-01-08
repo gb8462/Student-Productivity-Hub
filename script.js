@@ -76,3 +76,8 @@ dateToday();
 coverPhotoButton.addEventListener('click', () => {
     coverOption.classList.toggle('active');
 });
+
+pfpPhotoButton.addEventListener('click', () => {
+    pfpOption.classList.toggle('active');
+});
+
