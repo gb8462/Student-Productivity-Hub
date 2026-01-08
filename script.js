@@ -73,20 +73,6 @@ function dateToday() {
 dateToday();
 
 // Cover/Pfp Buttons
-coverToggle = false;
 coverPhotoButton.addEventListener('click', () => {
-    if (!coverToggle) {
-        coverOption.style.opacity = 1;
-        coverOption.style.pointerEvents = 'auto';
-        coverToggle = true;
-    } else {
-        coverOption.style.opacity = 1;
-        coverOption.style.pointerEvents = 'auto';
-        coverToggle = false;
-    }
-});
-
-window.addEventListener('click', () => {
-    coverOption.style.opacity = 0;
-    coverOption.style.pointerEvents = 'none';
+    coverOption.classList.toggle('active');
 });
