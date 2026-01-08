@@ -292,7 +292,7 @@ ul {
     background: var(--bg-color);
     font-variation-settings: 'FILL' 35;
 }
-    
+
 .cover-option {
     position: absolute;
     display: flex;
@@ -306,6 +306,7 @@ ul {
     right: 90px;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .cover-option button {
@@ -365,7 +366,16 @@ ul {
     font-variation-settings: 'FILL' 25;
 }
 
+/* Button Toggle/Hover */
+.cover-btn:hover {
+    background: #cacaca;
+}
 
+.pfp-btn:hover {
+    background: #585858;
+}
+
+/* Users Info */
 .main-info {
     display: flex;
     margin: 70px 0 5px 0;
