@@ -382,6 +382,11 @@ ul {
     background: #585858;
 }
 
+.cover-btn:active,
+.pfp-btn:active {
+    transform: scale(0.95);
+}
+
 #coverOption.active {
     opacity: 1;
     pointer-events: auto;
