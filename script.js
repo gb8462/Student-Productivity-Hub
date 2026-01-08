@@ -12,12 +12,6 @@ const randomGreeting = document.getElementById('randomGreeting');
 const username = document.getElementById('username');
 const currentDate = document.getElementById('currentDate');
 
-// Task List Section
-const newTaskButton = document.getElementById('newTaskButton');
-const editTaskButton = document.getElementById('editTaskButton');
-const deleteTaskButton = document.getElementById('deleteTaskButton');
-const addTableButton = document.getElementById('addTableButton');
-
 
 // Side Navigation Bar Section
 // Sidebar Toggle Function
