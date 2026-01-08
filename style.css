@@ -302,7 +302,7 @@ ul {
     display: flex;
     flex-direction: column;
     background: #353535;
-    gap: 10px;
+    gap: 6px;
     border-radius: 10px;
     padding: 10px 17px;
     width: 200px;
@@ -319,6 +319,7 @@ ul {
     justify-content: flex-start;
     gap: 11px;
     color: var(--tertiary-text-color);
+    padding: 4px 5px;
     background: none;
     border: none;
     cursor: pointer;
@@ -349,7 +350,7 @@ ul {
     justify-self: center;
     width: 250px;
     background: #353535;
-    gap: 10px;
+    gap: 6px;
     border-radius: 10px;
     padding: 10px 17px;
     opacity: 0;
@@ -363,6 +364,7 @@ ul {
     justify-content: flex-start;
     gap: 11px;
     color: var(--tertiary-text-color);
+    padding: 4px 5px;
     background: none;
     border: none;
     cursor: pointer;
@@ -388,6 +390,12 @@ ul {
 #pfpOption.active {
     opacity: 1;
     pointer-events: auto;
+}
+
+.cover-option button:hover,
+.pfp-option button:hover {
+    background: #585858;
+    border-radius: 5px;
 }
 
 /* Users Info */
