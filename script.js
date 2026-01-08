@@ -16,6 +16,9 @@ const currentDate = document.getElementById('currentDate');
 const coverImageInput = document.getElementById('coverImageInput');
 const coverImage = document.querySelector('.image-cover');
 
+const pfpImageInput = document.getElementById('pfpImageInput');
+const pfpImage = document.querySelector('.image-pfp');
+
 // Cover/Pfp Button
 const coverPhotoButton = document.getElementById('coverPhotoButton');
 const coverOption = document.getElementById('coverOption');
@@ -23,6 +26,7 @@ const coverAddPhotoButton = document.getElementById('coverAddPhotoButton');
 
 const pfpPhotoButton = document.getElementById('pfpPhotoButton');
 const pfpOption = document.getElementById('pfpOption');
+const pfpAddPhotoButton = document.getElementById('pfpAddPhotoButton');
 
 // Side Navigation Bar Section
 // Sidebar Toggle Function
