@@ -327,8 +327,6 @@ ul {
     justify-content: center;
 }
 
-
-
 .pfp-option {
     display: flex;
     flex-direction: column;
@@ -338,6 +336,8 @@ ul {
     gap: 10px;
     border-radius: 10px;
     padding: 10px 17px;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .pfp-option button {
