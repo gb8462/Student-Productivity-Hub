@@ -72,21 +72,3 @@ function dateToday() {
 };
 
 dateToday();
-
-
-// Dashboard Section
-// Random Quote Generator
-async function randomQuoteGenerator() {
-    try {
-        const proxyUrl = "https://api.allorigins.win/get?url=";
-        const targetUrl = encodeURIComponent("https://zenquotes.io/api/random");
-        const response = await fetch(proxyUrl + targetUrl);
-        const result = await response.json();
-        const data = JSON.parse(result.contents); // ZenQuotes JSON is inside "contents"
-        console.log(`${data[0].q} — ${data[0].a}`);
-    } catch (error) {
-        console.error("Error fetching the quote:", error);
-    }
-}
-
-randomQuoteGenerator();
