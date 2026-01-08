@@ -12,10 +12,17 @@ const randomGreeting = document.getElementById('randomGreeting');
 const username = document.getElementById('username');
 const currentDate = document.getElementById('currentDate');
 
+// User Images
+const coverImageInput = document.getElementById('coverImageInput');
+const coverImage = document.querySelector('.image-cover');
+const coverContainer = document.querySelector('.cover-container');
+
 // Cover/Pfp Button
 const coverPhotoButton = document.getElementById('coverPhotoButton');
-const pfpPhotoButton = document.getElementById('pfpPhotoButton');
 const coverOption = document.getElementById('coverOption');
+const coverAddPhotoButton = document.getElementById('coverAddPhotoButton');
+
+const pfpPhotoButton = document.getElementById('pfpPhotoButton');
 const pfpOption = document.getElementById('pfpOption');
 
 // Side Navigation Bar Section
