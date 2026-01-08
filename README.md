@@ -32,8 +32,8 @@ This project was created as a student-level web development project to practice:
 
 ## 👥 Team
 
-- Developer 1: JavaScript & Logic
-- Developer 2: UI & Styling
+- Joshie-Borrow: Front-End Design
+- Worms8462: Back-End Database
 
 ## Project Folder Structure
 
