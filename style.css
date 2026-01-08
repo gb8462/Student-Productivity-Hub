@@ -164,6 +164,10 @@ ul {
     transition: all 0.3s ease;
 }
 
+.toggle-sidebar:active {
+    transform: scale(0.95);
+}
+
 /* Sidebar Active/Deactive */
 .toggle-sidebar.active-toggle {
     left: 205px;
