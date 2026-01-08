@@ -265,8 +265,40 @@ ul {
 
 /* Cover / Pfp Buttons */
 .cover-button-container {
-    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 125px;
+    right: 90px;
 }
+
+.cover-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 11px;
+    gap: 11px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    background: var(--bg-color);
+}
+
+.cover-option {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* opacity: 0;
+    pointer-events: none; */
+}
+
+.cover-option 
+
+
+
+
 
 .main-info {
     display: flex;
