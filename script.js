@@ -81,3 +81,18 @@ pfpPhotoButton.addEventListener('click', () => {
     pfpOption.classList.toggle('active');
 });
 
+document.addEventListener('click', (e) => {
+    if (
+        !coverOption.contains(e.target) && 
+        !coverPhotoButton.contains(e.target)
+    ) {
+        coverOption.classList.remove('active');
+    } 
+    
+    if (
+        !pfpOption.contains(e.target) && 
+        !pfpPhotoButton.contains(e.target)
+    ) {
+        pfpOption.classList.remove('active')
+    }
+});
