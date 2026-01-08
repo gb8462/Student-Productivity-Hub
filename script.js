@@ -85,9 +85,12 @@ coverAddPhotoButton.addEventListener('click', () => {
 
 coverImageInput.addEventListener('change', () => {
     const file = coverImageInput.files[0];
+    let imageUrl;
+
     if (!file) return;
 
-    coverImage = URL.createObjectURL(file);
+    coverUrl = URL.createObjectURL(file);
+    coverImage.src = imageUrl;
     coverImage.hidden = false;
 });
 
