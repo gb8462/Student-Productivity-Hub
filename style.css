@@ -238,15 +238,24 @@ ul {
     width: 100%;
     height: 180px;
     overflow: hidden;
-    box-shadow: var(--box-shadow), 
-                inset 0 -5px 10px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--box-shadow);
 }
 
 .image-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
+/* 
+.cover-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: inset 0 -5px 10px 2px rgba(0, 0, 0, 0.25)
+} */
 
 .pfp-container {
     position: absolute;
