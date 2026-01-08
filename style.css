@@ -387,7 +387,9 @@ ul {
 }
 
 .cover-btn:active,
-.pfp-btn:active {
+.pfp-btn:active,
+.cover-option button:active,
+.pfp-btn button:active {
     transform: scale(0.95);
 }
 
