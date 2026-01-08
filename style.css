@@ -350,6 +350,12 @@ ul {
     padding: 10px 17px;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.pfp-option.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .pfp-option button {
