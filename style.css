@@ -263,6 +263,11 @@ ul {
     border-radius: 50%;
 }
 
+/* Cover / Pfp Buttons */
+.cover-button-container {
+    
+}
+
 .main-info {
     display: flex;
     margin: 70px 0 5px 0;
