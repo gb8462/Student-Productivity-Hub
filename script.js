@@ -15,7 +15,6 @@ const currentDate = document.getElementById('currentDate');
 // User Images
 const coverImageInput = document.getElementById('coverImageInput');
 const coverImage = document.querySelector('.image-cover');
-const coverContainer = document.querySelector('.cover-container');
 
 // Cover/Pfp Button
 const coverPhotoButton = document.getElementById('coverPhotoButton');
@@ -82,6 +81,14 @@ dateToday();
 // User Images
 coverAddPhotoButton.addEventListener('click', () => {
     coverImageInput.click();
+});
+
+coverImageInput.addEventListener('change', () => {
+    const file = coverImageInput.files[0];
+    if (!file) return;
+
+    coverImage = URL.createObjectURL(file);
+    coverImage.hidden = false;
 });
 
 // Cover/Pfp Buttons
