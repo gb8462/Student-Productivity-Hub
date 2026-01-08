@@ -277,6 +277,12 @@ ul {
     border: 5px solid var(--bg-color);
 }
 
+.img-container {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.01);
+}
+
 .image-pfp {
     width: 100%;
     height: 100%;
