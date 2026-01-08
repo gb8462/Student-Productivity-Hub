@@ -18,6 +18,7 @@ const coverImage = document.querySelector('.image-cover');
 
 const pfpImageInput = document.getElementById('pfpImageInput');
 const pfpImage = document.querySelector('.image-pfp');
+const userIcon = document.querySelector('.user-icon');
 
 // Cover/Pfp Button
 const coverPhotoButton = document.getElementById('coverPhotoButton');
@@ -96,6 +97,10 @@ coverImageInput.addEventListener('change', () => {
     coverUrl = URL.createObjectURL(file);
     coverImage.src = imageUrl;
     coverImage.hidden = false;
+});
+
+pfpAddPhotoButton.addEventListener('click', () => {
+    pfpImageInput.click();
 });
 
 // Cover/Pfp Buttons
