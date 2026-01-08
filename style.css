@@ -39,6 +39,10 @@ ul {
     list-style: none;
 }
 
+.material-symbols-outlined {
+    user-select: none;
+}
+
 /* Sidebar Styles */
 /* Sidebar Expanded */
 .sidebar {
