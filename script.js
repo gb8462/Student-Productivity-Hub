@@ -89,18 +89,30 @@ coverAddPhotoButton.addEventListener('click', () => {
 });
 
 coverImageInput.addEventListener('change', () => {
-    const file = coverImageInput.files[0];
-    let imageUrl;
+    const coverFile = coverImageInput.files[0];
+    let coverImageUrl;
 
-    if (!file) return;
+    if (!coverFile) return;
 
-    coverUrl = URL.createObjectURL(file);
-    coverImage.src = imageUrl;
+    coverImageUrl = URL.createObjectURL(coverFile);
+    coverImage.src = coverImageUrl;
     coverImage.hidden = false;
 });
 
 pfpAddPhotoButton.addEventListener('click', () => {
     pfpImageInput.click();
+});
+
+pfpImageInput.addEventListener('change', () => {
+    const pfpFile = pfpImageInput.files[0];
+    let pfpImageUrl;
+
+    if (!pfpFile) return;
+
+    pfpImageUrl = URL.createObjectURL(pfpFile);
+    pfpImage.src = pfpImageUrl;
+    pfpImage.hidden = false;
+    userIcon.style.display = 'none';
 });
 
 // Cover/Pfp Buttons
