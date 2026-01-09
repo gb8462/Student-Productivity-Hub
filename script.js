@@ -50,6 +50,8 @@ toggleSideBar.addEventListener('click', () => {
     }
 });
 
+// 
+
 // Navigation Link Active
 navLinks.forEach(link => {
     link.addEventListener('click', () => {

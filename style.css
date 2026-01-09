@@ -224,7 +224,9 @@ ul {
 }
 
 /* Sidebar Hover */
-
+.sidebar.collapsed .nav-link:hover + .sidebar {
+    width: 250px;
+}
 
 /* Main Layout */
 .app-layout {
