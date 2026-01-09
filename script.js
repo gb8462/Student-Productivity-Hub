@@ -61,7 +61,6 @@ navLinks.forEach(link => {
 
 
 // User Info Section
-// User Info Functions
 
 // Date Function
 function dateToday() {
@@ -84,6 +83,8 @@ function dateToday() {
 dateToday();
 
 // User Images
+
+// Cover Photo Insert
 coverAddPhotoButton.addEventListener('click', () => {
     coverImageInput.click();
 });
@@ -99,6 +100,8 @@ coverImageInput.addEventListener('change', () => {
     coverImage.hidden = false;
 });
 
+
+// Pfp Photo Insert
 pfpAddPhotoButton.addEventListener('click', () => {
     pfpImageInput.click();
 });
