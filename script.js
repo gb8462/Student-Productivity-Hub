@@ -6,6 +6,7 @@
 const sidebar = document.getElementById('sidebar');
 const toggleSideBar = document.getElementById('toggleSideBar');
 const navLinks = document.querySelectorAll('.nav-link')
+const iconHover = document.getElementById('iconHover')
 
 // User Info
 const randomGreeting = document.getElementById('randomGreeting');
@@ -51,11 +52,11 @@ toggleSideBar.addEventListener('click', () => {
 });
 
 // Sidebar Hover Toggle
-sidebar.addEventListener('mouseenter', () => {
+iconHover.addEventListener('mouseenter', () => {
     sidebar.classList.add('sidebar-hover');
 });
 
-sidebar.addEventListener('mouseleave', () => {
+iconHover.addEventListener('mouseleave', () => {
     sidebar.classList.remove('sidebar-hover');
 });
 
