@@ -224,7 +224,7 @@ ul {
 }
 
 /* Sidebar Hover */
-.sidebar.collapsed .nav-link:hover + .sidebar {
+.sidebar.collapsed.sidebar-hover {
     width: 250px;
 }
 
