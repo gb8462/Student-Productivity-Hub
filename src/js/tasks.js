@@ -14,7 +14,7 @@ const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 
 // Task List
-let tasks = [];
+let tasks = []; // id, text
 
 // Render Function
 function renderTask() {
@@ -32,5 +32,14 @@ function renderTask() {
         createCheckbox.type = 'checkbox';
         createCheckbox.checked = task.done;
         createCheckbox.addEventListener('change', () => toggleTodo(task.id));
-    })
+
+        const createSpan = document.createElement('span');
+        createSpan.className = 'task-name' + (todo.done ? ' done' : '');
+        createSpan.textContent = task.text;
+
+        createDiv.appendChild(createCheckbox);
+        createDiv.appendChild(createSpan);
+
+        
+    });
 };
