@@ -12,3 +12,25 @@ const progressBar = document.getElementById('progressFill')
 // Task List
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
+
+// Task List
+let tasks = [];
+
+// Render Function
+function renderTask() {
+    taskList.innerHTML = '';
+
+    // Creation of Lists of task
+    tasks.forEach(task => {
+        const createLi = document.createElement('li');
+        createLi.className = 'task-item';
+
+        const createDiv = document.createElement('div');
+        createDiv.className = 'task-left';
+
+        const createCheckbox = document.createElement('input');
+        createCheckbox.type = 'checkbox';
+        createCheckbox.checked = task.done;
+        createCheckbox.addEventListener('change', () => toggleTodo(task.id));
+    })
+};
