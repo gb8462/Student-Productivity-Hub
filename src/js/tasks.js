@@ -7,7 +7,7 @@ const deleteTaskButton = document.getElementById('deleteTaskButton');
 
 // Progress Bar
 const progressLabel = document.getElementById('progressLabel')
-const progressBar = document.getElementById('progressFill')
+const progressFill = document.getElementById('progressFill')
 
 // Task List
 const taskInput = document.getElementById('taskInput');
@@ -40,6 +40,19 @@ function renderTask() {
         createDiv.appendChild(createCheckbox);
         createDiv.appendChild(createSpan);
 
-        
+        editTaskButton.addEventListener('click', () => editTask(task.id));
+
+        deleteTaskButton.addEventListener('click', () => deleteTask(task.id));
     });
+
+    updateTaskStats();
+};
+
+function updateTaskStats() {
+    const total = tasks.length;
+    const done = tasks.filter(t => t.done).length;
+
+    const percentage = total === 0 ? 0 :Math.round((done / total) * 100);
+    progressFill.style.width = percentage + '%';
+    progressLabel.textContent = `${done} of ${total} done`;
 };
