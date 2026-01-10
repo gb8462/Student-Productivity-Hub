@@ -153,7 +153,15 @@
             <!-- Tasks Section -->
             <section class="tasks">
                 <header class="task-header">
-                    <h1>Tasks/Todos</h1>
+                    <div class="left-task">
+                        <h1>Tasks/Todos</h1>
+                        <div class="task-progress">
+                            <span>0 of 0 done</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="right-task">
                         <h2>Task for today</h2>
@@ -164,12 +172,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="task-progress">
-                    <span>0 of 0 done</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                </div>
+
                 <div class="task-wrapper">
                     <input type="text" class="task-input" id="taskInput" placeholder="Add a new task (e.g. Finish CS project)…">
                     <ul class="task-list" id="taskList"></ul>
