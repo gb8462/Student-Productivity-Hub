@@ -85,3 +85,8 @@ function editTask(id) {
     
     // Will finish later
 };
+
+addTaskButton.addEventListener('click', addTask());
+taskInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') addTask();
+});
