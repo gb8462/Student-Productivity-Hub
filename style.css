@@ -223,10 +223,6 @@ ul {
     justify-content: center;
 }
 
-/* Sidebar Hover */
-.sidebar.collapsed.sidebar-hover {
-    width: 250px;
-}
 
 /* Main Layout */
 .app-layout {
