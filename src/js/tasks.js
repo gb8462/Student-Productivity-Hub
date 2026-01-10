@@ -70,8 +70,18 @@ function addTask() {
 };
 
 function toggleTodo(id) {
-    todos = todos.map(t => t.id === id ? { ...t, done: !t.done} : t);
+    tasks = tasks.map(t => t.id === id ? { ...t, done: !t.done} : t);
     renderTask();
 };
 
-function
+function deleteTask(id) {
+    tasks = tasks.filter(t => t.id === id);
+    renderTask();
+};
+
+function editTask(id) {
+    const task = tasks.find(t => t.id === id);
+    if (!task) return;
+    
+    // Will finish later
+};
