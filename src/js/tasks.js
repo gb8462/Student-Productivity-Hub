@@ -90,3 +90,5 @@ addTaskButton.addEventListener('click', addTask());
 taskInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') addTask();
 });
+
+// It's still not working, will fix tommorow morning or afternoon
