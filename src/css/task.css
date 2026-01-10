@@ -97,10 +97,11 @@
 
 .task-wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-.task-wrapper input {
+.task-input {
     display: flex;
     width: 100%;
     height: 37px;
@@ -109,4 +110,24 @@
     border-radius: 7px;
     padding: 9px 17px;
     background: #f9fafb;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+    width: 100%;
+}
+
+.task-list li {
+    display: flex;
+    gap: 15px;
+    padding: 6px 13px;
+    border-bottom: 1px dashed #E5E7EB;
+}
+
+.task-list li p {
+    font-size: 15px;
+    font-weight: 400;
 }
