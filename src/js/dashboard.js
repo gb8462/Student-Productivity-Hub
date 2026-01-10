@@ -16,3 +16,10 @@ const quotes = [
     '“Study smart, not just hard.”'
 ];
 
+function randomQuote() {
+    const quoteText = quotes[Math.floor(Math.random() * quotes.length)];
+
+    randomQuoteText.textContent = quoteText;
+};
+
+randomQuote();
