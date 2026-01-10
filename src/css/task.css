@@ -95,68 +95,11 @@
     background: #46E563;
 }
 
-.table-wrapper {
+.task-wrapper {
+    display: flex;
     width: 100%;
-    overflow-x: auto;
 }
 
-.task-content {
-    width: 100%;
-    min-width: 700px;
-    border-collapse: collapse;
-    table-layout: fixed;
-    font-size: 14px;
-}
-
-.task-content thead th {
-    text-align: left;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 8px;
-    border-top: 1px solid #E7E7E7;
-    border-bottom: 1px solid #E7E7E7;
-    color: #555;
-}
-
-.task-content thead button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    color: #888;
-}
-
-.task-content tbody tr {
-    border-bottom: 1px solid #F0F0F0;
-}
-
-.task-content tbody td {
-    padding: 8px;
-    font-size: 14px;
-    vertical-align: middle;
-}
-
-.task-content th:first-child,
-.task-content td:first-child {
-    width: 80px;
-    text-align: center;
-}
-
-.task-content th.add-column,
-.task-content td.add-column {
-    width: 50px;
-    text-align: center;
-    cursor: pointer;
-    color: #888;
-}
-
-.task-content th.add-column {
-    font-size: 18px;
-    font-weight: 700;
-    color: #4CAF50;
-    user-select: none;
-}
-
-.task-content th.add-column:hover {
-    background-color: #F5F5F5;
+.task-wrapper input {
+    border: ;
 }
