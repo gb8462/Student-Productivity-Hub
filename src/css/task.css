@@ -1,4 +1,6 @@
 /* Tasks Styles */
+
+/* Main Box */
 .tasks {
     display: flex;
     flex-direction: column;
@@ -11,6 +13,7 @@
     gap: 6px;
 }
 
+/* Left Content */
 .left-task {
     width: 100%;
 }
@@ -26,6 +29,7 @@
     font-weight: 400;
 }
 
+/* Rigth Content */
 .right-task {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,7 @@
     font-weight: 400;
 }
 
+/* Buttons */
 .action-buttons {
     display: flex;
     align-items: center;
@@ -72,6 +77,7 @@
     background: #E55346;
 }
 
+/* Task Bar Progress */
 .task-progress {
     display: flex;
     justify-content: space-between;
@@ -101,10 +107,12 @@
     background: #46E563;
 }
 
+/* Task Lists */
 .task-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
 }
 
 .task-input {
@@ -121,10 +129,11 @@
 .task-list {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 10px 0;
+    padding: 10px 10px 10px 0;
     gap: 10px;
     width: 100%;
     overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .task-item {
@@ -149,4 +158,17 @@
 .task-left span {
     font-size: 15px;
     font-weight: 400;
+}
+
+/* Task List Scrollbar */
+.task-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.task-list::-webkit-scrollbar-track {
+    background: transparent;
 }
