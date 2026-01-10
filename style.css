@@ -472,6 +472,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 0 clamp(16px, 5vw, 130px);
+    gap: 30px;
 }
 
 /* Responsive Adjustments */
