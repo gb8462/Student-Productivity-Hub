@@ -13,37 +13,3 @@ const progressFill = document.getElementById('progressFill')
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 
-// Task List
-let tasks = []; // id, text
-
-// Render Function
-function renderTask() {
-    taskList.innerHTML = '';
-
-    // Creation of Lists of task
-    tasks.forEach(task => {
-        const createLi = document.createElement('li');
-        createLi.className = 'task-item';
-
-        const createDiv = document.createElement('div');
-        createDiv.className = 'task-left';
-
-        const createCheckbox = document.createElement('input');
-        createCheckbox.type = 'checkbox';
-        createCheckbox.checked = task.done;
-        createCheckbox.addEventListener('change', () => toggleTodo(task.id));
-
-        const createSpan = document.createElement('span');
-        createSpan.className = 'task-name' + (task.done ? ' done' : '');
-        createSpan.textContent = task.text;
-
-        createDiv.appendChild(createCheckbox);
-        createDiv.appendChild(createSpan);
-
-        editTaskButton.addEventListener('click', () => editTask(task.id));
-
-        deleteTaskButton.addEventListener('click', () => deleteTask(task.id));
-    });
-
-    updateTaskStats();
-};
