@@ -1,9 +1,9 @@
 /* Tasks Styles */
 .tasks {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: 450px;
     border-radius: var(--border-radius);
     background: #fff;
     box-shadow: var(--box-shadow);
@@ -150,5 +150,3 @@
     font-size: 15px;
     font-weight: 400;
 }
-
-.
