@@ -8,11 +8,17 @@
     background: #fff;
     box-shadow: var(--box-shadow);
     padding: 18px 20px;
+    gap: 6px;
+}
+
+.left-task {
+    width: 100%;
 }
 
 .task-header {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .task-header h1 {
@@ -71,7 +77,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 27px;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 .task-progress span {
