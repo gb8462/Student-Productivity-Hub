@@ -1,7 +1,7 @@
 // Task List Section
 
 // Buttons
-const newTaskButton = document.getElementById('newTaskButton');
+const newTaskButton = document.getElementById('addTaskButton');
 const editTaskButton = document.getElementById('editTaskButton');
 const deleteTaskButton = document.getElementById('deleteTaskButton');
 
