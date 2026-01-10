@@ -124,16 +124,31 @@
     padding: 10px 0;
     gap: 10px;
     width: 100%;
+    overflow-y: auto;
 }
 
 .task-item {
     display: flex;
     gap: 15px;
     padding: 6px 13px;
+    justify-content: space-between;
     border-bottom: 1px dashed #E5E7EB;
 }
 
-.task-list li p {
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+}
+
+.task-left input[type='checkbox'] {
+    accent-color: var(--tertiary-text-color);
+}
+
+.task-left span {
     font-size: 15px;
     font-weight: 400;
 }
+
+.
