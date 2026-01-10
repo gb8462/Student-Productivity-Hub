@@ -170,22 +170,9 @@
                         <div class="progress-fill"></div>
                     </div>
                 </div>
-                <div class="table-wrapper">
-                    <table class="task-content">
-                        <thead>
-                            <tr>
-                                <th>Complete</th>
-                                <th><button id="addTableButton">+</button></th>
-                                <!-- Add column for task details -->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <!-- Task items will be dynamically added here -->
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="task-wrapper">
+                    <input type="text" id="taskInput" placeholder="Add a new task (e.g. Finish CS project)…">
+                    <ul class="task-list" id="taskList"></ul>
                 </div>
             </section>
 
