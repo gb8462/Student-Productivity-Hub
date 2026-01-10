@@ -56,3 +56,22 @@ function updateTaskStats() {
     progressFill.style.width = percentage + '%';
     progressLabel.textContent = `${done} of ${total} done`;
 };
+
+function addTask() {
+    const text = taskInput.value.trim();
+    if (!text) return;
+    tasks.push({
+        id: Date.now(),
+        text,
+        done: false
+    });
+    taskInput.value = '';
+    renderTask();
+};
+
+function toggleTodo(id) {
+    todos = todos.map(t => t.id === id ? { ...t, done: !t.done} : t);
+    renderTask();
+};
+
+function
