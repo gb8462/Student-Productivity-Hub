@@ -51,15 +51,6 @@ toggleSideBar.addEventListener('click', () => {
     }
 });
 
-// Sidebar Hover Toggle
-iconHover.addEventListener('mouseenter', () => {
-    sidebar.classList.add('sidebar-hover');
-});
-
-iconHover.addEventListener('mouseleave', () => {
-    sidebar.classList.remove('sidebar-hover');
-});
-
 // Navigation Link Active
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
