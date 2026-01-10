@@ -126,7 +126,7 @@
     width: 100%;
 }
 
-.task-list li {
+.task-item {
     display: flex;
     gap: 15px;
     padding: 6px 13px;
