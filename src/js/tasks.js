@@ -34,7 +34,7 @@ function renderTask() {
         createCheckbox.addEventListener('change', () => toggleTodo(task.id));
 
         const createSpan = document.createElement('span');
-        createSpan.className = 'task-name' + (todo.done ? ' done' : '');
+        createSpan.className = 'task-name' + (task.done ? ' done' : '');
         createSpan.textContent = task.text;
 
         createDiv.appendChild(createCheckbox);
