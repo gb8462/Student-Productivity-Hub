@@ -293,8 +293,19 @@ ul {
 .sidebar.collapsed .user-log {
     max-width: 0;
     opacity: 0;
-    transform: translate(-8px);
+    transform: translateX(-8px);
     pointer-events: none;
+}
+
+/* Expanded Behavior */
+.sidebar.expanded .nav-title,
+.sidebar.expanded .nav-label,
+.sidebar.expanded .user-img-container,
+.sidebar.expanded .user-log {
+    max-width: 150px;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 /* Main Layout */
