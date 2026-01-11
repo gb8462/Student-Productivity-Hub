@@ -237,7 +237,6 @@ ul {
 /* Toggle Button */
 .toggle-sidebar {
     position: absolute;
-    left: 205px;
     top: 55px;
     width: 30px;
     height: 30px;
@@ -245,7 +244,6 @@ ul {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: var(--box-shadow);
-    background: var(--highlight-text-color);
     color: var(--tertiary-text-color);
     z-index: 10;
     transition: all 0.3s ease;
@@ -258,6 +256,22 @@ ul {
 .toggle-sidebar span {
     display: inline-block;
     transition: transform 0.3s ease;
+}
+
+/* Toggle States */
+.toggle-sidebar.active-toggle {
+    left: 205px;
+    background: var(--primary-text-color);
+}
+
+.toggle-sidebar.deactive-toggle {
+    left: 50px;
+    background-color: var(--tertiary-text-color);
+    color: var(--primary-text-color);
+}
+
+.toggle-sidebar.deactive-toggle span {
+    transform: rotate(180deg);
 }
 
 
