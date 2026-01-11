@@ -1,0 +1,253 @@
+
+
+.sidebar.expanded {
+    width: 250px;
+}
+
+.nav-wrapper {
+    overflow: hidden;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.nav-title {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-wrapper nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 9px;
+    align-items: center;
+}
+
+.link-wrapper,
+.setting-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-img-container {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-quick-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    max-width: 150px;
+}
+
+.user-quick-info h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.email-link h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-log {
+    display: flex;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+    max-width: 150px;
+}
+
+.group-title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.link-wrapper ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-icon {
+    font-size: 26px;
+    min-width: 24px;
+}
+
+.nav-label {
+    font-size: 15px;
+    flex-shrink: 0;
+    max-width: 150px;
+}
+
+.nav-link.active {
+    border-radius: 5px;
+    background: var(--highlight-text-color);
+    color: var(--tertiary-text-color);
+    font-weight: 700;
+}
+
+/* Sidebar Collapsed Style */
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed nav {
+    align-items: center;
+    padding: 5px 3px;
+}
+
+.sidebar.collapsed ul {
+    align-items: center;
+}
+
+/* LI Hover */
+.sidebar nav ul li:hover {
+    border-radius: 5px;
+    background: var(--hover-color);
+}
+
+/* Toggle Button For Sidebar */
+.button-wrapper {
+    position: fixed;
+    z-index: 100;
+}
+
+.toggle-sidebar {
+    position: absolute;
+    top: 55px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+    color: var(--tertiary-text-color);
+    transition: all 0.3s ease;
+}
+
+.toggle-sidebar:active {
+    transform: scale(0.95);
+}
+
+/* Sidebar Active/Deactive */
+.toggle-sidebar.active-toggle {
+    left: 205px;
+    background: var(--primary-text-color);
+}
+
+.toggle-sidebar.deactive-toggle {
+    left: 50px;
+    background: var(--tertiary-text-color);
+    color: var(--primary-text-color);
+}
+
+.toggle-sidebar span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.toggle-sidebar.deactive-toggle span {
+    transform: rotate(180deg);
+}
+
+.sidebar.collapsed .nav-link,
+.sidebar.collapsed .group-title,
+.sidebar.collapsed .user-img-container {
+    justify-content: center;
+    gap: 0;
+}
+
+.sidebar.collapsed .nav-label,
+.sidebar.collapsed .nav-title,
+.sidebar.collapsed .user-quick-info,
+.sidebar.collapsed .user-log {
+    justify-content: center;
+    max-width: 0;
+    opacity: 0;
+    transform: translateX(-8px);
+    pointer-events: none;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
+}
+
+.sidebar.expanded .nav-label,
+.sidebar.expanded .nav-title,
+.sidebar.expanded .user-quick-info,
+.sidebar.expanded .user-log {
+    max-width: 150px;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
+}
+
+.sidebar.collapsed .nav-link.active {
+    justify-content: center;
+}
