@@ -156,6 +156,11 @@ ul {
 }
 
 /* Toggle Button For Sidebar */
+.button-wrapper {
+    position: fixed;
+    z-index: 100;
+}
+
 .toggle-sidebar {
     position: absolute;
     top: 55px;
