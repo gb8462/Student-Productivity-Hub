@@ -242,6 +242,7 @@ ul {
     border: none;
     cursor: pointer;
     font-size: 20px;
+    color: var(--primary-text-color);
 }
 
 /* Hover States */
