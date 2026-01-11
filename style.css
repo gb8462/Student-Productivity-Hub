@@ -46,18 +46,22 @@ ul {
 /* Sidebar Styles */
 /* Sidebar Expanded */
 .sidebar {
-    position: sticky;
     top: 0;
-    height: 100vh;
+    position: relative;
+    height: 100vw;
     background: #353535;
     transition: width 0.3s ease;
     align-items: flex-start;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: var(--box-shadow);
 }
 
 .sidebar.expanded {
     width: 250px;
+}
+
+.nav-wrapper {
+    overflow: hidden;
 }
 
 .sidebar nav header {
@@ -88,6 +92,7 @@ ul {
 }
 
 .sidebar nav {
+    position: fixed;
     display: flex;
     flex-direction: column;
     padding: 7px 10px;
