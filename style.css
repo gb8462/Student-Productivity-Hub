@@ -134,8 +134,8 @@ ul {
 .user-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .user-img-container {
