@@ -84,7 +84,7 @@ ul {
     width: 85px;
 }
 
-/* Nav Structure */
+/* Nav Structure Wrappers */
 .nav-wrapper {
     overflow: hidden;
 }
@@ -115,6 +115,11 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.button-wrapper {
+    position: fixed;
+    z-index: 100;
 }
 
 /* Nav Header */
@@ -229,7 +234,33 @@ ul {
     background: var(--hover-color);
 }
 
-/*  */
+/* Toggle Button */
+.toggle-sidebar {
+    position: absolute;
+    left: 205px;
+    top: 55px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    background: var(--highlight-text-color);
+    color: var(--tertiary-text-color);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.toggle-sidebar.active {
+    transform: scale(0.95);
+}
+
+.toggle-sidebar span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
 
 /* Main Layout */
 .app-layout {
