@@ -94,6 +94,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
     padding: 7px 9px;
 }
 
@@ -115,6 +116,9 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px; */
 }
 
 .button-wrapper {
@@ -152,11 +156,13 @@ ul {
 
 /* Nav Links */
 .group-title {
+    display: flex;
     font-size: 13px;
     font-weight: 500;
 }
 
-.link-wrapper ul {
+.link-wrapper ul,
+.setting-wrapper ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -284,7 +290,7 @@ ul {
 
 .sidebar.collapsed .nav-link,
 .sidebar.collapsed .group-title,
-.sidebar.collapsed .user-img-container {
+.sidebar.collapsed .user-wrapper {
     justify-content: center;
     gap: 0;
 }
