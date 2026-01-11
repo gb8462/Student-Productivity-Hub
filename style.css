@@ -16,7 +16,7 @@
     --box-shadow: 0 2px 7.5px 2px rgba(0, 0, 0, 0.25);
 }
 
-.dark-mode {
+.dark-theme {
     --bg-color: #191A1C;
     --special-bg-color: #E0E7FF;
     --primary-text-color: #FAFAFA;
@@ -545,7 +545,41 @@ ul {
 }
 
 /* Switch Theme Toggle */
-.theme-switch
+.theme-switch {
+    position: absolute;
+    display: flex;
+    top: 190px;
+    right: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--special-bg-color);
+    color: var(--primary-text-color);
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.dark-mode,
+.light-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.theme-switch div:last-child {
+    display: none;
+}
+
+.dark-theme .theme-switch div:first-child {
+    display: none;
+}
+
+.dark-theme .theme-switch div:last-child {
+    display: block;
+}
 
 /* Users Info */
 .main-info {
