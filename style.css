@@ -145,6 +145,46 @@ ul {
     overflow: hidden;
 }
 
+/* Nav Links */
+.group-title {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.link-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-icon {
+    font-size: 26px;
+    min-width: 24px;
+}
+
+.nav-title {
+    font-size: 15px;
+    max-width: 150px;
+}
+
+.nav-link.active {
+    background: var(--highlight-text-color);
+    color: var(--tertiary-text-color);
+    font-weight: 700;
+}
+
+/* User Info */
+
+
 /* Main Layout */
 .app-layout {
     display: flex;
