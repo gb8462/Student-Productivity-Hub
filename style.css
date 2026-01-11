@@ -169,6 +169,7 @@ ul {
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .nav-icon {
@@ -232,6 +233,7 @@ ul {
 .setting-wrapper ul li:hover,
 .user-quick-info h3:hover {
     background: var(--hover-color);
+    border-radius: 5px;
 }
 
 /* Toggle Button */
@@ -265,7 +267,7 @@ ul {
 }
 
 .toggle-sidebar.deactive-toggle {
-    left: 50px;
+    left: 65px;
     background-color: var(--tertiary-text-color);
     color: var(--primary-text-color);
 }
@@ -295,6 +297,10 @@ ul {
     opacity: 0;
     transform: translateX(-8px);
     pointer-events: none;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
 }
 
 /* Expanded Behavior */
@@ -306,6 +312,10 @@ ul {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        max-width 0.2s ease;
 }
 
 /* Main Layout */
