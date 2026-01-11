@@ -66,6 +66,8 @@ ul {
 .sidebar {
     top: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background: var(--content-color);
     transition: width 0.3s ease;
@@ -86,7 +88,11 @@ ul {
 
 /* Nav Structure Wrappers */
 .nav-wrapper {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px 5px;
 }
 
 .nav-wrapper nav {
@@ -116,6 +122,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: auto;
     /* white-space: nowrap;
     overflow: hidden;
     max-width: 150px; */
@@ -288,11 +295,13 @@ ul {
 .sidebar.collapsed nav,
 .sidebar.collapsed ul {
     align-items: center;
+    justify-content: center;
 }
 
 .sidebar.collapsed .nav-link,
 .sidebar.collapsed .group-title,
 .sidebar.collapsed .user-wrapper {
+    align-items: center;
     justify-content: center;
     gap: 0;
 }
