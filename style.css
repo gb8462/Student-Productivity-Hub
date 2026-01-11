@@ -258,7 +258,7 @@ ul {
     transition: transform 0.3s ease;
 }
 
-/* Toggle States */
+/* Toggle Button States */
 .toggle-sidebar.active-toggle {
     left: 205px;
     background: var(--primary-text-color);
@@ -274,7 +274,28 @@ ul {
     transform: rotate(180deg);
 }
 
+/* Collapsed Behavior */
+.sidebar.collapsed nav,
+.sidebar.collapsed ul {
+    align-items: center;
+}
 
+.sidebar.collapsed .nav-link,
+.sidebar.collapsed .group-title,
+.sidebar.collapsed .user-img-container {
+    justify-content: center;
+    gap: 0;
+}
+
+.sidebar.collapsed .nav-title,
+.sidebar.collapsed .nav-label,
+.sidebar.collapsed .user-quick-info,
+.sidebar.collapsed .user-log {
+    max-width: 0;
+    opacity: 0;
+    transform: translate(-8px);
+    pointer-events: none;
+}
 
 /* Main Layout */
 .app-layout {
