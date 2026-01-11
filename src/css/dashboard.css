@@ -10,7 +10,7 @@
     max-width: 915px;
     height: 159px;
     border-radius: var(--border-radius);
-    background: #fff;
+    background: var(--content-color);
     box-shadow: var(--box-shadow);
     padding: 18px 20px;
 }
