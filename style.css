@@ -165,7 +165,7 @@ ul {
 .setting-wrapper ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 
 .nav-link {
@@ -176,6 +176,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .nav-icon {
@@ -200,6 +201,7 @@ ul {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
+    background: var(--primary-text-color);
 }
 
 .user-img-container img {
