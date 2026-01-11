@@ -156,6 +156,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-shrink: 0;
+    max-width: 150px;
 }
 
 .user-quick-info h2 {
@@ -174,6 +176,8 @@ ul {
     background: transparent;
     font-size: 20px;
     cursor: pointer;
+    flex-shrink: 0;
+    max-width: 150px;
 }
 
 .group-title {
