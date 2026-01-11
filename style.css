@@ -139,6 +139,7 @@ ul {
 }
 
 .user-img-container {
+    display: flex;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -176,6 +177,8 @@ ul {
 }
 
 .group-title {
+    display: flex;
+    justify-content: flex-start;
     font-size: 13px;
     font-weight: 500;
 }
@@ -279,13 +282,17 @@ ul {
     transform: rotate(180deg);
 }
 
-.sidebar.collapsed .nav-link {
+.sidebar.collapsed .nav-link,
+.sidebar.collapsed .group-title,
+.sidebar.collapsed .user-img-container {
     justify-content: center;
     gap: 0;
 }
 
 .sidebar.collapsed .nav-label,
-.sidebar.collapsed .nav-title {
+.sidebar.collapsed .nav-title,
+.sidebar.collapsed .user-quick-info,
+.sidebar.collapsed .user-log {
     justify-content: center;
     max-width: 0;
     opacity: 0;
@@ -298,7 +305,9 @@ ul {
 }
 
 .sidebar.expanded .nav-label,
-.sidebar.expanded .nav-title {
+.sidebar.expanded .nav-title,
+.sidebar.expanded .user-quick-info,
+.sidebar.expanded .user-log {
     max-width: 150px;
     opacity: 1;
     transform: translateX(0);
