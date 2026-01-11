@@ -19,6 +19,7 @@ const coverImage = document.querySelector('.image-cover');
 
 const pfpImageInput = document.getElementById('pfpImageInput');
 const pfpImage = document.querySelector('.image-pfp');
+const miniProfile = document.querySelector('.image-mini-pfp')
 const userIcon = document.querySelector('.user-icon');
 
 // Cover/Pfp Button
@@ -117,6 +118,9 @@ pfpImageInput.addEventListener('change', () => {
     pfpImage.src = pfpImageUrl;
     pfpImage.hidden = false;
     userIcon.style.display = 'none';
+
+    miniProfile.src = pfpImageUrl;
+    miniProfile.hidden = false;
 });
 
 // Cover/Pfp Buttons
