@@ -222,6 +222,15 @@ ul {
     font-size: 20px;
 }
 
+/* Hover States */
+.link-wrapper ul li:hover,
+.setting-wrapper ul li:hover,
+.user-quick-info h3:hover {
+    background: var(--hover-color);
+}
+
+/*  */
+
 /* Main Layout */
 .app-layout {
     display: flex;
