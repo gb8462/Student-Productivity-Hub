@@ -378,6 +378,16 @@ ul {
     transform: scale(1.01);
 }
 
+.main-info-container {
+    display: flex;
+    margin: 70px 0 5px 0;
+    padding: 0 clamp(16px, 5vw, 130px);
+    text-align: center;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
 /* Cover Container Effect */
 .cover-container::after {
     content: '';
@@ -457,7 +467,6 @@ ul {
 }
 
 /* Option Button */
-
 .cover-option {
     position: absolute;
     display: flex;
@@ -552,7 +561,7 @@ ul {
     border-radius: 5px;
 }
 
-/* Switch Theme Toggle */
+/* Switch Theme Toggle Button */
 .theme-switch {
     position: absolute;
     display: flex;
@@ -590,16 +599,6 @@ ul {
 }
 
 /* Users Info */
-.main-info {
-    display: flex;
-    margin: 70px 0 5px 0;
-    padding: 0 clamp(16px, 5vw, 130px);
-    text-align: center;
-    align-items: center;
-    align-self: stretch;
-    justify-content: space-between;
-}
-
 .username {
     display: flex;
     align-items: flex-start;
@@ -632,6 +631,8 @@ ul {
     padding: 0 clamp(16px, 5vw, 130px);
     gap: 30px;
 }
+
+
 
 /* Responsive Adjustments */
 
