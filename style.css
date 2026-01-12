@@ -646,55 +646,18 @@ ul {
 
 
 
-/* Responsive Adjustments */
+/* Responsive Breakpoints */
 
-/* Auto collapsed sidebar during small screens */
-@media (max-width: 900px) {
-    .sidebar {
-        width: 50px !important;
+/* PC BREAKPOINT */
+@media (max-width: 1440px) {
+    /* Main Content */
+    .main-content {
+        padding: 0 clamp(24px, 5vw, 110px);
     }
 
-    .toggle-sidebar {
-        display: none;
-    }
-    
-}
-
-/* Header and buttons for tablet */
-@media (max-width: 768px) {
-    .task-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .right-task {
-        align-items: flex-start;
-    }
-
-    .action-buttons {
-        flex-wrap: wrap;
-    }
-
-    .task-content thead th,
-    .task-content tbody td {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .task-content th:first-child,
-    .task-content td:first-child {
-        width: 60px;
-    }
-
-    .pfp-container {
-        left: 50%;
-        transform: translateY(-50%);
-    }
-
-    .main-info {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
+    /* Main Container */
+    .main-info-container {
+        padding: 0 clamp(24px, 5vw, 110px);
     }
 }
+
