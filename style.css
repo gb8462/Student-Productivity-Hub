@@ -23,7 +23,7 @@
     --secondary-text-color: #a5a5a5;
     --tertiary-text-color: #1E1E1E;
     --content-color: #353535;
-    --highlight-text-color: #FFF;
+    --highlight-text-color: #d1d1d1;
     --accent-color: #4F46E5;
     --hover-color: #9c9c9c;
     --border-radius: 12px;
@@ -363,7 +363,7 @@ ul {
 
 .pfp-container {
     position: absolute;
-    background: #1E1E1E;
+    background: var(--primary-text-color);
     border-radius: 50%;
     width: 130px;
     height: 130px;
@@ -446,14 +446,15 @@ ul {
     cursor: pointer;
     font-weight: 600;
     font-size: 15px;
-    background: var(--bg-color);
+    background: var(--tertiary-text-color);
+    color: var(--primary-text-color);
     font-variation-settings: 'FILL' 35;
 }
 
 .pfp-btn {
     position: absolute;
     display: flex;
-    background: #353535;
+    background: var(--highlight-text-color);
     color: var(--tertiary-text-color);
     font-variation-settings: 'FILL' 35;
     top: 80px;
