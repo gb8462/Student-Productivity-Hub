@@ -80,13 +80,13 @@
     padding: 9px 17px;
     align-items: center;
     border-radius: 7px;
-    border: 1px dashed #e5e7eb;
-    background: #F9FAFB;
+    border: 1px dashed var(--border-color);
+    background: var(--box-color);
 }
 
 .random-quote blockquote,
 .random-quote p {
-    color: #555;
+    color: var(--input-color);
     font-size: 15px;
     font-weight: 400;
 }
