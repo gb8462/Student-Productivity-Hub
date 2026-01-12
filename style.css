@@ -744,3 +744,47 @@ ul {
     }
 }
 
+/* MOBILE BREAKPOINT */
+@media (max-width: 356px) {
+    /* Sidebar */
+    .sidebar.expanded {
+        width: 200px;
+    }
+
+    .toggle-sidebar.active-toggle {
+        left: 165px;
+    }
+
+    .nav-title,
+    .nav-label,
+    .user-quick-info {
+        font-size: 13px;
+        max-width: 110px;
+    }
+
+    /* Profile */
+    .pfp-container {
+        width: 80px;
+        height: 80px;
+        top: 140px;
+    }
+
+    .username h1 {
+        font-size: 1.9rem;
+    }
+
+    .current-date {
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .cover-btn {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    .cover-option,
+    .pfp-option {
+        width: 160px;
+    }
+}
