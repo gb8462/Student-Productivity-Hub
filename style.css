@@ -661,3 +661,25 @@ ul {
     }
 }
 
+/* LAPTOP BREAKPOINT */
+@media (max-width: 1024px) {
+    /* Expanded Sidebar */
+    .sidebar.expanded {
+        width: 220px;
+    }
+
+    .toggle-sidebar.active-toggle {
+        left: 180px;
+    }
+
+    .nav-title,
+    .nav-label,
+    .user-quick-info {
+        max-width: 130px;
+    }
+
+    .main-content {
+        padding: 0 clamp(16px, 4vw, 70px);
+    }
+}
+
