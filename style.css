@@ -367,7 +367,7 @@ ul {
     display: block;
     transform: scale(1.01);
 }
-/* 
+
 .cover-container::after {
     content: '';
     position: absolute;
@@ -375,7 +375,7 @@ ul {
     pointer-events: none;
     z-index: 2;
     box-shadow: inset 0 -5px 10px 2px rgba(0, 0, 0, 0.25)
-} */
+}
 
 .pfp-container {
     position: absolute;
@@ -614,6 +614,7 @@ ul {
 .main-header hr {
     background: #7E7E7E;
     height: 3px;
+    border: none;
 }
 
 /* Main Content Styles */
