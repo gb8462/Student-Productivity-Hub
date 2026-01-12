@@ -99,15 +99,19 @@
 
     <!-- App Layout -->
     <div class="app-layout">
-        <!-- User Cover and Profile img-->
         <header class="main-header">
+            <!-- User Cover and Profile img-->
             <div class="cover-container">
+                <!-- Img Input -->
                 <input type="file" id="coverImageInput" accept="image/*" hidden>
+                <!-- Main Cover Img -->
                 <img class="image-cover" hidden>
+
                 <button class="cover-btn" id="coverPhotoButton">
                     <span class="material-symbols-outlined">photo_camera</span>
                     <span>Customize</span>
                 </button>
+
                 <div class="cover-option" id="coverOption">
                     <button id="coverAddPhotoButton">
                         <span class="material-symbols-outlined">add_a_photo</span>
@@ -119,15 +123,20 @@
                     </button>
                 </div>
             </div>
+
             <div class="pfp-container">
+                <!-- Img Input -->
                 <input type= "file" id="pfpImageInput" accept="image/*" hidden>
+                <!-- Main PFP Img -->
                 <div class="img-container">
                     <img class="image-pfp" hidden>
                     <span class="material-symbols-outlined user-icon">person</span>
                 </div>
+
                 <button class="pfp-btn" id="pfpPhotoButton">
                     <span class="material-symbols-outlined pfp-icon">photo_camera</span>
                 </button>
+
                 <div class="pfp-option" id="pfpOption">
                     <button id="pfpAddPhotoButton">
                         <span class="material-symbols-outlined">add_a_photo</span>
@@ -139,6 +148,8 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Theme Switch Button -->
             <button class="theme-switch" id="themeSwitch">
                 <div class="dark-mode">
                     <span class="material-symbols-outlined">dark_mode</span>
@@ -150,6 +161,7 @@
                 </div>
             </button>
 
+            <!-- User Info -->
             <div class="main-info">
                 <div class="username">
                     <span class="user-greet" id="randomGreeting">Hello!</span>
@@ -157,6 +169,7 @@
                 </div>
                 <span class="current-date" id="currentDate"></span>
             </div>
+
             <hr>
         </header>
 
