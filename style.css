@@ -18,7 +18,7 @@
 
 .dark-theme {
     --bg-color: #191A1C;
-    --special-bg-color: #E0E7FF;
+    --special-bg-color: #565963;
     --primary-text-color: #FAFAFA;
     --secondary-text-color: #a5a5a5;
     --tertiary-text-color: #1E1E1E;
@@ -256,7 +256,7 @@ ul {
 /* Toggle Button */
 .toggle-sidebar {
     position: absolute;
-    top: 55px;
+    top: 65px;
     width: 30px;
     height: 30px;
     border: none;
@@ -354,7 +354,7 @@ ul {
 
 /* Containers */
 .cover-container {
-    background: #3b3b3b;
+    background: var(--highlight-text-color);
     width: 100%;
     height: 180px;
     overflow: hidden;
@@ -472,7 +472,7 @@ ul {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background: #353535;
+    background: var(--primary-text-color);
     gap: 6px;
     border-radius: 10px;
     padding: 10px 17px;
@@ -482,6 +482,7 @@ ul {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .cover-option button {
@@ -504,8 +505,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 250px;
-    background: #353535;
+    width: 210px;
+    background: var(--primary-text-color);
     top: 125px;
     gap: 6px;
     border-radius: 10px;
@@ -513,12 +514,13 @@ ul {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    z-index: 10;
 }
 
 .pfp-option button {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 11px;
     color: var(--tertiary-text-color);
     padding: 4px 5px;
@@ -596,7 +598,7 @@ ul {
 }
 
 .dark-theme .theme-switch div:last-child {
-    display: block;
+    display: flex;
 }
 
 /* Users Info */
