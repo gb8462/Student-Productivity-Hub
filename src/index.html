@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Productivity Hub</title>
+
+    <!-- Style For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_a_photo,alarm_on,assignment,book_5,chevron_left,chevron_right,dark_mode,dashboard,ent,event,image,light_mode,person,photo_camera,settings,task,timer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/dashboard.css">
+    <link rel="stylesheet" href="src/css/task.css">
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <aside class="sidebar expanded" id="sidebar">
+        <!-- Toggle Button for Sidebar -->
+        <div class="button-wrapper">
+            <button class="toggle-sidebar active-toggle" id="toggleSideBar">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+        </div>
+
+        <div class="nav-wrapper">
+            <nav>
+                <header class="nav-header">
+                    <div class="logo-title">
+                        <img src="src/assets/logo.png" alt="logo">
+                        <h2 class="nav-title">Student Hub</h2>
+                    </div>
+                </header>
+                <div class="main-nav">
+                    <div class="link-wrapper">
+                        <span class="group-title">MAIN</span>
+                        <ul>
+                            <li>
+                                <a class="nav-link active">
+                                    <span class="material-symbols-outlined nav-icon" id="iconHover">dashboard</span>
+                                    <span class="nav-label">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <span class="material-symbols-outlined nav-icon" id="iconHover">assignment</span>
+                                    <span class="nav-label">Task</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <span class="material-symbols-outlined nav-icon" id="iconHover">timer</span>
+                                    <span class="nav-label">Study Timer</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <span class="material-symbols-outlined nav-icon" id="iconHover">ent</span>
+                                    <span class="nav-label">Notes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <span class="material-symbols-outlined nav-icon" id="iconHover">event</span>
+                                    <span class="nav-label">Planner</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="setting-wrapper">
+                        <span class="group-title">SETTING</span>
+                        <ul>
+                            <li>
+                                <a class="nav-link">
+                                    <span class="material-symbols-outlined nav-icon">settings</span>
+                                    <span class="nav-label">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="user-wrapper">
+                <div class="user-img-container">
+                    <img class="image-mini-pfp" hidden>
+                </div>
+                <div class="user-quick-info">
+                    <h2>Name Here</h2>
+                    <a class="email-link">
+                        <h3>Email Here</h3>
+                    </a>
+                </div>
+                <button class="user-log">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- App Layout -->
+    <div class="app-layout">
+        <header class="main-header">
+            <!-- User Cover and Profile img-->
+            <div class="cover-container">
+                <!-- Img Input -->
+                <input type="file" id="coverImageInput" accept="image/*" hidden>
+                <!-- Main Cover Img -->
+                <img class="image-cover" hidden>
+
+                <button class="cover-btn" id="coverPhotoButton">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                    <span>Customize</span>
+                </button>
+
+                <div class="cover-option" id="coverOption">
+                    <button id="coverAddPhotoButton">
+                        <span class="material-symbols-outlined">add_a_photo</span>
+                        <span>Add Cover Photo</span>
+                    </button>
+                    <button id="coverViewButton">
+                        <span class="material-symbols-outlined">image</span>
+                        <span>View Cover Photo</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pfp-container">
+                <!-- Img Input -->
+                <input type= "file" id="pfpImageInput" accept="image/*" hidden>
+                <!-- Main PFP Img -->
+                <div class="img-container">
+                    <img class="image-pfp" hidden>
+                    <span class="material-symbols-outlined user-icon">person</span>
+                </div>
+
+                <button class="pfp-btn" id="pfpPhotoButton">
+                    <span class="material-symbols-outlined pfp-icon">photo_camera</span>
+                </button>
+
+                <div class="pfp-option" id="pfpOption">
+                    <button id="pfpAddPhotoButton">
+                        <span class="material-symbols-outlined">add_a_photo</span>
+                        <span>Add Profile Picture</span>
+                    </button>
+                    <button class="pfpViewButton">
+                        <span class="material-symbols-outlined">image</span>
+                        <span>View Profile Picture</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme Switch Button -->
+            <button class="theme-switch" id="themeSwitch">
+                <div class="dark-mode">
+                    <span class="material-symbols-outlined">dark_mode</span>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="light-mode">
+                    <span class="material-symbols-outlined">light_mode</span>
+                    <span>Light Mode</span>
+                </div>
+            </button>
+
+            <!-- User Info -->
+            <div class="main-info-container">
+                <div class="username">
+                    <span class="user-greet" id="randomGreeting">Hello!</span>
+                    <h1 id="username">Username</h1>
+                </div>
+                <span class="current-date" id="currentDate"></span>
+            </div>
+
+            <hr>
+        </header>
+
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section class="dashboard">
+                <div class="left-dash">
+                    <h1>Dashboard</h1>
+                    <p>Today's focus: <span id="randomFocus"><!-- Random Focus here -->Be consistent and ship your work</span></p>
+                </div>
+                <div class="right-dash">
+                    <p>Overview for today</p>
+                    <div class="overview-stats" id="taskBox">
+                        <div class="overview-box">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">task</span>
+                                <span id="taskCount"><!-- task count here -->0 / 0</span>
+                                <span>tasks</span>
+                            </a>
+                        </div>
+                        <div class="overview-box" id="timeBox">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">alarm_on</span>
+                                <span>pomodoro</span>
+                            </a>
+                        </div>
+                        <div class="overview-box" id="modeBox">
+                            <a href="index.html">
+                                <span class="material-symbols-outlined">book_5</span>
+                                <span>IT / College Mode</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="random-quote">
+                    <blockquote id="randomQuoteText"></blockquote>
+                    <p id="quoteAuthor"></p>
+                </div>
+            </section>
+
+            <!-- Tasks Section -->
+            <section class="tasks">
+                <header class="task-header">
+                    <div class="left-task">
+                        <h1>Tasks/Todos</h1>
+                        <div class="task-progress">
+                            <span id="progressLabel">0 of 0 done</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-task">
+                        <h2>Task for today</h2>
+                        <div class="action-buttons">
+                            <button class="add-btn" id="addTaskButton">Add</button>
+                            <button class="task-btn" id="editTaskButton">Edit</button>
+                            <button class="delete-btn" id="deleteTaskButton">Delete</button>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="task-wrapper">
+                    <input type="text" class="task-input" id="taskInput" placeholder="Add a new task (e.g. Finish CS project)…">
+                    <ul class="task-list" id="taskList">
+                        <li class="task-item">
+                            <input type="checkbox" name="" id="">
+                            <span>awefwe</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="weekly-planner-section">
+
+            </section>
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="src/js/theme-switch.js"></script>
+    <script src="src/js/dashboard.js"></script>
+    <script src="src/js/tasks.js"></script>
+</body>
+</html>
