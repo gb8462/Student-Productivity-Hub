@@ -74,8 +74,6 @@
 
     .sidebar.collapsed {
         width: 0;
-        /* opacity: 0;
-        pointer-events: none; */
     }
 
     .sidebar.collapsed .nav-wrapper {
@@ -165,6 +163,7 @@
 
     .main-content {
         padding: 0 16px;
+        height: auto;
     }
 
     /* ============ DASHBOARD ============ */
@@ -182,13 +181,23 @@
 
     /* Left Content */
     .left-dash {
-        width: 220px;
+        flex: 1;
+        min-width: 220px;
+    }
+
+    /* Right Content */
+    .right-dash {
+        flex: 1;
+        align-items: flex-end;
     }
 
     /* Random Quote Box */
     .random-quote {
         padding: 5px 10px;
         height: auto;
+        white-space: normal;
+        flex-wrap: wrap;
+        line-height: 1.4;
     }
 
     .random-quote blockquote {
