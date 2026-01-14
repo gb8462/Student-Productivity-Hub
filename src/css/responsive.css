@@ -170,13 +170,10 @@
 
     /* Main Dash */
     .dashboard {
-        padding: 18px 20px;
-        min-height: 169px;
-    }
-
-    .left-dash,
-    .right-dash {
-        gap: 12px;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 16px;
+        min-height: unset;
     }
 
     /* Left Content */
@@ -210,26 +207,44 @@
 /* SMALL TABLET BREAKPOINT */
 @media (max-width: 650px) {
     /* ============ DASHBOARD ============ */
-    /* Main Dash */
+    .left-dash {
+        position: static;
+    }
+}
+
+@media (max-width: 520px) {
+    /* ============ DASHBOARD ============ */
     .dashboard {
-        padding: 13px 15px;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        gap: 14px;
     }
 
-    .left-dash,
+    .left-dash {
+        width: 100%;
+        gap: 6px;
+    }
+
     .right-dash {
         width: 100%;
+        justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .left-dash p {
+    .left-dash p,
+    .right-dash p {
         display: none;
     }
 
-    .right-dash {
-        gap: 10px;
+    .overview-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .overview-box {
+        height: auto;
+        padding: 6px 10px;
+        font-size: 13px;
     }
 }
 
