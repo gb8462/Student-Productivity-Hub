@@ -667,6 +667,17 @@ ul {
     .main-info-container {
         padding: 0 clamp(24px, 5vw, 110px);
     }
+
+    /* User Profile */ 
+    .pfp-container {
+        left: 70px;
+    }
+
+    .cover-btn,
+    .cover-option,
+    .theme-switch {
+        right: 70px;
+    }
 }
 
 /* LAPTOP BREAKPOINT */
@@ -688,6 +699,18 @@ ul {
 
     .main-content {
         padding: 0 clamp(16px, 4vw, 70px);
+    }
+
+    /* User Profile */
+    .pfp-container {
+        left: 45px;
+    }
+
+    /* User Buttons */
+    .cover-btn,
+    .cover-option,
+    .theme-switch {
+        right: 45px;
     }
 }
 
