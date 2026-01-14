@@ -705,11 +705,27 @@ ul {
     }
 
     .sidebar.collapsed {
-        width: 70px;
+        width: 0;
+        /* opacity: 0;
+        pointer-events: none; */
+    }
+
+    .sidebar.collapsed .nav-wrapper {
+        opacity: 0;
+        pointer-events: none;
     }
 
     /* Sidebar Toggle Btn */
     .toggle-sidebar {
+        top: 65px;
+    }
+
+    .toggle-sidebar.active-toggle {
+        left: 195px;
+    }
+
+    .toggle-sidebar.deactive-toggle {
+        left: 16px;
         top: 16px;
     }
 
@@ -733,6 +749,10 @@ ul {
         left: 16px;
     }
 
+    .username {
+        align-items: center;
+    }
+
     /* Buttons */
     .cover-btn {
         top: 16px;
@@ -741,10 +761,33 @@ ul {
         padding: 8px 10px;
     }
 
+    .pfp-btn {
+        padding: 2px;
+        top: 70px;
+    }
+
+    .pfp-btn span {
+        font-size: 23px;
+    }
+
     .cover-option,
     .pfp-option {
-        right: 16px;
         width: 180px;
+    }
+
+    .cover-option {
+        top: 60px;
+        right: 16px;
+    }
+
+    .pfp-option {
+        top: 105px;
+        left: 16px;
+    }
+
+    /* Theme Switch */
+    .theme-switch {
+        right: 16px;
     }
 
     .main-content {
