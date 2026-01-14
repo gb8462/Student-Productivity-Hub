@@ -8,7 +8,7 @@
     gap: 17px;
     width: 100%;
     max-width: 915px;
-    height: 159px;
+    min-height: 159px;  
     border-radius: var(--border-radius);
     background: var(--content-color);
     box-shadow: var(--box-shadow);
