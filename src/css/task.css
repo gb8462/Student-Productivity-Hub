@@ -125,9 +125,20 @@
     justify-content: flex-start;
     border: 1px dashed var(--border-color);
     color: var(--input-color);
+    font-size: 15px;
+    font-weight: 550;
     border-radius: 7px;
     padding: 9px 17px;
     background: var(--box-color);
+}
+
+.task-wrapper label {
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50px);
+    color: var(--input-color);
+    font-size: 15px;
+    font-weight: 550;
 }
 
 .task-list {
