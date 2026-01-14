@@ -715,7 +715,7 @@ ul {
 }
 
 /* TABLET BREAKPOINT */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     /* Sidebar */
     .sidebar {
         position: fixed;
@@ -758,6 +758,7 @@ ul {
         align-items: flex-start;
         gap: 12px;
         margin-top: 85px;
+        margin-bottom: 13px;
     }
 
     .username h1 {
@@ -770,6 +771,10 @@ ul {
         height: 105px;
         top: 130px;
         left: 16px;
+    }
+
+    .user-icon {
+        padding: 12px;
     }
 
     .username {
