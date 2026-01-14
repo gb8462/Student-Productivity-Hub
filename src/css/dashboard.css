@@ -94,3 +94,41 @@
     font-size: 15px;
     font-weight: 400;
 }
+
+/* RESPONSIVE LAYOUT */
+
+/* TABLET BREAKPOINT */
+@media (max-width: 868px) {
+    /* Main Dash */
+    .dashboard {
+        padding: 13px 15px;
+        height: 158px;
+    }
+
+    .left-dash,
+    .right-dash {
+        gap: 12px;
+    }
+
+    /* Left Content */
+    .left-dash {
+        width: 220px;
+    }
+
+    /* Random Quote Box */
+    .random-quote {
+        padding: 5px 10px;
+    }
+
+    .random-quote blockquote {
+        font-size: 14px;
+    }
+}
+
+/* SMALL TABLET BREAKPOINT */
+@media (max-width: 650) {
+    /* Main Dash */
+    .dashboard {
+        
+    }
+}
