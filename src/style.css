@@ -131,9 +131,6 @@ ul {
     justify-content: center;
     gap: 10px;
     margin-top: auto;
-    /* white-space: nowrap;
-    overflow: hidden;
-    max-width: 150px; */
 }
 
 .button-wrapper {
@@ -250,6 +247,16 @@ ul {
     cursor: pointer;
     font-size: 20px;
     color: var(--primary-text-color);
+}
+
+.mini-icon {
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--tertiary-text-color);
+    font-variation-settings: 'FILL' 35;
 }
 
 /* Hover States */
