@@ -165,6 +165,22 @@
     font-weight: 400;
 }
 
+/* Task Buttons Hover */
+.add-btn:hover {
+    background: #65e27c;
+}
+
+.task-btn:hover {
+    background: #e2bb73;
+}
+
+.delete-btn:hover {
+    background: #db7d75;
+}
+.action-buttons button:active {
+    transform: scale(0.85);
+}
+
 /* Task Input Effect */
 .task-input:focus {
     border: 1px solid var(--border-color);
