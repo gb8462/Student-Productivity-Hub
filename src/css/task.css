@@ -65,6 +65,7 @@
     border: none;
 }
 
+/* Buttons Color */
 .add-btn {
     background: #46E563;
 }
@@ -92,6 +93,7 @@
     font-weight: 400;
 }
 
+/* Bar Progress */
 .progress-bar {
     position: relative;
     flex: 1;
@@ -159,6 +161,11 @@
 .task-left span {
     font-size: 15px;
     font-weight: 400;
+}
+
+/* Task Input Effect */
+.task-input:focus {
+    border: 1px dashed var(--border-color);
 }
 
 /* Task List Scrollbar */
