@@ -115,6 +115,7 @@
     flex-direction: column;
     width: 100%;
     overflow: hidden;
+    gap: 5px;
 }
 
 .task-input {
@@ -166,8 +167,9 @@
 
 /* Task Input Effect */
 .task-input:focus {
-    border: 1px dashed var(--border-color);
-}
+    border: 1px solid var(--border-color);
+    outline: none;
+}   
 
 /* Task List Scrollbar */
 .task-list::-webkit-scrollbar {
