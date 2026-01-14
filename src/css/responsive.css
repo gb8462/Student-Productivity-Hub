@@ -170,8 +170,8 @@
 
     /* Main Dash */
     .dashboard {
-        padding: 13px 15px;
-        height: auto;
+        padding: 18px 20px;
+        min-height: 169px;
     }
 
     .left-dash,
@@ -182,12 +182,14 @@
     /* Left Content */
     .left-dash {
         flex: 1;
-        min-width: 220px;
+    }
+
+    .left-dash p {
+        width: auto;
     }
 
     /* Right Content */
     .right-dash {
-        flex: 1;
         align-items: flex-end;
     }
 
@@ -210,6 +212,7 @@
     /* ============ DASHBOARD ============ */
     /* Main Dash */
     .dashboard {
+        padding: 13px 15px;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
