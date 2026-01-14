@@ -80,7 +80,7 @@
 .random-quote {
     display: flex;
     width: 100%;
-    height: 37px;
+    height: auto;
     padding: 9px 17px;
     align-items: center;
     border-radius: 7px;
@@ -102,7 +102,7 @@
     /* Main Dash */
     .dashboard {
         padding: 13px 15px;
-        height: 158px;
+        height: auto;
     }
 
     .left-dash,
@@ -118,6 +118,7 @@
     /* Random Quote Box */
     .random-quote {
         padding: 5px 10px;
+        height: auto;
     }
 
     .random-quote blockquote {
@@ -126,9 +127,27 @@
 }
 
 /* SMALL TABLET BREAKPOINT */
-@media (max-width: 650) {
+@media (max-width: 650px) {
     /* Main Dash */
     .dashboard {
-        
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
+
+    .left-dash,
+    .right-dash {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .left-dash p {
+        display: none;
+    }
+
+    .right-dash {
+        gap: 10px;
+    }
+
+
 }
