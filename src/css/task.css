@@ -118,6 +118,11 @@
     gap: 5px;
 }
 
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .task-input {
     display: flex;
     width: 100%;
@@ -132,13 +137,16 @@
     background: var(--box-color);
 }
 
-.task-wrapper label {
+.input-wrapper label {
     position: absolute;
-    top: 50px;
-    transform: translateY(-50px);
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
     color: var(--input-color);
     font-size: 15px;
     font-weight: 550;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .task-list {
@@ -196,7 +204,15 @@
 .task-input:focus {
     border: 1px solid var(--border-color);
     outline: none;
-}   
+}
+
+/* Task Input + Label Focus */
+.task-input:focus + label,
+.task-input:valid + label {
+    font-size: 10px;
+    color: var(--special-bg-color);
+    opacity: 0;
+}
 
 /* Task List Scrollbar */
 .task-list::-webkit-scrollbar {
