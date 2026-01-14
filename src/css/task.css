@@ -20,8 +20,8 @@
 
 .task-header {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .task-header h1 {
