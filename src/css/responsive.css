@@ -57,6 +57,24 @@
     .theme-switch {
         right: 45px;
     }
+
+    /* ============ DASHBOARD ============ */
+    .dashboard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+        height: auto;
+    }
+
+    .left-dash,
+    .right-dash {
+        width: 100%;
+    }
+
+    .overview-stats {
+        flex-wrap: wrap;
+    }
 }
 
 /* TABLET BREAKPOINT */
@@ -198,6 +216,7 @@
 
 /* SMALL TABLET BREAKPOINT */
 @media (max-width: 650px) {
+    /* ============ DASHBOARD ============ */
     /* Main Dash */
     .dashboard {
         flex-direction: column;
