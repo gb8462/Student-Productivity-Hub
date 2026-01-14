@@ -25,6 +25,13 @@
     }
 }
 
+/* LARGE LAPTOP BREAKPOINT */
+@media (max-width: 1220px) {
+    .toggle-sidebar.active-toggle {
+        left: 192px;
+    }
+}
+
 /* LAPTOP BREAKPOINT */
 @media (max-width: 1024px) {
     /* Expanded Sidebar */
@@ -347,5 +354,11 @@
 
     .pfp-option {
         top: 95px;
+    }
+
+    /* ============ TASK ============ */
+    .task-input,
+    .input-wrapper label {
+        font-size: 13px !important;
     }
 }
