@@ -214,6 +214,7 @@ ul {
     border-radius: 50%;
     overflow: hidden;
     background: var(--primary-text-color);
+    transform: scale(1.01);
 }
 
 .user-img-container img {
