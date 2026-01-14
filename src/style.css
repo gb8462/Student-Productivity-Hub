@@ -823,13 +823,33 @@ ul {
     }
 }
 
-/* MOBILE BREAKPOINT */
-@media (max-width: 356px) {
+/* LARGE MOBILE BREAKPOINT */
+@media (max-width: 425px) {
     /* Sidebar */
     .sidebar.expanded {
-        width: 200px;
+        width: 180px;
     }
 
+    /* Mini Profile */
+    .user-wrapper {
+        justify-content: center;
+    }
+
+    .user-img-container {
+        width: 35px;
+        height: 35px;
+    }
+
+    .mini-icon {
+        padding: 2px;
+        font-size: 30px;
+    }
+
+    .user-log {
+        justify-content: center;
+    }
+
+    /* Sidebar Button */
     .toggle-sidebar.active-toggle {
         left: 165px;
     }
@@ -843,8 +863,8 @@ ul {
 
     /* Profile */
     .pfp-container {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         top: 140px;
     }
 
@@ -862,8 +882,20 @@ ul {
         padding: 6px 8px;
     }
 
+    .pfp-btn {
+        top: 60px;
+    }
+
     .cover-option,
     .pfp-option {
         width: 160px;
+    }
+
+    .cover-option {
+        top: 55px;
+    }
+
+    .pfp-option {
+        top: 95px;
     }
 }
