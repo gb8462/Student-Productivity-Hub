@@ -137,6 +137,7 @@
     width: 100%;
     overflow-y: auto;
     scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
 .task-item {
@@ -178,5 +179,6 @@
 }
 
 .task-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
     background: transparent;
 }
