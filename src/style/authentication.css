@@ -21,6 +21,10 @@ a {
     cursor: pointer;
 }
 
+input {
+    outline: none;
+}
+
 /* Main Authentication Form Style */
 .auth-layout {
     display: flex;
@@ -131,28 +135,39 @@ a {
 }
 
 .login-form div {
-    margin-bottom: 27px;
+    margin-bottom: 33px;
 }
 
 /* Input Box Group */
-.user-email-input-group,
-.password-input-group {
+.auth-input-box {
     position: relative;
     width: 100%;
     display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1E1E1E;
 }
 
-/* Username Input Box */
-.user-email-input-group input {
+/* Username / Password Input Box */
+.auth-input-box input {
     width: 100%;
-    padding: 7px 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Input Box Label */
-.user-email-input-group label,
-.password-input-group label {
+.auth-input-box label {
     position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
+    top: 49%;
+    left: 15px;
+    transform: translateY(-49%);
+    transition: top 0.3s ease;
+}
 
+/* Input Box Label Focus Animation */
+.auth-input-box input:focus + label,
+.auth-input-box input:valid + label {
+    top: -11px;
+    color: #FAFAFA;
 }
