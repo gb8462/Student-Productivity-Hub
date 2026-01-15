@@ -1,0 +1,35 @@
+/* Individual Root CSS */
+/* Root CSS */
+:root {
+    --bg-color: #F5F6FB;
+    --special-bg-color: #E0E7FF;
+    --primary-text-color: #1E1E1E;
+    --secondary-text-color: #6B6B6B;
+    --tertiary-text-color: #FAFAFA;
+    --content-color: #FFF;
+    --highlight-text-color: #353535;
+    --accent-color: #4F46E5;
+    --hover-color: #747474;
+    --border-color: #e5e7eb;
+    --box-color: #F9FAFB;
+    --input-color: #555;
+    --border-radius: 12px;
+    --box-shadow: 0 2px 7.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.dark-theme {
+    --bg-color: #191A1C;
+    --special-bg-color: #565963;
+    --primary-text-color: #FAFAFA;
+    --secondary-text-color: #a5a5a5;
+    --tertiary-text-color: #1E1E1E;
+    --content-color: #353535;
+    --highlight-text-color: #d1d1d1;
+    --accent-color: #4F46E5;
+    --hover-color: #9c9c9c;
+    --border-color: #636363;
+    --box-color: #a3a3a3;
+    --input-color: #1f1f1f;
+    --border-radius: 12px;
+    --box-shadow: 0 2px 7.5px 2px rgba(0, 0, 0, 0.25);
+}
