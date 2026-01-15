@@ -192,6 +192,55 @@ input {
     display: flex;
     align-items: center;
     gap: 6px;
+    cursor: pointer;
 }
 
 /* Checkbox Style */
+.custom-checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hidden Default/Native Checkmark */
+.custom-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* CheckBox */
+.checkmark {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    padding: 3px;
+    border: 2px solid #888;
+    background: transparent;
+    transition: all 0.2 ease;
+    place-items: center;
+}
+
+/* Custom Checkmark */
+.checkmark::after {
+    content: "";
+    width: 4px;
+    height: 7px;
+    border: solid #2b2b2b;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Custom Checked State */
+.custom-checkbox-container input:checked + .checkmark {
+    background: #c45336;
+    border-color: #c45336;
+}
+
+.custom-checkbox-container input:checked + .checkmark::after {
+    transform: rotate(45deg) scale(1);
+}
