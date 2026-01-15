@@ -6,6 +6,7 @@
 /* Root CSS */
 :root {
     --bg-color: #F5F6FB;
+    --theme-color: #c45336;
     --special-bg-color: #E0E7FF;
     --primary-text-color: #1E1E1E;
     --secondary-text-color: #6B6B6B;
@@ -23,6 +24,7 @@
 
 .dark-theme {
     --bg-color: #191A1C;
+    --theme-color: #c45336;
     --special-bg-color: #565963;
     --primary-text-color: #FAFAFA;
     --secondary-text-color: #a5a5a5;
