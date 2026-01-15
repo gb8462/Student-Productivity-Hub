@@ -1,0 +1,99 @@
+/* Importing Root Css */
+@import url(/src/css/variable.css);
+
+/* Dashboard Styles */
+.dashboard {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 17px;
+    width: 100%;
+    max-width: 915px;
+    min-height: 159px;  
+    border-radius: var(--border-radius);
+    background: var(--content-color);
+    box-shadow: var(--box-shadow);
+    padding: 18px 20px;
+}
+
+/* Left Content */
+.left-dash {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.left-dash h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.left-dash p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Right Content */
+.right-dash {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: flex-end;
+}
+
+.right-dash p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Overview Boxes */
+.overview-stats {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.overview-box {
+    display: flex;
+    height: 33px;
+    border-radius: 50px;
+    background: var(--special-bg-color);
+    padding: 8px 6px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.overview-box a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.overview-box a span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--special-text-color);
+}
+
+/* Random Quote Rectangle */
+.random-quote {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 9px 17px;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px dashed var(--border-color);
+    background: var(--box-color);
+}
+
+.random-quote blockquote,
+.random-quote p {
+    color: var(--input-color);
+    font-size: 15px;
+    font-weight: 400;
+}
