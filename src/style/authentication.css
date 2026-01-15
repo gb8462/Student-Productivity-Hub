@@ -62,7 +62,6 @@ a {
     justify-content: center;
     align-items: center;
     width: 400px;
-    gap: 7px;
 }
 
 /* Link Logo */
@@ -75,4 +74,10 @@ a {
 .text-content span {
     font-size: 29px;
     font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+/* Link Hover */
+.auth-header-wrapper a:hover .text-content span {
+    border-bottom: solid 3px #c45336;
 }
