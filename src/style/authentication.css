@@ -13,6 +13,8 @@ body {
     background: #101111;
     min-height: 100vh;
     color: #FAFAFA;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 a {
@@ -78,7 +80,8 @@ input {
 .text-content span {
     font-size: 29px;
     font-weight: 600;
-    transition: all 0.1s ease;
+    border-bottom: solid 3px transparent;
+    transition: border 0.3s ease;
 }
 
 /* Link Hover */
@@ -143,8 +146,6 @@ input {
     position: relative;
     width: 100%;
     display: block;
-    font-size: 14px;
-    font-weight: 500;
     color: #1E1E1E;
 }
 
@@ -179,3 +180,8 @@ input {
 }
 
 /* Login Form Settings */
+.auth-form-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
