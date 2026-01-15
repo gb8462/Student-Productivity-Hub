@@ -153,6 +153,11 @@ input {
     color: var(--primary-text-color);
 }
 
+/* No Margin At Password */
+.auth-input-box.pass {
+    margin-bottom: 15px;
+}
+
 /* Username / Password Input Box */
 .auth-input-box input {
     width: 100%;
@@ -343,4 +348,21 @@ input {
 /* Buttons Focus */
 .auth-option-buttons-group button:active {
     transform: scale(0.97);
+}
+
+/* Register Form Group */
+.register-form-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0 !important;
+}
+
+.register-form-group a {
+    color: var(--theme-color);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+.register-form-group a:hover {
+    border-bottom: 2px solid var(--theme-color);
 }
