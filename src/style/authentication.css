@@ -12,7 +12,7 @@ body {
     font-family: Inter, "Crimson Text";
     background: #101111;
     min-height: 100vh;
-    color: #FAFAFA;
+    color: var(--tertiary-text-color);
     font-size: 15px;
     font-weight: 500;
 }
@@ -150,7 +150,7 @@ input {
     position: relative;
     width: 100%;
     display: block;
-    color: #1E1E1E;
+    color: var(--primary-text-color);
 }
 
 /* Username / Password Input Box */
@@ -179,7 +179,7 @@ input {
 .auth-input-box input:focus + label,
 .auth-input-box input:valid + label {
     top: -11px;
-    color: #FAFAFA;
+    color: var(--tertiary-text-color);
 }
 
 /* Login Form Settings */
@@ -281,12 +281,66 @@ input {
     cursor: pointer;
     border: none;
     background: var(--theme-color);
-    color: #FAFAFA;
+    color: var(--tertiary-text-color);
     font-weight: 800;
     transition: transform 0.2s ease;
 }
 
 /* Login Submit Focus */
 .auth-submit-button input:focus {
+    transform: scale(0.97);
+}
+
+/* Option Line */
+.option-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-line hr {
+    width: 100%;
+}
+
+.option-line span {
+    min-width: 105px;
+    text-align: center;
+}
+
+/* Login 3rd Party Buttons Group */
+.auth-option-buttons-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 40px;
+}
+
+/* Continue Buttons */
+.auth-option-buttons-group button {
+    display: flex;
+    width: 184px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    background: var(--tertiary-text-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.auth-option-buttons-group button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Buttons Focus */
+.auth-option-buttons-group button:active {
     transform: scale(0.97);
 }
