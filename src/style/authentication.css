@@ -96,8 +96,16 @@ a {
     overflow: hidden;
 }
 
+.design-form {
+    width: 100%;
+}
+
 .auth-login {
     display: flex;
     flex-direction: column;
+    justify-self: flex-end;
+    min-width: 465px;
     padding: 58px 41px;
 }
+
+.
