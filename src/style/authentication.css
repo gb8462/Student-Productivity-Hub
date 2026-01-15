@@ -244,3 +244,10 @@ input {
 .custom-checkbox-container input:checked + .checkmark::after {
     transform: rotate(45deg) scale(1);
 }
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    color: #c45336;
+    font-weight: 700;
+}
