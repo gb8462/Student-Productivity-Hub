@@ -40,71 +40,69 @@
         </header>
 
         <!-- Login Form -->
-        <div class="auth-form login active">
-            <!-- Design Side -->
-            <div class="design-content-login">
-
-            </div>
-            <!-- Form Side -->
-            <div class="form-content-login">
-                <header class="title">
-                    <h1>User Login</h1>
-                </header>
-                <!-- Login Form Contents -->
-                <form action="" class="login-form" id="formLogin" method="post">
-                    <!-- Username Input Box -->
-                    <div class="user-email-input-group">
-                        <input type="text" class="user-email login-input" id="usernameInput" required>
-                        <label for="usernameInput">Username or Email</label>
-                    </div>
-                    
-                    <!-- Password Input Box -->
-                    <div class="password-input-group">
-                        <input type="text" class="password login-input" id="passwordInput" required>
-                        <label for="passwordInput">Password</label>
-                    </div>
-
-                    <!-- Form Settings -->
-                    <div class="user-login-settings">
-                        <div class="remember-password">
-                            <input type="checkbox" name="remember-user-password" id="rememberPassword">
-                            <label for="remember-user-password">Remember me</label>
+        <div class="auth-form">
+            <div class="auth-login">
+                <!-- Form Login -->
+                <div class="form-content-login">
+                    <header class="title">
+                        <h1>User Login</h1>
+                    </header>
+                    <!-- Login Form Contents -->
+                    <form action="" class="login-form" id="formLogin" method="post">
+                        <!-- Username Input Box -->
+                        <div class="user-email-input-group">
+                            <input type="text" class="user-email login-input" id="usernameInput" required>
+                            <label for="usernameInput">Username or Email</label>
                         </div>
-                        <div class="forgot-password">
-                            <a href="#">
-                                <span>Forgot Password?</span>
-                            </a>
+                        
+                        <!-- Password Input Box -->
+                        <div class="password-input-group">
+                            <input type="text" class="password login-input" id="passwordInput" required>
+                            <label for="passwordInput">Password</label>
                         </div>
-                    </div>
 
-                    <!-- Form Submit Button -->
-                    <input type="submit" value="LogIn">
+                        <!-- Form Settings -->
+                        <div class="user-login-settings">
+                            <div class="remember-password">
+                                <input type="checkbox" name="remember-user-password" id="rememberPassword">
+                                <label for="remember-user-password">Remember me</label>
+                            </div>
+                            <div class="forgot-password">
+                                <a href="#">
+                                    <span>Forgot Password?</span>
+                                </a>
+                            </div>
+                        </div>
 
-                    <!-- Option Line -->
-                    <div class="option-line">
-                        <hr>
-                        <span>Or Login With:</span>
-                        <hr>
-                    </div>
+                        <!-- Form Submit Button -->
+                        <input type="submit" value="LogIn">
 
-                    <div class="option-buttons-group">
-                        <button class="github-button" disabled="disabled">
-                            <img src="/src/assets/auth-button/github-icon/github-mark.png" alt="github-icon">
-                            <span>Continue with Github</span>
-                        </button>
+                        <!-- Option Line -->
+                        <div class="option-line">
+                            <hr>
+                            <span>Or Login With:</span>
+                            <hr>
+                        </div>
 
-                        <button class="google-button" disabled="disabled">
-                            <img src="/src/assets/auth-button/google-icon/google.png" alt="google-icno">
-                            <span>Continue with Google</span>
-                        </button>
-                    </div>
+                        <div class="option-buttons-group">
+                            <button class="github-button" disabled="disabled">
+                                <img src="/src/assets/auth-button/github-icon/github-mark.png" alt="github-icon">
+                                <span>Continue with Github</span>
+                            </button>
 
-                    <div class="register-form-group">
-                        <span>Don't have an account?</span>
-                        <a href="#">Register</a>
-                    </div>
+                            <button class="google-button" disabled="disabled">
+                                <img src="/src/assets/auth-button/google-icon/google.png" alt="google-icno">
+                                <span>Continue with Google</span>
+                            </button>
+                        </div>
 
-                </form>
+                        <div class="register-form-group">
+                            <span>Don't have an account?</span>
+                            <a href="#">Register</a>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
     </main>
