@@ -13,7 +13,7 @@ body {
     background: #101111;
     min-height: 100vh;
     color: #FAFAFA;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -183,5 +183,15 @@ input {
 .auth-form-settings {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
+
+/* Remember Password */
+.remember-password {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Checkbox Style */
