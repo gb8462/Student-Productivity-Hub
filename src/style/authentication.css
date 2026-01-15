@@ -142,7 +142,7 @@ input {
 .auth-input-box {
     position: relative;
     width: 100%;
-    display: flex;
+    display: block;
     font-size: 14px;
     font-weight: 500;
     color: #1E1E1E;
@@ -152,8 +152,9 @@ input {
 .auth-input-box input {
     width: 100%;
     padding: 15px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 10px;
+    transition: border 0.4s ease;
 }
 
 /* Input Box Label */
@@ -163,6 +164,11 @@ input {
     left: 15px;
     transform: translateY(-49%);
     transition: top 0.3s ease;
+}
+
+/* Input Box Input Focus */
+.auth-input-box input:focus{
+    border: 2px solid #c45336;
 }
 
 /* Input Box Label Focus Animation */
