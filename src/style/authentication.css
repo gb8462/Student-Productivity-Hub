@@ -125,3 +125,21 @@ a {
     font-weight: 600;
 }
 
+/* Login Form */
+.login-form {
+    display: block;
+}
+
+.login-form div {
+    margin-bottom: 27px;
+}
+
+/* Input Box Group */
+.user-email-input-group,
+.password-input-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+/* Username Input Box */
