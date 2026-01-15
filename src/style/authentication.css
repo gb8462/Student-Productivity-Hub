@@ -10,8 +10,9 @@
 
 body {
     font-family: Inter, "Crimson Text";
-    background: #191A1C;
+    background: #0f1011;
     min-height: 100vh;
+    color: #FAFAFA;
 }
 
 a {
@@ -26,5 +27,52 @@ a {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    padding-top: 20px;
 }
 
+/* Authentication Header */
+.auth-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+/* Header Wrapper */
+.auth-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6rem;
+    margin: 25px 0;
+    padding: 0;
+}
+
+/* Header Link */
+.auth-header-wrapper a {
+    height: 100%;
+}
+
+/* Text Content */
+.text-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    gap: 7px;
+}
+
+/* Link Logo */
+.text-content img {
+    width: 190px;
+    height: 110px;
+}
+
+/* Link Title */
+.text-content span {
+    font-size: 29px;
+    font-weight: 600;
+}
