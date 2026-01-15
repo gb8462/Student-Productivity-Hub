@@ -141,6 +141,10 @@ input {
     margin-bottom: 33px;
 }
 
+.login-form input {
+    border-radius: 10px;
+}
+
 /* Login Input Box Group */
 .auth-input-box {
     position: relative;
@@ -154,7 +158,6 @@ input {
     width: 100%;
     padding: 15px;
     border: 2px solid transparent;
-    border-radius: 10px;
     transition: border 0.4s ease;
 }
 
@@ -193,6 +196,7 @@ input {
     align-items: center;
     gap: 6px;
     cursor: pointer;
+    margin-bottom: 0 !important;
 }
 
 /* Checkbox Style */
@@ -251,6 +255,7 @@ input {
     color: var(--theme-color);
     font-weight: 800;
     align-items: center;
+    margin-bottom: 0 !important;
 }
 
 .forgot-password a {
@@ -261,4 +266,27 @@ input {
 /* Forgot Password Hover */
 .forgot-password a:hover{
     border-bottom: 2px solid var(--theme-color);
+}
+
+/* Login Submit Button */
+.auth-submit-button {
+    width: 100%;
+    display: block;
+}
+
+/* Login Submit Button Input */
+.auth-submit-button input {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background: var(--theme-color);
+    color: #FAFAFA;
+    font-weight: 800;
+    transition: transform 0.2s ease;
+}
+
+/* Login Submit Focus */
+.auth-submit-button input:focus {
+    transform: scale(0.97);
 }
