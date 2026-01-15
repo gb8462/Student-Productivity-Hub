@@ -64,6 +64,7 @@
                         <label for="passwordInput">Password</label>
                     </div>
 
+                    <!-- Form Settings -->
                     <div class="user-login-settings">
                         <div class="remember-password">
                             <input type="checkbox" name="remember-user-password" id="rememberPassword">
@@ -76,16 +77,31 @@
                         </div>
                     </div>
 
+                    <!-- Form Submit Button -->
                     <input type="submit" value="LogIn">
 
-                    <div class="option-group">
+                    <!-- Option Line -->
+                    <div class="option-line">
                         <hr>
                         <span>Or Login With:</span>
                         <hr>
                     </div>
 
                     <div class="option-buttons-group">
-                        <button disabled="disabled"></button>
+                        <button class="github-button" disabled="disabled">
+                            <img src="/src/assets/auth-button/github-icon/github-mark.png" alt="github-icon">
+                            <span>Continue with Github</span>
+                        </button>
+
+                        <button class="google-button" disabled="disabled">
+                            <img src="/src/assets/auth-button/google-icon/google.png" alt="google-icno">
+                            <span>Continue with Google</span>
+                        </button>
+                    </div>
+
+                    <div class="register-form-group">
+                        <span>Don't have an account?</span>
+                        <a href="#">Register</a>
                     </div>
 
                 </form>
