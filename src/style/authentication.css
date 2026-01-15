@@ -138,7 +138,7 @@ input {
     margin-bottom: 33px;
 }
 
-/* Input Box Group */
+/* Login Input Box Group */
 .auth-input-box {
     position: relative;
     width: 100%;
@@ -177,3 +177,5 @@ input {
     top: -11px;
     color: #FAFAFA;
 }
+
+/* Login Form Settings */
