@@ -23,11 +23,15 @@
     <link rel="stylesheet" href="/src/css/root.css">
 </head>
 <body>
+    <!-- Main Authentication Layout -->
     <main class="auth-layout">
+        <!-- Website Header Link -->
         <header class="website-logo-link">
             <div class="logo-link-wrapper">
+                <!-- Link To Main Page -->
                 <a href="/index.html">
                     <div class="link-content">
+                        <!-- Logo + Title -->
                         <img src="/public/logo.png" alt="Student Hub Logo">
                         <h1>Student Productivity Hub</h1>
                     </div>
@@ -43,9 +47,16 @@
                     <h1>User Login</h1>
                 </header>
                 <form action="" class="login-form" id="formLogin" method="post">
-                    <div class="user-email-input">
-                        <input type="text">
+                    <div class="user-email-input-group">
+                        <input type="text" class="user-email login-input" id="usernameInput" required>
+                        <label for="usernameInput">Username or Email</label>
                     </div>
+                    
+                    <div class="password-input-group">
+                        <input type="text" class="password login-input" id="passwordInput" required>
+                        <label for="passwordInput">Password</label>
+                    </div>
+
                 </form>
             </div>
         </div>
