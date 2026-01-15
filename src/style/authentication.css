@@ -11,4 +11,20 @@
 body {
     font-family: Inter, "Crimson Text";
     background: #191A1C;
+    min-height: 100vh;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Main Authentication Form Style */
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
