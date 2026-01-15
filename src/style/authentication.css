@@ -34,7 +34,7 @@ a {
 .auth-header {
     position: relative;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     overflow: visible;
     white-space: nowrap;
 }
@@ -81,3 +81,5 @@ a {
 .auth-header-wrapper a:hover .text-content span {
     border-bottom: solid 3px #c45336;
 }
+
+/* Authentication Form Login */
