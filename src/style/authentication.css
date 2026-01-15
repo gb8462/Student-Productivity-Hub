@@ -10,7 +10,7 @@
 
 body {
     font-family: Inter, "Crimson Text";
-    background: #0f1011;
+    background: #101111;
     min-height: 100vh;
     color: #FAFAFA;
 }
@@ -34,7 +34,7 @@ a {
 .auth-header {
     position: relative;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow: visible;
     white-space: nowrap;
 }
@@ -83,4 +83,21 @@ a {
 }
 
 /* Authentication Form Login */
-.auth-
+.auth-form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    min-height: 740px;
+    width: 100%;
+    max-width: 1100px;
+    border: 15px solid #0c0c0c;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.auth-login {
+    display: flex;
+    flex-direction: column;
+    padding: 58px 41px;
+}
