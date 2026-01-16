@@ -46,15 +46,32 @@ student-productivity-hub/
 ├── src /
 │   ├── assets /
 │   │   ├── auth-button /
+│   │   │   ├── github-icon
+│   │   │   └── google-icon
 │   │   │
 │   │   ├── logo.png 
 │   │   └── profile.png
 │   │
 │   ├── pages /
+│   │   └── authentication.html
+│   │
 │   ├── script /
+│   │   ├── dashboard.js
+│   │   ├── tasks.js
+│   │   └── theme-switch.js
+│   │
 │   ├── style /
+│   │   ├── authentication.css
+│   │   ├── dashboard.css
+│   │   ├── responsive.css
+│   │   ├── root.css
+│   │   └── task.css
+│   │
 │   ├── main.css
 │   └── main.js
+│
+├── public /
+│   └── logo.png
 │
 └── README.md
 ```
