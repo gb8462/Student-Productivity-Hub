@@ -42,12 +42,14 @@ This project was created as a student-level web development project to practice:
 student-productivity-hub/
 │
 ├── index.html
-├── style.css
-├── script.js
 │
-├── assets/
-│   ├── icons/
-│   └── images/
+├── src /
+│   ├── assets /
+│   ├── pages /
+│   ├── script /
+│   ├── style /
+│   ├── main.css
+│   └── main.js
 │
 └── README.md
 ```
