@@ -114,8 +114,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
-    width: 100%;
-    max-width: 465px;
+    min-width: 465px;
     padding: 58px 41px;
     background: #2b2b2b;
 }
