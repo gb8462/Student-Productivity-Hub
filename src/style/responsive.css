@@ -223,6 +223,7 @@
     /* Authentication Form */
     .auth-form {
         flex-direction: column;
+        height: 100%;
         border-width: 10px;
     }
 
@@ -243,6 +244,8 @@
     .left-dash {
         position: static;
     }
+
+    /* ============ AUTHENTICATION ============ */
 }
 
 /* SMALL TABLET BREAKPOINT */
