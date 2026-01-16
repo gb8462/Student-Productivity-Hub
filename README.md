@@ -45,6 +45,11 @@ student-productivity-hub/
 │
 ├── src /
 │   ├── assets /
+│   │   ├── auth-button /
+│   │   │
+│   │   ├── logo.png 
+│   │   └── profile.png
+│   │
 │   ├── pages /
 │   ├── script /
 │   ├── style /
