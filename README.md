@@ -78,7 +78,11 @@ student-productivity-hub/
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+<img src="screenshots/light.png" alt="light_mode">
+
+<br>
+
+<img src="screenshots/dark.png" alt="dark_mode">
 
 ## 🌐 Live Demo
 
@@ -89,3 +93,10 @@ student-productivity-hub/
 - User accounts
 - Cloud storage
 - Mobile app version
+
+## 🤝 💬 Feedback & Critiques
+
+All critiques are welcome!
+
+If you see something that could be better, cleaner, or more efficient,
+just open an **Issue** and share your thoughts.
