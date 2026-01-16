@@ -308,9 +308,31 @@
     }
 
     /* ============ AUTHENTICATION ============ */
-    /* No Display For Label */
+    /* Auth Layout */
+    .auth-layout {
+        padding-top: 10px;
+    }
+
+    /* Auth Header */
+    .auth-header-wrapper {
+        margin: 10px 0;
+    }
+
+    /* Auth Form */
+    .auth-form {
+        min-height: auto;
+    }
+
+    /* Auth Login */
+    .auth-login {
+        padding: 32px 20px;
+    }
+
     /* Option Buttons Group */
-    
+    .auth-option-buttons-group {
+        justify-content: center;
+        gap: 10px;
+    }
 
     /* Option Buttons */
     .auth-option-buttons-group button {
@@ -319,6 +341,7 @@
         padding: 6px;
     }
 
+    /* No Display For Label */
     .auth-option-buttons-group button span {
         display: none;
     }
