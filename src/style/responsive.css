@@ -440,4 +440,26 @@
     .input-wrapper label {
         font-size: 13px !important;
     }
+
+     /* ============ AUTHENTICATION ============ */
+    /* Auth Head */
+    .auth-header {
+        white-space: nowrap;
+    }
+
+    /* Middle Title */
+    .auth-header-wrapper a {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Title Config */
+    .text-content span {
+        font-size: clamp(24px, 5vw, 29px);
+    }
+
+    /* None Display On Logo */
+    .text-content img {
+        display: none;
+    }
 }
