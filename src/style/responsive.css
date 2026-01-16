@@ -321,11 +321,20 @@
     /* Auth Form */
     .auth-form {
         min-height: auto;
+        overflow: visible;
     }
 
     /* Auth Login */
     .auth-login {
         padding: 32px 20px;
+        min-width: unset;
+    }
+
+    /* Auth Inputs */
+    .auth-input-box input {
+        display: flex;
+        white-space: normal;
+        flex-wrap: wrap;
     }
 
     /* Option Buttons Group */
