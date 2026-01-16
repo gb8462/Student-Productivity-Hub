@@ -30,6 +30,13 @@
     .toggle-sidebar.active-toggle {
         left: 192px;
     }
+
+    /* ============ AUTHENTICATION ============ */
+    /* Layout Fixed */
+    .auth-layout {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* LAPTOP BREAKPOINT */
@@ -66,7 +73,6 @@
     }
 
     /* ============ AUTHENTICATION ============ */
-    
 }
 
 /* TABLET BREAKPOINT */
@@ -211,6 +217,22 @@
 
     .random-quote blockquote {
         font-size: 14px;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+    /* Authentication Form */
+    .auth-form {
+        flex-direction: column;
+        border-width: 10px;
+    }
+
+    /* None Display Design */
+    .design-form {
+        display: none;
+    }
+
+    .auth-login {
+        width: 100%;
     }
 }
 
