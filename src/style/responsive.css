@@ -246,6 +246,9 @@
     }
 
     /* ============ AUTHENTICATION ============ */
+    .auth-header {
+        white-space: wrap;
+    }
 }
 
 /* SMALL TABLET BREAKPOINT */
