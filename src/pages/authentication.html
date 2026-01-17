@@ -57,13 +57,13 @@
                     <!-- Login Form Contents -->
                     <form class="content-form login" id="formLogin">
                         <!-- Username Input Box -->
-                        <div class="auth-input-box sign-in-input first">
+                        <div class="auth-input-box first">
                             <input type="text" class="user-email login-input" id="usernameInput" required>
                             <label for="usernameInput">Username or Email</label>
                         </div>
                         
                         <!-- Password Input Box -->
-                        <div class="auth-input-box sign-in-input last">
+                        <div class="auth-input-box last">
                             <input type="text" class="password login-input" id="passwordInput" required>
                             <label for="passwordInput">Password</label>
                         </div>
@@ -86,13 +86,13 @@
 
                         <!-- Form Submit Button -->
                         <div class="auth-submit-button">
-                            <input type="submit" value="LogIn">
+                            <input type="submit" value="Sign In">
                         </div>
 
                         <!-- Option Line -->
                         <div class="option-line">
                             <hr>
-                            <span>Or Login With:</span>
+                            <span>Or Sign In With:</span>
                             <hr>
                         </div>
 
@@ -124,21 +124,50 @@
                     </header>
                     <!-- Register Form Contents -->
                     <form class="content-form register" id="formSignup">
+                        <!-- Email Input Box -->
                         <div class="auth-input-box">
                             <input type="text" class="email-adress reg-input" id="emailInput" required>
                             <label for="emailInput">Email Address</label>
                         </div>
+
+                        <!-- Username Input Box -->
                         <div class="auth-input-box">
                             <input type="text" class="username reg-input" id="userInput" required>
                             <label for="userInput">Username</label>
                         </div>
+
+                        <!-- Password Input Box -->
                         <div class="auth-input-box">
                             <input type="text" class="pass-reg reg-input" id="passInput" required>
                             <label for="passInput">Password</label>
                         </div>
+
+                        <!-- Confirm Password Input Box -->
                         <div class="auth-input-box last">
                             <input type="text" class="confirm-pass reg-input" id="confirmPassInput" required>
                             <label for="confirmPassInput">Confirm Password</label>
+                        </div>
+
+                        <!-- Form Settings -->
+                        <div class="auth-form-settings">
+                            <div class="terms-condition">
+                                <label class="custom-checkbox-container">
+                                    <input type="checkbox" name="agree-terms-condition" id="agreeTermsCondition">
+                                    <span class="checkmark"></span>
+                                    I agree to the terms and condition
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Submit Button -->
+                        <div class="auth-submit-button">
+                            <input type="submit" value="Sign Up">
+                        </div>
+
+                        <!-- Option Line -->
+                        <div class="option-line">
+                            <hr>
+                            <span>Or Sign Up With:</span>
                         </div>
                     </form>
                 </div>
