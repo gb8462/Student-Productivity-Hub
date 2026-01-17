@@ -440,30 +440,3 @@ input {
     transform: translateX(-100%);
     opacity: 0;
 }
-
-/* Switch Events */
-/* Forms */
-.auth-form.show-register .auth-login {
-    transform: translateX(100%);
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-}
-
-.auth-form.show-register .auth-register {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-    user-select: auto;
-}
-
-/* Arts */
-.auth-form.show-register .art-login {
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.auth-form.show-register .art-register {
-    transform: translateX(100%);
-    opacity: 0;
-}
