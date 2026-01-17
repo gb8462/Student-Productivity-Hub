@@ -405,10 +405,3 @@ input {
     box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
     z-index: 2;
 }
-
-/* Authentication Form Wrapper */
-.auth-wrapper {
-    display: flex;
-    overflow-y: hidden;
-    width: 100%;
-}
