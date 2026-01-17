@@ -42,159 +42,86 @@
 
         <!-- Authentication Form Box-->
         <div class="auth-form">
-            <div class="auth-wrapper">
-                <div class="design-form">
-                    <div class="design-wrapper">
-                        <img src="../../src/assets/authentication-page/art-landing/sign-in-art.png" alt="sign-in-art" class="art-login active">
-                        <img src="../../src/assets/authentication-page/art-landing/sign-up-art.png" alt="sign-up-art" class="art-register active">
-                    </div>
+            <div class="design-form">
+                <div class="design-wrapper">
+                    <img src="../../src/assets/authentication-page/art-landing/sign-up-art.png" alt="sign-up-art" class="art-register active">
                 </div>
-                <!-- Login -->
-                <div class="auth-login active">
-                    <!-- Form Login -->
-                    <div class="form-content-login">
-                        <header class="title">
-                            <h1>User Sign In</h1>
-                        </header>
-                        <!-- Login Form Contents -->
-                        <form class="content-form login" id="formLogin">
-                            <!-- Username Input Box -->
-                            <div class="auth-input-box first">
-                                <input type="text" class="user-email login-input" id="usernameInput" required>
-                                <label for="usernameInput">Username or Email</label>
-                            </div>
-                            
-                            <!-- Password Input Box -->
-                            <div class="auth-input-box last">
-                                <input type="text" class="password login-input" id="passwordInput" required>
-                                <label for="passwordInput">Password</label>
-                            </div>
+            </div>
 
-                            <!-- Form Settings -->
-                            <div class="auth-form-settings">
-                                <div class="remember-password">
-                                    <label class="custom-checkbox-container">
-                                        <input type="checkbox" name="remember-user-password" id="rememberPassword">
-                                        <span class="checkmark"></span>
-                                        Remember me
-                                    </label>
-                                </div>
-                                <div class="forgot-password">
-                                    <a href="#">
-                                        <span>Forgot Password?</span>
-                                    </a>
-                                </div>
+            <!-- Register -->
+            <div class="auth-register">
+                <div class="form-content-register">
+                    <header class="title">
+                        <h1>User Sign Up</h1>
+                    </header>
+                    <!-- Register Form Contents -->
+                    <form class="content-form register" id="formSignup">
+                        <!-- Email Input Box -->
+                        <div class="auth-input-box">
+                            <input type="text" class="email-adress reg-input" id="emailInput" required>
+                            <label for="emailInput">Email Address</label>
+                        </div>
+
+                        <!-- Username Input Box -->
+                        <div class="auth-input-box">
+                            <input type="text" class="username reg-input" id="userInput" required>
+                            <label for="userInput">Username</label>
+                        </div>
+
+                        <!-- Password Input Box -->
+                        <div class="auth-input-box">
+                            <input type="text" class="pass-reg reg-input" id="passInput" required>
+                            <label for="passInput">Password</label>
+                        </div>
+
+                        <!-- Confirm Password Input Box -->
+                        <div class="auth-input-box last">
+                            <input type="text" class="confirm-pass reg-input" id="confirmPassInput" required>
+                            <label for="confirmPassInput">Confirm Password</label>
+                        </div>
+
+                        <!-- Form Settings -->
+                        <div class="auth-form-settings">
+                            <div class="terms-condition">
+                                <label class="custom-checkbox-container">
+                                    <input type="checkbox" name="agree-terms-condition" id="agreeTermsCondition">
+                                    <span class="checkmark"></span>
+                                    I agree to the terms and condition
+                                </label>
                             </div>
+                        </div>
 
-                            <!-- Form Submit Button -->
-                            <div class="auth-submit-button">
-                                <input type="submit" value="Sign In">
-                            </div>
+                        <!-- Form Submit Button -->
+                        <div class="auth-submit-button">
+                            <input type="submit" value="Sign Up">
+                        </div>
 
-                            <!-- Option Line -->
-                            <div class="option-line">
-                                <hr>
-                                <span>Or Continue With:</span>
-                                <hr>
-                            </div>
+                        <!-- Option Line -->
+                        <div class="option-line">
+                            <hr>
+                            <span>Or Continue With:</span>
+                            <hr>
+                        </div>
 
-                            <!-- Continue Buttons -->
-                            <div class="auth-option-buttons-group">
-                                <button class="github-button" disabled="disabled">
-                                    <img src="../../src/assets/authentication-page/button-icons/github-icon/github-mark.png" alt="github-icon">
-                                    <span>Continue with Github</span>
-                                </button>
+                        <!-- Continue Buttons -->
+                        <div class="auth-option-buttons-group">
+                            <button class="github-button" disabled="disabled">
+                                <img src="../../src/assets/authentication-page/button-icons/github-icon/github-mark.png" alt="github-icon">
+                                <span>Continue with Github</span>
+                            </button>
 
-                                <button class="google-button" disabled="disabled">
-                                    <img src="../../src/assets/authentication-page/button-icons/google-icon/google.png" alt="google-icon">
-                                    <span>Continue with Google</span>
-                                </button>
-                            </div>
+                            <button class="google-button" disabled="disabled">
+                                <img src="../../src/assets/authentication-page/button-icons/google-icon/google.png" alt="google-icon">
+                                <span>Continue with Google</span>
+                            </button>
+                        </div>
 
-                            <!-- Switch Page -->
-                            <div class="switch-form-group">
-                                <span>Don't have an account?</span>
-                                <a href="#" id="switchRegister">Sign Up</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Register -->
-                <div class="auth-register">
-                    <div class="form-content-register">
-                        <header class="title">
-                            <h1>User Sign Up</h1>
-                        </header>
-                        <!-- Register Form Contents -->
-                        <form class="content-form register" id="formSignup">
-                            <!-- Email Input Box -->
-                            <div class="auth-input-box">
-                                <input type="text" class="email-adress reg-input" id="emailInput" required>
-                                <label for="emailInput">Email Address</label>
-                            </div>
-
-                            <!-- Username Input Box -->
-                            <div class="auth-input-box">
-                                <input type="text" class="username reg-input" id="userInput" required>
-                                <label for="userInput">Username</label>
-                            </div>
-
-                            <!-- Password Input Box -->
-                            <div class="auth-input-box">
-                                <input type="text" class="pass-reg reg-input" id="passInput" required>
-                                <label for="passInput">Password</label>
-                            </div>
-
-                            <!-- Confirm Password Input Box -->
-                            <div class="auth-input-box last">
-                                <input type="text" class="confirm-pass reg-input" id="confirmPassInput" required>
-                                <label for="confirmPassInput">Confirm Password</label>
-                            </div>
-
-                            <!-- Form Settings -->
-                            <div class="auth-form-settings">
-                                <div class="terms-condition">
-                                    <label class="custom-checkbox-container">
-                                        <input type="checkbox" name="agree-terms-condition" id="agreeTermsCondition">
-                                        <span class="checkmark"></span>
-                                        I agree to the terms and condition
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Form Submit Button -->
-                            <div class="auth-submit-button">
-                                <input type="submit" value="Sign Up">
-                            </div>
-
-                            <!-- Option Line -->
-                            <div class="option-line">
-                                <hr>
-                                <span>Or Continue With:</span>
-                                <hr>
-                            </div>
-
-                            <!-- Continue Buttons -->
-                            <div class="auth-option-buttons-group">
-                                <button class="github-button" disabled="disabled">
-                                    <img src="../../src/assets/authentication-page/button-icons/github-icon/github-mark.png" alt="github-icon">
-                                    <span>Continue with Github</span>
-                                </button>
-
-                                <button class="google-button" disabled="disabled">
-                                    <img src="../../src/assets/authentication-page/button-icons/google-icon/google.png" alt="google-icon">
-                                    <span>Continue with Google</span>
-                                </button>
-                            </div>
-
-                            <!-- Switch Page -->
-                            <div class="switch-form-group">
-                                <span>Already have an account?</span>
-                                <a href="#" id="switchRegister">Sign In</a>
-                            </div>
-                        </form>
-                    </div>
+                        <!-- Switch Page -->
+                        <div class="switch-form-group">
+                            <span>Already have an account?</span>
+                            <a href="#" id="switchRegister">Sign In</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
