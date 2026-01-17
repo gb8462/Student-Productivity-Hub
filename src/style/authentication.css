@@ -405,38 +405,3 @@ input {
     box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
     z-index: 2;
 }
-
-/* Toggle Animation For Register and Login */
-.auth-login,
-.auth-register {
-    width: 50%;
-    padding: 58px 41px;
-    transition: transform 0.6s ease, 
-                opacity 0.4s ease;
-}
-
-/* Sign In Visible By Default */
-.auth-login {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-/* Register Invisible */
-.auth-register {
-    position: absolute;
-    left: 0;
-    transform: translateX(100%);
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Stacked Up Images */
-.art-login {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.art-register {
-    transform: translateX(-100%);
-    opacity: 0;
-}
