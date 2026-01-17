@@ -290,16 +290,6 @@ input {
     margin-bottom: 0 !important;
 }
 
-.forgot-password a {
-    border-bottom: 2px solid transparent;
-    transition: border 0.1s ease;
-}
-
-/* Forgot Password Hover */
-.forgot-password a:hover{
-    border-bottom: 2px solid var(--theme-color);
-}
-
 /* Login Submit Button */
 .auth-submit-button {
     width: 100%;
@@ -384,13 +374,13 @@ input {
     margin-bottom: 0 !important;
 }
 
-.switch-form-group a {
+.link-path {
     color: var(--theme-color);
     font-weight: 700;
     border-bottom: 2px solid transparent;
 }
 
-.switch-form-group a:hover {
+.link-path:hover {
     border-bottom: 2px solid var(--theme-color);
 }
 
