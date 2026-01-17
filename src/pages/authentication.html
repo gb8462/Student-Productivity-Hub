@@ -55,15 +55,15 @@
                         <h1>User Sign In</h1>
                     </header>
                     <!-- Login Form Contents -->
-                    <form class="content-form" id="formLogin">
+                    <form class="content-form login" id="formLogin">
                         <!-- Username Input Box -->
-                        <div class="auth-input-box user">
+                        <div class="auth-input-box sign-in-input first">
                             <input type="text" class="user-email login-input" id="usernameInput" required>
                             <label for="usernameInput">Username or Email</label>
                         </div>
                         
                         <!-- Password Input Box -->
-                        <div class="auth-input-box pass">
+                        <div class="auth-input-box sign-in-input last">
                             <input type="text" class="password login-input" id="passwordInput" required>
                             <label for="passwordInput">Password</label>
                         </div>
@@ -123,21 +123,21 @@
                         <h1>User Sign Up</h1>
                     </header>
                     <!-- Register Form Contents -->
-                    <form class="content-form" id="formSignup">
+                    <form class="content-form register" id="formSignup">
                         <div class="auth-input-box">
-                            <input type="text" class="email-adress reg-input" id="emailInput">
+                            <input type="text" class="email-adress reg-input" id="emailInput" required>
                             <label for="emailInput">Email Address</label>
                         </div>
                         <div class="auth-input-box">
-                            <input type="text" class="username reg-input" id="userInput">
+                            <input type="text" class="username reg-input" id="userInput" required>
                             <label for="userInput">Username</label>
                         </div>
                         <div class="auth-input-box">
-                            <input type="text" class="pass-reg reg-input" id="passInput">
+                            <input type="text" class="pass-reg reg-input" id="passInput" required>
                             <label for="passInput">Password</label>
                         </div>
-                        <div class="auth-input-box">
-                            <input type="text" class="confirm-pass reg-input" id="confirmPassInput">
+                        <div class="auth-input-box last">
+                            <input type="text" class="confirm-pass reg-input" id="confirmPassInput" required>
                             <label for="confirmPassInput">Confirm Password</label>
                         </div>
                     </form>
