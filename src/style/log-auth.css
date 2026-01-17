@@ -1,0 +1,414 @@
+/* Importing Root Css */
+@import url(/src/style/root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, "Crimson Text";
+    background: #101111;
+    min-height: 100vh;
+    color: var(--tertiary-text-color);
+    font-size: clamp(14px, 1.2vw, 15px);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+/* Main Authentication Form Style */
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+/* Authentication Header */
+.auth-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+/* Header Wrapper */
+.auth-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6rem;
+    margin: 25px 0;
+    padding: 0;
+}
+
+/* Header Link */
+.auth-header-wrapper a {
+    height: 100%;
+}
+
+/* Text Content */
+.text-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: min(400px, 90%);
+    gap: 12px;
+}
+
+/* Link Logo */
+.text-content img {
+    width: clamp(140px, 30vw, 190px);
+    height: auto;
+}
+
+/* Link Title */
+.text-content span {
+    font-size: 29px;
+    font-weight: 600;
+    border-bottom: solid 3px transparent;
+    transition: border 0.3s ease;
+}
+
+/* Link Hover */
+.auth-header-wrapper a:hover .text-content span {
+    border-bottom: solid 3px var(--theme-color);
+}
+
+/* Authentication Form Login */
+.auth-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    max-width: min(1100px, 100%);
+    border: 15px solid #0c0c0c;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+/* Design Form */
+.design-form {
+    width: 100%;
+    overflow: hidden;
+}
+
+.design-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.design-wrapper img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    transition: transform 0.6s ease,
+                opacity 0.4s ease;
+}
+
+/* Authentications */
+.auth-login {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    min-width: 465px;
+    padding: 58px 41px;
+    background: #2b2b2b;
+    box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+/* Title */
+.title {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.title h1 {
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'Crimson text';
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+/* Form */
+.content-form {
+    display: block;
+}
+
+.content-form.login div {
+    margin-bottom: 33px;
+}
+
+.content-form.register div {
+    margin-bottom: 27px;
+}
+
+.content-form input {
+    border-radius: 10px;
+}
+
+/* Login Input Box Group */
+.auth-input-box {
+    position: relative;
+    width: 100%;
+    display: block;
+    color: var(--primary-text-color);
+}
+
+/* No Margin At Password */
+.auth-input-box.last {
+    margin-bottom: 15px;
+}
+
+/* Username / Password Input Box */
+.auth-input-box input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: border 0.4s ease;
+}
+
+/* Input Box Label */
+.auth-input-box label {
+    position: absolute;
+    top: 49%;
+    left: 15px;
+    transform: translateY(-49%);
+    transition: top 0.3s ease;
+}
+
+/* Input Box Input Focus */
+.auth-input-box input:focus{
+    border: 2px solid var(--theme-color);
+}
+
+/* Input Box Label Focus Animation */
+.auth-input-box input:focus + label,
+.auth-input-box input:valid + label {
+    top: -11px;
+    color: var(--tertiary-text-color);
+}
+
+/* Login Form Settings */
+.auth-form-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Remember Password */
+.remember-password,
+.terms-condition {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+/* Checkbox Style */
+.custom-checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hidden Default/Native Checkmark */
+.custom-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* CheckBox */
+.checkmark {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    padding: 3px;
+    border: 2px solid #888;
+    background: transparent;
+    transition: all 0.2 ease;
+    place-items: center;
+}
+
+/* Custom Checkmark */
+.checkmark::after {
+    content: "";
+    width: 4px;
+    height: 7px;
+    border: solid #2b2b2b;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Custom Checked State */
+.custom-checkbox-container input:checked + .checkmark {
+    background: var(--theme-color);
+    border-color: var(--theme-color);
+}
+
+.custom-checkbox-container input:checked + .checkmark::after {
+    transform: rotate(45deg) scale(1);
+}
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    color: var(--theme-color);
+    font-weight: 800;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+
+.forgot-password a {
+    border-bottom: 2px solid transparent;
+    transition: border 0.1s ease;
+}
+
+/* Forgot Password Hover */
+.forgot-password a:hover{
+    border-bottom: 2px solid var(--theme-color);
+}
+
+/* Login Submit Button */
+.auth-submit-button {
+    width: 100%;
+    display: block;
+}
+
+/* Login Submit Button Input */
+.auth-submit-button input {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background: var(--theme-color);
+    color: var(--tertiary-text-color);
+    font-weight: 800;
+    transition: transform 0.2s ease;
+}
+
+/* Login Submit Focus */
+.auth-submit-button input:focus {
+    transform: scale(0.97);
+}
+
+/* Option Line */
+.option-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-line hr {
+    width: 100%;
+}
+
+.option-line span {
+    min-width: 105px;
+    text-align: center;
+}
+
+/* Login 3rd Party Buttons Group */
+.auth-option-buttons-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 40px;
+}
+
+/* Continue Buttons */
+.auth-option-buttons-group button {
+    display: flex;
+    width: clamp(140px, 45%, 184px);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    background: var(--tertiary-text-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.auth-option-buttons-group button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Buttons Focus */
+.auth-option-buttons-group button:active {
+    transform: scale(0.97);
+}
+
+/* Register Form Group */
+.switch-form-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0 !important;
+}
+
+.switch-form-group a {
+    color: var(--theme-color);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+.switch-form-group a:hover {
+    border-bottom: 2px solid var(--theme-color);
+}
+
+/* Sign-up Authentication */
+.auth-register {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    min-width: 465px;
+    padding: 58px 41px;
+    background: #2b2b2b;
+    box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+/* Authentication Form Wrapper */
+.auth-wrapper {
+    display: flex;
+    overflow-y: hidden;
+    width: 100%;
+}
