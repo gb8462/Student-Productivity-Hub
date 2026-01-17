@@ -376,19 +376,19 @@ input {
 }
 
 /* Register Form Group */
-.register-form-group {
+.switch-form-group {
     display: flex;
     gap: 8px;
     margin-bottom: 0 !important;
 }
 
-.register-form-group a {
+.switch-form-group a {
     color: var(--theme-color);
     font-weight: 700;
     border-bottom: 2px solid transparent;
 }
 
-.register-form-group a:hover {
+.switch-form-group a:hover {
     border-bottom: 2px solid var(--theme-color);
 }
 
