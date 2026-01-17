@@ -1,5 +1,5 @@
 const registerBtn = document.getElementById('switchRegister');
-const authForm = document.querySelectorAll('.auth-form');
+const authForm = document.querySelector('.auth-form');
 
 registerBtn.addEventListener('click', (e) => {
     e.preventDefault();
