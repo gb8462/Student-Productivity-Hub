@@ -33,7 +33,7 @@ input {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding-top: 20px;
+    padding: 20px 0 40px 0;
 }
 
 /* Authentication Header */
