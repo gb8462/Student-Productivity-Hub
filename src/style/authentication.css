@@ -416,13 +416,12 @@ input {
 /* Sign In Visible By Default */
 .auth-login {
     transform: translateX(0);
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
 }
 
 .auth-register {
-    /* position: absolute;
-    left: 0; */
-    transform: translateX(0);
+    position: absolute;
+    left: 0;
+    transform: translateX(100%);
     opacity: 1;
 }
