@@ -152,13 +152,17 @@ input {
     font-weight: 600;
 }
 
-/* Login Form */
+/* Form */
 .content-form {
     display: block;
 }
 
-.content-form div {
+.content-form.login div {
     margin-bottom: 33px;
+}
+
+.content-form.register div {
+    margin-bottom: 27px;
 }
 
 .content-form input {
@@ -174,7 +178,7 @@ input {
 }
 
 /* No Margin At Password */
-.auth-input-box.pass {
+.auth-input-box.last {
     margin-bottom: 15px;
 }
 
