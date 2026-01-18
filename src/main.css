@@ -1,6 +1,5 @@
-
 /* Importing Root Css */
-@import url(/src/css/variable.css);
+@import url(../../src/style/root.css);
 
 * {
     margin: 0;
@@ -168,8 +167,8 @@ ul {
 }
 
 .nav-link.active {
-    background: var(--highlight-text-color);
-    color: var(--tertiary-text-color);
+    background: var(--theme-color);
+    color: var(--primary-text-color);
     font-weight: 700;
 }
 
@@ -266,7 +265,7 @@ ul {
 
 .toggle-sidebar.deactive-toggle {
     left: 65px;
-    background-color: var(--tertiary-text-color);
+    background-color: var(--theme-color);
     color: var(--primary-text-color);
 }
 
