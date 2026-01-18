@@ -37,7 +37,7 @@ addTaskButton.addEventListener('click', () => {
 
     const createSpan = document.createElement('span');
     createSpan.classList.add('task-text');
-    createSpan.innerHTML = checkTaskInput;
+    createSpan.textContent = checkTaskInput;
 
     createList.addEventListener('click', () => {
         document.querySelectorAll('.task-item').forEach(t => t.classList.remove('selected'));
