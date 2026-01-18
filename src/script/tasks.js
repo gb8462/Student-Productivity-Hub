@@ -40,7 +40,7 @@ addTaskButton.addEventListener('click', () => {
     createSpan.innerHTML = checkTaskInput;
 
     createList.addEventListener('click', () => {
-        document.querySelectorAll('task-item').forEach(t => t.classList.remove('selected'));
+        document.querySelectorAll('.task-item').forEach(t => t.classList.remove('selected'));
         createList.classList.add('selected');
         selectedTask = createList;
     });
@@ -56,3 +56,24 @@ addTaskButton.addEventListener('click', () => {
     taskInput.value = '';
     statsProgress();
 });
+
+/* ----------- Edit Task Function ----------- */
+editTaskButton.addEventListener('click', () => {
+    if (!selectedTask) return;
+
+    const editSpan = selectedTask.querySelector('.task-text');
+    const newText = prompt('Edit Task:', editSpan.textContent);
+
+    if (newText !== null && newText.trim()) {
+        editSpan.textContent =newText.trim();
+    }
+});
+
+/* ----------- Delete Task Function ----------- */
+deleteTaskButton.addEventListener('click', () => {
+    if (!selectedTask) return;
+
+    selectedTask.remove();
+    selectedTask = null;
+    statsProgress();
+})
