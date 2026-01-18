@@ -27,6 +27,16 @@ input {
     outline: none;
 }
 
+.link-path {
+    color: var(--theme-color);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+.link-path:hover {
+    border-bottom: 2px solid var(--theme-color);
+}
+
 /* Main Authentication Form Style */
 .auth-layout {
     display: flex;
@@ -34,6 +44,12 @@ input {
     width: 100%;
     min-height: 100vh;
     padding-bottom: 40px;
+}
+
+/* Reset Password Layout */
+.auth-layout.layout-reset-pass {
+    justify-content: center;
+    padding-bottom: 0;
 }
 
 /* Authentication Header */
@@ -104,6 +120,12 @@ input {
     overflow: hidden;
 }
 
+/* Reset Password Authentication */
+.auth-form.auth-reset-pass {
+    width: auto;
+    max-width: min(640px, 100%);
+}
+
 /* Design Form */
 .design-form {
     width: 100%;
@@ -128,7 +150,7 @@ input {
                 opacity 0.4s ease;
 }
 
-/* Authentications */
+/* Authentications PAGE */
 .auth-login,
 .auth-register,
 .reset-credentials {
@@ -156,7 +178,18 @@ input {
     font-weight: 600;
 }
 
-/* Form */
+.title.pass-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title.pass-reset h1 {
+    width: 100%;
+    max-width: 385px;
+}
+
+/* MAIN Form */
 .content-form {
     display: block;
 }
@@ -174,7 +207,12 @@ input {
     border-radius: 10px;
 }
 
-/* Login Input Box Group */
+/* No Margin At Last Box */
+.auth-input-box.last {
+    margin-bottom: 15px;
+}
+
+/* Input Box Group */
 .auth-input-box {
     position: relative;
     width: 100%;
@@ -182,12 +220,7 @@ input {
     color: var(--primary-text-color);
 }
 
-/* No Margin At Password */
-.auth-input-box.last {
-    margin-bottom: 15px;
-}
-
-/* Username / Password Input Box */
+/* Input Box */
 .auth-input-box input {
     width: 100%;
     padding: 15px;
@@ -216,7 +249,7 @@ input {
     color: var(--tertiary-text-color);
 }
 
-/* Login Form Settings */
+/* Form Settings */
 .auth-form-settings {
     display: flex;
     flex-direction: row;
@@ -234,6 +267,15 @@ input {
     margin-bottom: 0 !important;
 }
 
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    color: var(--theme-color);
+    font-weight: 800;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+
 /* Checkbox Style */
 .custom-checkbox-container {
     display: inline-flex;
@@ -243,7 +285,7 @@ input {
     user-select: none;
 }
 
-/* Hidden Default/Native Checkmark */
+/* Hidden Default/Native Check Mark */
 .custom-checkbox-container input {
     position: absolute;
     opacity: 0;
@@ -263,7 +305,7 @@ input {
     place-items: center;
 }
 
-/* Custom Checkmark */
+/* Custom Check Mark */
 .checkmark::after {
     content: "";
     width: 4px;
@@ -283,23 +325,13 @@ input {
 .custom-checkbox-container input:checked + .checkmark::after {
     transform: rotate(45deg) scale(1);
 }
-
-/* Forgot Password */
-.forgot-password {
-    display: block;
-    color: var(--theme-color);
-    font-weight: 800;
-    align-items: center;
-    margin-bottom: 0 !important;
-}
-
-/* Login Submit Button */
+/* Submit Button */
 .auth-submit-button {
     width: 100%;
     display: block;
 }
 
-/* Login Submit Button Input */
+/* Submit Button Input */
 .auth-submit-button input {
     width: 100%;
     padding: 15px;
@@ -311,7 +343,7 @@ input {
     transition: transform 0.2s ease;
 }
 
-/* Login Submit Focus */
+/* Submit Focus */
 .auth-submit-button input:focus {
     transform: scale(0.97);
 }
@@ -335,7 +367,7 @@ input {
     text-align: center;
 }
 
-/* Login 3rd Party Buttons Group */
+/* 3rd Party Buttons Group */
 .auth-option-buttons-group {
     display: flex;
     width: 100%;
@@ -368,43 +400,4 @@ input {
 /* Buttons Focus */
 .auth-option-buttons-group button:active {
     transform: scale(0.97);
-}
-
-/* Register Form Group */
-.switch-form-group {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 0 !important;
-}
-
-.link-path {
-    color: var(--theme-color);
-    font-weight: 700;
-    border-bottom: 2px solid transparent;
-}
-
-.link-path:hover {
-    border-bottom: 2px solid var(--theme-color);
-}
-
-/* Reset Password Authentication */
-.auth-layout.layout-reset-pass {
-    justify-content: center;
-    padding-bottom: 0;
-}
-
-.auth-form.auth-reset-pass {
-    width: auto;
-    max-width: min(640px, 100%);
-}
-
-.title.pass-reset {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title.pass-reset h1 {
-    width: 100%;
-    max-width: 385px;
 }
