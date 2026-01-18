@@ -44,58 +44,51 @@
         <div class="auth-form">
             <div class="design-form">
                 <div class="design-wrapper">
-                    <img src="../../src/assets/authentication-page/art-landing/sign-up-art.png" alt="sign-up-art" class="art-register active">
+                    <img src="../../src/assets/authentication-page/art-landing/sign-in-art.png" alt="sign-in-art" class="art-login active">
                 </div>
             </div>
 
-            <!-- Register -->
-            <div class="auth-register">
-                <!-- Form Register -->
-                <div class="form-content-register">
+            <!-- Login -->
+            <div class="auth-login">
+                <!-- Form Login -->
+                <div class="form-content-login">
                     <header class="title">
-                        <h1>User Sign Up</h1>
+                        <h1>User Sign In</h1>
                     </header>
-                    <!-- Register Form Contents -->
-                    <form class="content-form register" id="formRegister">
-
-                        <!-- Email Input Box -->
-                        <div class="auth-input-box">
-                            <input type="text" id="emailRegistserInput" required>
-                            <label for="emailInput">Email Address</label>
-                        </div>
-
+                    <!-- Login Form Contents -->
+                    <form class="content-form login" id="formLogin">
+                        
                         <!-- Username Input Box -->
-                        <div class="auth-input-box">
-                            <input type="text" id="userRegistserInput" required>
-                            <label for="userInput">Username</label>
+                        <div class="auth-input-box first">
+                            <input type="text" id="usernameLoginInput" required>
+                            <label for="usernameInput">Username or Email</label>
                         </div>
-
+                        
                         <!-- Password Input Box -->
-                        <div class="auth-input-box">
-                            <input type="text" id="passwordRegistserInput" required>
-                            <label for="passInput">Password</label>
-                        </div>
-
-                        <!-- Confirm Password Input Box -->
                         <div class="auth-input-box last">
-                            <input type="text" id="confirmPassRegistserInput" required>
-                            <label for="confirmPassInput">Confirm Password</label>
+                            <input type="text" id="passwordLoginInput" required>
+                            <label for="passwordInput">Password</label>
                         </div>
 
                         <!-- Form Settings -->
                         <div class="auth-form-settings">
-                            <div class="terms-condition">
+                            <div class="remember-password">
                                 <label class="custom-checkbox-container">
-                                    <input type="checkbox" name="agree-terms-condition" id="agreeTermsCondition">
+                                    <input type="checkbox" name="remember-user-password" id="rememberPassword">
                                     <span class="checkmark"></span>
-                                    I agree to the <a href="#" class="link-path">terms and condition</a>
+                                    Remember me
                                 </label>
+                            </div>
+                            <div class="forgot-password">
+                                <a href="../../src/pages/password-reset-auth.html" class="link-path" id="forgotPassword">
+                                    <span>Forgot Password?</span>
+                                </a>
                             </div>
                         </div>
 
                         <!-- Form Submit Button -->
                         <div class="auth-submit-button">
-                            <input type="submit" value="Sign Up">
+                            <input type="submit" value="Sign In">
                         </div>
 
                         <!-- Option Line -->
@@ -120,8 +113,8 @@
 
                         <!-- Switch Page -->
                         <div class="switch-form-group">
-                            <span>Already have an account?</span>
-                            <a href="../../src/pages/login-auth.html" class="link-path">Sign In</a>
+                            <span>Don't have an account?</span>
+                            <a href="../../src/pages/register-auth.html" class="link-path">Sign Up</a>
                         </div>
                     </form>
                 </div>
