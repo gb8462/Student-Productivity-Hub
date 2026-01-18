@@ -129,7 +129,9 @@ input {
 }
 
 /* Authentications */
-.auth-login {
+.auth-login,
+.auth-register,
+.reset-credentials {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
@@ -159,7 +161,8 @@ input {
     display: block;
 }
 
-.content-form.login div {
+.content-form.login div,
+.content-form.pass-reset div {
     margin-bottom: 33px;
 }
 
@@ -384,14 +387,24 @@ input {
     border-bottom: 2px solid var(--theme-color);
 }
 
-/* Sign-up Authentication */
-.auth-register {
+/* Reset Password Authentication */
+.auth-layout.layout-reset-pass {
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.auth-form.auth-reset-pass {
+    width: auto;
+    max-width: min(640px, 100%);
+}
+
+.title.pass-reset {
     display: flex;
-    flex-direction: column;
-    justify-self: flex-end;
-    min-width: 465px;
-    padding: 58px 41px;
-    background: #2b2b2b;
-    box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
-    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.title.pass-reset h1 {
+    width: 100%;
+    max-width: 385px;
 }
