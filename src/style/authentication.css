@@ -208,8 +208,8 @@ input {
 }
 
 /* No Margin At Last Box */
-.auth-input-box.last {
-    margin-bottom: 15px;
+.content-form div.last {
+    margin-bottom: 15px !important;
 }
 
 /* Input Box Group */
@@ -400,4 +400,22 @@ input {
 /* Buttons Focus */
 .auth-option-buttons-group button:active {
     transform: scale(0.97);
+}
+
+/* Password Strength Percentage */
+.password-strength {
+    font-weight: 800;
+    color: #888;
+}
+
+.password-strength.lowest {
+    color: #E55346;
+}
+
+.password-strength.mid {
+    color: #E5AD46;
+}
+
+.password-strength.highest {
+    color: #46E563;
 }
