@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub Sign Up</title>
+    <title>Student Hub Sign In</title>
 
     <!-- Meta Config -->
     <meta name="description" content="A personal student hub planner with a dashboard, tasks management, pomodoro, weekly planner, etc.">
@@ -47,6 +47,7 @@
                     <img src="../../src/assets/authentication-page/art-landing/sign-in-art.png" alt="sign-in-art" class="art-login active">
                 </div>
             </div>
+
             <!-- Login -->
             <div class="auth-login">
                 <!-- Form Login -->
@@ -56,15 +57,16 @@
                     </header>
                     <!-- Login Form Contents -->
                     <form class="content-form login" id="formLogin">
+                        
                         <!-- Username Input Box -->
                         <div class="auth-input-box first">
-                            <input type="text" class="user-email login-input" id="usernameInput" required>
+                            <input type="text" id="usernameLoginInput" required>
                             <label for="usernameInput">Username or Email</label>
                         </div>
                         
                         <!-- Password Input Box -->
                         <div class="auth-input-box last">
-                            <input type="text" class="password login-input" id="passwordInput" required>
+                            <input type="text" id="passwordLoginInput" required>
                             <label for="passwordInput">Password</label>
                         </div>
 
