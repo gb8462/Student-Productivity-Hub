@@ -1,5 +1,5 @@
 /* Importing Root Css */
-@import url(../../src/style/root.css);
+@import url(../../src/styles/root.css);
 
 * {
     margin: 0;
