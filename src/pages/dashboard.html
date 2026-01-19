@@ -9,7 +9,7 @@
     <meta name="description" content="A personal student hub planner with a dashboard, tasks management, pomodoro, weekly planner, etc.">
     <meta name="author" content="Joshie-Borrow, Worms8462">
 
-    <link rel="icon" href="/public/logo.png">
+    <link rel="icon" href="../../public/logo.png">
 
     <!-- SEO -->
     <meta property="og:title" content="Student-Productivity-Hub">
@@ -21,11 +21,11 @@
     <!-- Style For Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_a_photo,alarm_on,assignment,book_5,chevron_left,chevron_right,dark_mode,dashboard,ent,event,image,light_mode,person,photo_camera,settings,task,timer" />
 
-    <link rel="stylesheet" href="./src/main.css">
-    <link rel="stylesheet" href="./src/style/root.css">
-    <link rel="stylesheet" href="./src/style/responsive.css">
-    <link rel="stylesheet" href="./src/style/dashboard.css">
-    <link rel="stylesheet" href="./src/style/task.css">
+    <link rel="stylesheet" href="../../src/styles/dashboard.css">
+    <link rel="stylesheet" href="../../src/styles/root.css">
+    <link rel="stylesheet" href="../../src/styles/responsive.css">
+    <link rel="stylesheet" href="../../src/styles/overview.css">
+    <link rel="stylesheet" href="../../src/styles/task.css">
 </head>
 <body>
     <!-- Navigation Sidebar -->
@@ -41,7 +41,7 @@
             <nav>
                 <header class="nav-header">
                     <div class="logo-title">
-                        <img src="src/assets/logo.png" alt="logo">
+                        <img src="../../src/assets/logo.png" alt="logo">
                         <h2 class="nav-title">Student Hub</h2>
                     </div>
                 </header>
@@ -200,20 +200,20 @@
                     <p>Overview for today</p>
                     <div class="overview-stats" id="taskBox">
                         <div class="overview-box">
-                            <a href="index.html">
+                            <a href="#">
                                 <span class="material-symbols-outlined">task</span>
                                 <span id="taskCount"><!-- task count here -->0 / 0</span>
                                 <span>tasks</span>
                             </a>
                         </div>
                         <div class="overview-box" id="timeBox">
-                            <a href="index.html">
+                            <a href="#">
                                 <span class="material-symbols-outlined">alarm_on</span>
                                 <span>pomodoro</span>
                             </a>
                         </div>
                         <div class="overview-box" id="modeBox">
-                            <a href="index.html">
+                            <a href="#">
                                 <span class="material-symbols-outlined">book_5</span>
                                 <span>IT / College Mode</span>
                             </a>
@@ -264,9 +264,9 @@
         </main>
 
     </div>
-    <script src="./src/main.js"></script>
-    <script src="./src/script/theme-switch.js"></script>
-    <script src="./src/script/dashboard.js"></script>
-    <script src="./src/script/tasks.js"></script>
+    <script src="../../src/scripts/dashboard.js"></script>
+    <script src="../../src/scripts/theme-switch.js"></script>
+    <script src="../../src/scripts/overview.js"></script>
+    <script src="../../src/scripts/tasks.js"></script>
 </body>
 </html>
