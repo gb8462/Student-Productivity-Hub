@@ -1,0 +1,465 @@
+/* Responsive Breakpoints */
+
+/* PC BREAKPOINT */
+@media (max-width: 1440px) {
+    /* Main Content */
+    .main-content {
+        padding: 0 clamp(24px, 5vw, 110px);
+    }
+
+    /* Main Container */
+    .main-info-container {
+        padding: 0 clamp(24px, 5vw, 110px);
+    }
+
+    /* User Profile */ 
+    .pfp-container {
+        left: 70px;
+    }
+
+    /* User Buttons */
+    .cover-btn,
+    .cover-option,
+    .theme-switch {
+        right: 70px;
+    }
+}
+
+/* LARGE LAPTOP BREAKPOINT */
+@media (max-width: 1220px) {
+    .toggle-sidebar.active-toggle {
+        left: 192px;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+    /* Layout Fixed */
+    .auth-layout {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* LAPTOP BREAKPOINT */
+@media (max-width: 1024px) {
+    /* Expanded Sidebar */
+    .sidebar.expanded {
+        width: 220px;
+    }
+
+    .toggle-sidebar.active-toggle {
+        left: 180px;
+    }
+
+    .nav-title,
+    .nav-label,
+    .user-quick-info {
+        max-width: 130px;
+    }
+
+    .main-content {
+        padding: 0 clamp(16px, 4vw, 70px);
+    }
+
+    /* User Profile */
+    .pfp-container {
+        left: 45px;
+    }
+
+    /* User Buttons */
+    .cover-btn,
+    .cover-option,
+    .theme-switch {
+        right: 45px;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+}
+
+/* TABLET BREAKPOINT */
+@media (max-width: 868px) {
+    /* Sidebar */
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        z-index: 200;
+    }
+
+    .sidebar.expanded {
+        width: 210px;
+    }
+
+    .sidebar.collapsed {
+        width: 0;
+    }
+
+    .sidebar.collapsed .nav-wrapper {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Sidebar Toggle Btn */
+    .toggle-sidebar {
+        top: 65px;
+    }
+
+    .toggle-sidebar.active-toggle {
+        left: 195px;
+    }
+
+    .toggle-sidebar.deactive-toggle {
+        left: 16px;
+        top: 16px;
+    }
+
+    /* Header Layout */
+    .main-info-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 85px;
+        margin-bottom: 13px;
+    }
+
+    .username h1 {
+        font-size: 2.3rem;
+    }
+
+    /* Profile */
+    .pfp-container {
+        width: 105px;
+        height: 105px;
+        top: 130px;
+        left: 16px;
+    }
+
+    .user-icon {
+        padding: 12px;
+    }
+
+    .username {
+        align-items: center;
+    }
+
+    /* Buttons */
+    .cover-btn {
+        top: 16px;
+        right: 16px;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .pfp-btn {
+        padding: 2px;
+        top: 70px;
+    }
+
+    .pfp-btn span {
+        font-size: 23px;
+    }
+
+    .cover-option,
+    .pfp-option {
+        width: 180px;
+    }
+
+    .cover-option {
+        top: 60px;
+        right: 16px;
+    }
+
+    .pfp-option {
+        top: 105px;
+        left: 16px;
+    }
+
+    /* Theme Switch */
+    .theme-switch {
+        right: 16px;
+    }
+
+    .main-content {
+        padding: 0 16px;
+        height: auto;
+    }
+
+    /* ============ DASHBOARD ============ */
+
+    /* Main Dash */
+    .dashboard {
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 16px;
+        min-height: unset;
+    }
+
+    /* Left Content */
+    .left-dash {
+        flex: 1;
+    }
+
+    .left-dash p {
+        width: auto;
+    }
+
+    /* Right Content */
+    .right-dash {
+        align-items: flex-end;
+    }
+
+    /* Random Quote Box */
+    .random-quote {
+        padding: 5px 10px;
+        height: auto;
+        white-space: normal;
+        flex-wrap: wrap;
+        line-height: 1.4;
+    }
+
+    .random-quote blockquote {
+        font-size: 14px;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+    /* Authentication Form */
+    .auth-form {
+        flex-direction: column;
+        height: 100%;
+        border-width: 10px;
+    }
+
+    /* None Display Design */
+    .design-form {
+        display: none;
+    }
+
+    .auth-login {
+        width: 100%;
+    }
+}
+
+/* Medium TABLET BREAKPOINT */
+@media (max-width: 650px) {
+    /* ============ DASHBOARD ============ */
+    /* Left Content */
+    .left-dash {
+        position: static;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+    .auth-header {
+        white-space: wrap;
+    }
+}
+
+/* SMALL TABLET BREAKPOINT */
+@media (max-width: 550px) {
+    /* ============ DASHBOARD ============ */
+    /* Main */
+    .dashboard {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    /* Left Content */
+    .left-dash {
+        width: 100%;
+        gap: 6px;
+    }
+
+    /* Right Content */
+    .right-dash {
+        width: 100%;
+        align-items: flex-start !important;
+    }
+
+    /* No Display for paragraph */
+    .left-dash p,
+    .right-dash p {
+        display: none;
+    }
+
+    /* Fix Overview Boxes */
+    .overview-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Box Config */
+    .overview-box {
+        height: auto;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    /* ============ TASKS ============ */
+    /* Main */
+    .tasks {
+        gap: 15px !important;
+    }
+
+    /* Task Header */
+    .task-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px !important;
+    }
+
+    /* No display for h2 */
+    .right-task h2 {
+        display: none;
+    }
+
+    /* ============ AUTHENTICATION ============ */
+    /* Auth Layout */
+    .auth-layout {
+        padding-top: 10px;
+    }
+
+    /* Auth Header */
+    .auth-header-wrapper {
+        margin: 10px 0;
+    }
+
+    /* Auth Form */
+    .auth-form {
+        min-height: auto;
+        overflow: visible;
+    }
+
+    /* Auth Login */
+    .auth-login {
+        padding: 32px 20px;
+        min-width: unset;
+    }
+
+    /* Auth Inputs */
+    .auth-input-box input {
+        display: flex;
+        white-space: normal;
+        flex-wrap: wrap;
+    }
+
+    /* Option Buttons Group */
+    .auth-option-buttons-group {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Option Buttons */
+    .auth-option-buttons-group button {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+
+    /* No Display For Label */
+    .auth-option-buttons-group button span {
+        display: none;
+    }
+}
+
+/* LARGE MOBILE BREAKPOINT */
+@media (max-width: 425px) {
+    /* Sidebar */
+    .sidebar.expanded {
+        width: 180px;
+    }
+
+    /* Mini Profile */
+    .user-wrapper {
+        justify-content: center;
+    }
+
+    .user-img-container {
+        width: 35px;
+        height: 35px;
+    }
+
+    .mini-icon {
+        padding: 2px;
+        font-size: 30px;
+    }
+
+    .user-log {
+        justify-content: center;
+    }
+
+    /* Sidebar Button */
+    .toggle-sidebar.active-toggle {
+        left: 165px;
+    }
+
+    .nav-title,
+    .nav-label,
+    .user-quick-info {
+        font-size: 13px;
+        max-width: 110px;
+    }
+
+    /* Profile */
+    .pfp-container {
+        width: 100px;
+        height: 100px;
+        top: 140px;
+    }
+
+    .username h1 {
+        font-size: 1.9rem;
+    }
+
+    .current-date {
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .cover-btn {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    .pfp-btn {
+        top: 60px;
+    }
+
+    .cover-option,
+    .pfp-option {
+        width: 160px;
+    }
+
+    .cover-option {
+        top: 55px;
+    }
+
+    .pfp-option {
+        top: 95px;
+    }
+
+    /* ============ TASK ============ */
+    .task-input,
+    .input-wrapper label {
+        font-size: 13px !important;
+    }
+
+     /* ============ AUTHENTICATION ============ */
+    /* Auth Head */
+    .auth-header {
+        white-space: nowrap;
+    }
+
+    /* Middle Title */
+    .auth-header-wrapper a {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Title Config */
+    .text-content span {
+        font-size: clamp(24px, 5vw, 29px);
+    }
+
+    /* None Display On Logo */
+    .text-content img {
+        display: none;
+    }
+}
