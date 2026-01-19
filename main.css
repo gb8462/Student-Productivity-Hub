@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: Inter, "Crimson Text";
+    background-color: var(--main-bg-color);
+    color: var(--content-color);
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================
+            App Main 
+================================ */
+
+
+/* ================================
+            App Main Header
+================================ */
+
+/* App Header */
+.app-header {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Wrapper */
+.app-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 140px;
+}   
+
+/* Navigation */
+.app-navigation-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 90px;
+    background: var(--main-bg-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Containers */
+.logo-container,
+.img-container,
+.title-container,
+.navigation-links ul,
+.sign-in-container {
+    display: flex;
+}
+
+/* Logo Container */
+.logo-container {
+    align-items: center;
+}
+
+/* Img Container */
+.img-container {
+    width: 120px;
+    height: 81px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
