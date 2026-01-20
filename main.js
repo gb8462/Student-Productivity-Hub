@@ -43,7 +43,6 @@ function navigationMove() {
     const scrollProgress = scrollFunction(200, 600);
 
     const marginTop = volume(0, -22, scrollProgress);
-    const margin = volume(0, 20, scrollProgress);
 
     appHeader.style.marginTop = `${marginTop}px`;
 }
