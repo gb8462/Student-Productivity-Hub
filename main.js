@@ -3,7 +3,7 @@
 ================================ */
 
 // Navigation Bar
-const appHeader = document.querySelector('app-header');
+const appHeader = document.querySelector('.app-header');
 
 // Hero Text Group
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
@@ -30,9 +30,9 @@ window.addEventListener('scroll', () => {
 })
 
 function navigationMove() {
-    scrollFunction(230, 600);
+    scrollFunction(300, 600);
 
-    
+    appHeader.style.margin = "10px 0 0 0";
 }
 
 function heroFade() {
@@ -45,18 +45,3 @@ function heroFade() {
 /* ================================
             Carousel List
 ================================ */
-
-// NEEDS TO FIX
-let listItem = 0;
-
-function moveItem() {
-    carouselTrack.style.transform = `translateX(-${listItem * 100}%)`;
-}
-
-function nextSlide() {
-    listItem++;
-    if (listItem >= carouselSlides.length) listItem = 0;
-    moveItem();
-}
-
-setInterval(nextSlide, 4000);
