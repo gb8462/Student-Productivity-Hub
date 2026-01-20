@@ -281,12 +281,16 @@ ul {
 /* Carousel Lists */
 .carousel-contents ul {
     display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
 }
 
 /* Carousel Items */
-.items.active img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 14 / 6;
-    object-fit: cover;
+.items img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
 }
