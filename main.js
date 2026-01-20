@@ -42,19 +42,19 @@ window.addEventListener('scroll', () => {
 });
 
 function navigationMove() {
-    const progress = scrollFunction(200, 600);
+    const scrollProgress = scrollFunction(200, 600);
 
-    const marginTop = volume(0, 16, progress);
+    const marginTop = volume(0, 16, scrollProgress);
 
     appHeader.style.marginTop = `${marginTop}px`;
 }
 
 function heroFade() {
-    const progress = scrollFunction (350, 600);
+    const scrollProgress = scrollFunction (350, 600);
 
-    const opacity = volume(1, 0, progress);
-    const translateY = volume(0, -60, progress);
-    const scale = volume(1, 0.9, progress);
+    const opacity = volume(1, 0, scrollProgress);
+    const translateY = volume(0, -60, scrollProgress);
+    const scale = volume(1, 0.9, scrollProgress);
 
     heroFadeGroup.style.opacity = opacity;
     heroFadeGroup.style.transform = `scale(${scale}) translateY(${translateY}px)`;
