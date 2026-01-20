@@ -7,12 +7,12 @@ const heroFadeGroup = document.querySelector('.fade-hero-contents');
 
 // Carousel lists
 const carouselTrack = document.querySelector('.carousel-list ul');
-const carouselItems = document.querySelectorAll('.items');
+const carouselSlides = document.querySelectorAll('.items');
 
 
 
 /* ================================
-            Scroll Function
+    Scroll Behavior Function
 ================================ */
 
 window.addEventListener('scroll', () => {
@@ -28,5 +28,20 @@ window.addEventListener('scroll', () => {
 })
 
 /* ================================
-            Scroll Function
+            Carousel List
 ================================ */
+
+// NEEDS TO FIX
+let listItem = 0;
+
+function moveItem() {
+    carouselTrack.style.transform = `translateX(-${listItem * 100}%)`;
+}
+
+function nextSlide() {
+    listItem++;
+    if (listItem >= carouselSlides.length) listItem = 0;
+    moveItem();
+}
+
+setInterval(nextSlide, 4000);
