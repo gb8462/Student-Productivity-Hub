@@ -4,6 +4,7 @@
 
 // Navigation Bar
 const appHeader = document.querySelector('.app-header');
+const headerWrapper = document.querySelector('.app-header-wrapper');
 
 // Hero Text Group
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
