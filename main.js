@@ -2,6 +2,9 @@
             Variables
 ================================ */
 
+// Navigation Bar
+const appHeader = document.querySelector('app-header');
+
 // Hero Text Group
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
 
@@ -14,18 +17,30 @@ const carouselSlides = document.querySelectorAll('.items');
 /* ================================
     Scroll Behavior Function
 ================================ */
+let progress = 0
+
+function scrollFunction(fadeStart, fadeEnd) {
+    progress = (window.scrollY - fadeStart) / (fadeEnd - fadeStart);
+    progress = Math.min(Math.max(progress, 0), 1);
+}
 
 window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const fadeStart = 350;
-    const fadeEnd = 600;
+    navigationMove();
+    heroFade();
+})
 
-    let progress = (scrollY - fadeStart) / (fadeEnd - fadeStart);
-    progress = Math.min(Math.max(progress, 0), 1);
+function navigationMove() {
+    scrollFunction(230, 600);
+
+    
+}
+
+function heroFade() {
+    scrollFunction (350, 600)
 
     heroFadeGroup.style.opacity = 1 - progress;
     heroFadeGroup.style.transform = `scale(${1 - progress * 0.15}) translateY(${progress * -40}px)`;
-})
+}
 
 /* ================================
             Carousel List
