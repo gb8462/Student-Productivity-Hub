@@ -24,15 +24,21 @@ function scrollFunction(fadeStart, fadeEnd) {
     progress = Math.min(Math.max(progress, 0), 1);
 }
 
+function volume(start, end, time) {
+    return start - (start + end) * time;
+}
+
 window.addEventListener('scroll', () => {
     navigationMove();
     heroFade();
 })
 
 function navigationMove() {
-    scrollFunction(300, 600);
+    const progress = scrollFunction(200, 600);
 
-    appHeader.style.margin = "10px 0 0 0";
+    const marginTop = volume(0, 16, progress);
+
+    appHeader.style.marginTop = `${marginTop}px`;
 }
 
 function heroFade() {
