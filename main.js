@@ -25,13 +25,21 @@ function scrollFunction(fadeStart, fadeEnd) {
 }
 
 function volume(start, end, time) {
-    return start - (start + end) * time;
+    return start - (end + start) * time;
 }
 
+let ticking = false;
+
 window.addEventListener('scroll', () => {
-    navigationMove();
-    heroFade();
-})
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            navigationMove();
+            heroFade();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
 
 function navigationMove() {
     const progress = scrollFunction(200, 600);
@@ -42,10 +50,14 @@ function navigationMove() {
 }
 
 function heroFade() {
-    scrollFunction (350, 600)
+    const progress = scrollFunction (350, 600);
 
-    heroFadeGroup.style.opacity = 1 - progress;
-    heroFadeGroup.style.transform = `scale(${1 - progress * 0.15}) translateY(${progress * -40}px)`;
+    const opacity = volume(1, 0, progress);
+    const translateY = volume(0, -60, progress);
+    const scale = volume(1, 0.9, progress);
+
+    heroFadeGroup.style.opacity = opacity;
+    heroFadeGroup.style.transform = `scale(${scale}) translateY(${translateY}px)`;
 }
 
 /* ================================
