@@ -18,8 +18,6 @@ const carouselSlides = document.querySelectorAll('.items');
 /* ================================
     Scroll Behavior Function
 ================================ */
-let progress = 0
-
 function scrollFunction(fadeStart, fadeEnd) {
     let progress = (window.scrollY - fadeStart) / (fadeEnd - fadeStart);
     return progress = Math.min(Math.max(progress, 0), 1);
