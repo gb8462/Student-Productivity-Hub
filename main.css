@@ -34,12 +34,12 @@ ul {
 
 /* App Header */
 .app-header {
-    position: sticky;
+    position: fixed;
     width: 100%;
-    margin-top: 2px;
     overflow: hidden;
     white-space: nowrap;
-    border-bottom: solid 1px #fff;
+    background: var(--main-nav-color);
+    border-bottom: solid 1px var(--main-nav-color);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -76,7 +76,7 @@ ul {
 .img-container {
     width: 120px;
     height: 81px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .img-container img {
@@ -119,6 +119,7 @@ ul {
 /* Sign In Buttons Container */
 .sign-in-container {
     margin-left: auto;
+    margin-right: 10px;
     gap: 16px;
 }
 
@@ -138,4 +139,52 @@ ul {
 .signup {
     border: solid 1px #fff;
     background: var(--main-bg-color);
+}
+
+/* ================================
+            App Main Layout
+================================ */
+
+/* Main Layout */
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ================================
+            Hero Section
+================================ */
+
+.hero-section {
+    background: var(--hero-section-color);
+    height: 100vh;
+}
+
+/* Contents */
+.hero-contents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-top: 140px;
+}
+
+/* Hero Content Title */
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* H1 Styles */
+.main-text-container h1 {
+    font-size: 74px;
+    font-weight: 700;
+}
+
+/* Carousel Items */
+.items img {
+    display: none;
 }
