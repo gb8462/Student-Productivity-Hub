@@ -6,7 +6,7 @@ const heroFadeGroup = document.querySelector('.fade-hero-contents');
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    const fadeStart = 90;
+    const fadeStart = 350;
     const fadeEnd = 600;
 
     let progress = (scrollY - fadeStart) / (fadeEnd - fadeStart);
