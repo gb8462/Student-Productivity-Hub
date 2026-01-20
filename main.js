@@ -20,8 +20,8 @@ const carouselSlides = document.querySelectorAll('.items');
 let progress = 0
 
 function scrollFunction(fadeStart, fadeEnd) {
-    progress = (window.scrollY - fadeStart) / (fadeEnd - fadeStart);
-    progress = Math.min(Math.max(progress, 0), 1);
+    let progress = (window.scrollY - fadeStart) / (fadeEnd - fadeStart);
+    return progress = Math.min(Math.max(progress, 0), 1);
 }
 
 function volume(start, end, time) {
@@ -42,22 +42,16 @@ window.addEventListener('scroll', () => {
 });
 
 function navigationMove() {
-    const scrollProgress = scrollFunction(200, 600);
+    const scrollProgress = scrollFunction(100, 600);
 
-    const marginTop = volume(0, 16, scrollProgress);
-
-    appHeader.style.marginTop = `${marginTop}px`;
+    appHeader.style.marginTop = `${scrollProgress}px`;
 }
 
 function heroFade() {
     const scrollProgress = scrollFunction (350, 600);
 
-    const opacity = volume(1, 0, scrollProgress);
-    const translateY = volume(0, -60, scrollProgress);
-    const scale = volume(1, 0.9, scrollProgress);
-
-    heroFadeGroup.style.opacity = opacity;
-    heroFadeGroup.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+    heroFadeGroup.style.opacity = 1 - scrollProgress;
+    heroFadeGroup.style.transform = `scale(${1 - scrollProgress * 0.2}) translateY(${scrollProgress * -40}px)`;
 }
 
 /* ================================
