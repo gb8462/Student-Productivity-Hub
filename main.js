@@ -4,7 +4,6 @@
 
 // Navigation Bar
 const appHeader = document.querySelector('.app-header');
-const headerWrapper = document.querySelector('.app-header-wrapper');
 
 // Hero Text Group
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
@@ -44,6 +43,7 @@ function navigationMove() {
     const scrollProgress = scrollFunction(200, 600);
 
     const marginTop = volume(0, -22, scrollProgress);
+    const margin = volume(0, 20, scrollProgress);
 
     appHeader.style.marginTop = `${marginTop}px`;
 }
