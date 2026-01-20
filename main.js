@@ -42,9 +42,11 @@ window.addEventListener('scroll', () => {
 });
 
 function navigationMove() {
-    const scrollProgress = scrollFunction(100, 600);
+    const scrollProgress = scrollFunction(200, 600);
 
-    appHeader.style.marginTop = `${scrollProgress}px`;
+    const marginTop = volume(0, -22, scrollProgress);
+
+    appHeader.style.marginTop = `${marginTop}px`;
 }
 
 function heroFade() {
