@@ -73,7 +73,7 @@ ul {
 
 /* Img Container */
 .img-container {
-    width: 120px;
+    width: 100px;
     height: 81px;
     overflow: visible;
 }
@@ -161,18 +161,56 @@ ul {
 .logo-container,
 .navigation-links,
 .sign-in-container {
-    transition: 
+    transition:
         margin 0.35s ease,
         padding 0.35s ease,
         width 0.35s ease,
+        opacity 0.35s ease,
         backdrop-filter 0.35s ease,
         background 0.35s ease,
+        color 0.35s ease,
         border-radius 0.35s ease,
         box-shadow 0.35s ease;
 }
 
 .app-header.active {
-    
+    margin-top: 20px;
+}
+
+.app-header-wrapper.active {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.app-navigation-bar.active {
+    width: 1160px;
+    justify-content: space-between;
+    background: #2a348961;
+    padding: 0 30px;
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.logo-container.active .title-container .logo-description {
+    position: absolute;
+    transform: translateX(-350px);
+    opacity: 0;
+    user-select: none;
+}
+
+.navigation-links.active {
+    max-width: 425px;
+}
+
+.sign-in-container.active {
+    margin: 0;
+}
+
+.sign-in-container.active .signup {
+    color: #000;
+    background: #fff;
 }
 
 /* ================================
