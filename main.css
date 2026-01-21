@@ -162,15 +162,15 @@ ul {
 .navigation-links,
 .sign-in-container {
     transition:
-        margin 0.35s ease,
-        padding 0.35s ease,
-        width 0.35s ease,
-        opacity 0.35s ease,
-        backdrop-filter 0.35s ease,
-        background 0.35s ease,
-        color 0.35s ease,
-        border-radius 0.35s ease,
-        box-shadow 0.35s ease;
+        margin 0.6s ease-in-out,
+        padding 0.6s ease-in-out,
+        width 0.6s ease-in-out,
+        opacity 0.6s ease-in-out,
+        backdrop-filter 0.6s ease-in-out,
+        background 0.6s ease-in-out,
+        color 0.6s ease-in-out,
+        border-radius 0.6s ease-in-out,
+        box-shadow 0.6s ease-in-out;
 }
 
 .app-header.active {
