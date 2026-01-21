@@ -200,14 +200,6 @@ ul {
     user-select: none;
 }
 
-.navigation-links.active {
-    max-width: 425px;
-}
-
-.sign-in-container.active {
-    margin: 0;
-}
-
 .sign-in-container.active .signup {
     color: #000;
     background: #fff;
