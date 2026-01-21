@@ -154,6 +154,27 @@ ul {
     opacity: 0.8;
 }
 
+/* Scroll Effects */
+.app-header,
+.app-header-wrapper,
+.app-navigation-bar,
+.logo-container,
+.navigation-links,
+.sign-in-container {
+    transition: 
+        margin 0.35s ease,
+        padding 0.35s ease,
+        width 0.35s ease,
+        backdrop-filter 0.35s ease,
+        background 0.35s ease,
+        border-radius 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.app-header.active {
+    
+}
+
 /* ================================
             App Main Layout
 ================================ */
