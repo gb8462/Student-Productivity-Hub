@@ -4,6 +4,11 @@
 
 // Navigation Bar
 const appHeader = document.querySelector('.app-header');
+const headWrapper = document.querySelector('.app-header-wrapper');
+const navBar = document.querySelector('.app-navigation-bar');
+const logoContainer = document.querySelector('.logo-container');
+const navLinks = document.querySelector('.navigation-links');
+const signInContainer = document.querySelector('.sign-in-container');
 
 // Hero Text Group
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
@@ -42,7 +47,11 @@ window.addEventListener('scroll', () => {
 function navigationMove() {
     const scrollProgress = scrollFunction(200, 600);
 
-    
+    if (window.scrollY > 200) {
+        appHeader.classList.add('active');
+    } else {
+        appHeader.classList.remove('active');
+    }
 }
 
 function heroFade() {
