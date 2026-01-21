@@ -47,6 +47,7 @@ ul {
     display: flex;
     margin: 0 20px;
     align-items: center;
+    justify-content: center;
 }   
 
 /* Navigation */
@@ -179,11 +180,10 @@ ul {
 
 .app-header-wrapper.active {
     margin: 0 auto;
-    justify-content: center;
 }
 
 .app-navigation-bar.active {
-    width: 1160px;
+    width: 1260px;
     justify-content: space-between;
     background: #2a348961;
     padding: 0 30px;
