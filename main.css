@@ -307,7 +307,7 @@ ul {
     font-size: 17px;
     font-weight: 400;
     border-radius: 6px;
-    border: 1px solid #fff;
+    border: none;
     cursor: pointer;
     transition:
         transform 0.25s ease,
@@ -328,7 +328,7 @@ ul {
 }
 
 .learn-more {
-    background: var(--main-nav-color);
+    background: none;
 }
 
 .get-started:hover {
@@ -338,7 +338,31 @@ ul {
 
 .learn-more:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Info Container */
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    inset: 10px;
+}
+
+.info-container span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #c5c5c5;
+    padding: 4px 20px;
+    border-radius: 30px;
+    background: #32355e;
+    border: dashed 1px #8088ED;
+}
+
+.info-container .dot {
+    width: 4px;
+    height: 4px;
+    background: #8088ED;
+    border-radius: 50%;
 }
 
 /* Hero Content Carousel */
