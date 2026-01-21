@@ -45,7 +45,9 @@ window.addEventListener('scroll', () => {
 });
 
 function navigationMove() {
-    if (window.scrollY > 200) {
+    let scroll = window.scrollY;
+
+    if (scroll > 200 && scroll < 800) {
         appHeader.classList.add('active');
         headWrapper.classList.add('active');
         navBar.classList.add('active');
