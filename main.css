@@ -127,7 +127,7 @@ ul {
     gap: 16px;
 }
 
-.sign-in-container button {
+.sign-in-container a {
     color: var(--content-color);
     padding: 7px 10px;
     border-radius: 6px;
@@ -426,3 +426,56 @@ ul {
            Features Section
 ================================ */
 
+/* Feature Section */
+.feature-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 1.555);
+}
+
+/* Feature Content */
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin: 50px auto 0 auto;
+    gap: 50px;
+    z-index: 3;
+}
+
+/* Feature Head */
+.feature-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-head span {
+    padding-bottom: 30px;
+    color: #c2c2c2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.feature-head h1 {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.feature-head p {
+    width: 725px;
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
