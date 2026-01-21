@@ -42,9 +42,7 @@ window.addEventListener('scroll', () => {
 function navigationMove() {
     const scrollProgress = scrollFunction(200, 600);
 
-    const marginTop = volume(0, -22, scrollProgress);
-
-    appHeader.style.marginTop = `${marginTop}px`;
+    
 }
 
 function heroFade() {
@@ -53,6 +51,8 @@ function heroFade() {
     heroFadeGroup.style.opacity = 1 - scrollProgress;
     heroFadeGroup.style.transform = `scale(${1 - scrollProgress * 0.2}) translateY(${scrollProgress * -40}px)`;
 }
+
+console.log(scrollFunction(200, 600));
 
 /* ================================
             Carousel List
