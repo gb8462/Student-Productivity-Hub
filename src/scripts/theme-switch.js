@@ -1,7 +1,7 @@
 // Theme Switch JS
 
 let darkmode = localStorage.getItem('dark-theme');
-const themeSwitch = document.getElementById('themeSwitch');
+const themeSwitch = document.querySelector('.switch');
 
 const enableDarkMode = () => {
     document.body.classList.add('dark-theme');
@@ -15,7 +15,7 @@ const disableDarkMode = () => {
 
 if(darkmode === 'active') enableDarkMode();
 
-themeSwitch.addEventListener('click', () => {
+themeSwitch.addEventListener('change', (event) => {
     darkmode = localStorage.getItem('dark-theme');
     if (darkmode !== "active") {
         enableDarkMode();
