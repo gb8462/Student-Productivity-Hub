@@ -45,12 +45,20 @@ window.addEventListener('scroll', () => {
 });
 
 function navigationMove() {
-    const scrollProgress = scrollFunction(200, 600);
-
     if (window.scrollY > 200) {
         appHeader.classList.add('active');
+        headWrapper.classList.add('active');
+        navBar.classList.add('active');
+        logoContainer.classList.add('active');
+        navLinks.classList.add('active');
+        signInContainer.classList.add('active');
     } else {
         appHeader.classList.remove('active');
+        headWrapper.classList.remove('active');
+        navBar.classList.remove('active');
+        logoContainer.classList.remove('active');
+        navLinks.classList.remove('active');
+        signInContainer.classList.remove('active');
     }
 }
 
