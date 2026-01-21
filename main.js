@@ -14,7 +14,7 @@ const signInContainer = document.querySelector('.sign-in-container');
 const heroFadeGroup = document.querySelector('.fade-hero-contents');
 
 // Carousel lists
-const carouselTrack = document.querySelector('.carousel-list ul');
+const carouselTrack = document.querySelector('.carousel-list');
 const carouselSlides = document.querySelectorAll('.items');
 
 
@@ -76,3 +76,16 @@ console.log(scrollFunction(200, 600));
 /* ================================
             Carousel List
 ================================ */
+let index = 0;
+
+function moveCarousel() {
+    carouselTrack.style.transform = `translateX(-${index * 1110}px)`;
+}
+
+function nextSlide() {
+    index++;
+    if (index >= carouselSlides.length) index = 0;
+    moveCarousel();
+}
+
+setInterval(nextSlide, 4000)
