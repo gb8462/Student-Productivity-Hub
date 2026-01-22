@@ -7,7 +7,7 @@
 
 body {
     font-family: Inter, "Crimson Text";
-    background-color: var(--main-bg-color);
+    background-color: #101111;
     color: var(--content-color);
     overflow-y: auto;
 }
@@ -127,7 +127,7 @@ ul {
     gap: 16px;
 }
 
-.sign-in-container button {
+.sign-in-container a {
     color: var(--content-color);
     padding: 7px 10px;
     border-radius: 6px;
@@ -148,7 +148,7 @@ ul {
 
 /* Navigation Effects */
 .links:hover,
-.sign-in-container button:hover {
+.sign-in-container a:hover {
     background: #32355e;
     opacity: 0.8;
 }
@@ -189,7 +189,7 @@ ul {
     background: #2a348961;
     padding: 0 30px;
     border-radius: 30px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
@@ -301,7 +301,7 @@ ul {
     gap: 18px;
 }
 
-.buttons-container button {
+.buttons-container a {
     padding: 10px 8px;
     color: #fff;
     font-size: 17px;
@@ -426,3 +426,128 @@ ul {
            Features Section
 ================================ */
 
+/* Feature Section */
+.feature-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 1.555);
+}
+
+/* Feature Content */
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin: 90px auto 0 auto;
+    gap: 50px;
+    z-index: 3;
+}
+
+/* Feature Head */
+.feature-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-head span {
+    padding-bottom: 30px;
+    color: #c2c2c2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.feature-head h1 {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.feature-head p {
+    width: 725px;
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 505px;
+    max-height: 505px;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(133deg, #191F4A 8.81%, #192146 23.9%, #0F172B 109.29%);
+    border: solid 1px #42457c;
+    transition: 
+        transform 0.3s ease,
+        border-color 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.icon-box {
+    position: relative;
+    display: flex;
+    background: #101111;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    margin-bottom: 24px;
+    padding: 8px;
+    border-radius: 17px;
+    border: solid 1px #42457c;
+    transition: 
+        transform 0.3s ease,
+        border-color 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.box-title {
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.box-description {
+    display: flex;
+    margin-bottom: 19px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.box-tags {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.box-tags .tags {
+    display: flex;
+    background: #212222;
+    font-size: 13px;
+    font-weight: 150;
+    padding: 4px 6px;
+    border-radius: 20px;
+    border: dashed 1px #42457c;
+}
+
+/* Hover Effects */
+.box:hover,
+.box:hover .icon-box {
+    transform: translateY(-6px);
+    border-color: #8088ED;
+    box-shadow: 0 20px 30px rgba(38, 0, 255, 0.25);
+}

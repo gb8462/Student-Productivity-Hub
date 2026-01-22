@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 function navigationMove() {
     let scroll = window.scrollY;
 
-    if (scroll > 200 && scroll < 800) {
+    if (scroll > 200) {
         appHeader.classList.add('active');
         headWrapper.classList.add('active');
         navBar.classList.add('active');
@@ -65,13 +65,11 @@ function navigationMove() {
 }
 
 function heroFade() {
-    const scrollProgress = scrollFunction (350, 600);
+    const scrollProgress = scrollFunction (350, 550);
 
     heroFadeGroup.style.opacity = 1 - scrollProgress;
     heroFadeGroup.style.transform = `scale(${1 - scrollProgress * 0.2}) translateY(${scrollProgress * -40}px)`;
 }
-
-console.log(scrollFunction(200, 600));
 
 /* ================================
             Carousel List
