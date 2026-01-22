@@ -78,11 +78,11 @@ student-productivity-hub/
 
 ## 📸 Screenshots
 
-<img src="src/assets/light.png" alt="light_mode">
+<img src="assets/light.png" alt="light_mode">
 
 <br>
 
-<img src="src/assets/light.png" alt="dark_mode">
+<img src="assets/dark.png" alt="dark_mode">
 
 ## 🌐 Live Demo
 
