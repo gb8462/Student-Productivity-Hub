@@ -441,7 +441,7 @@ ul {
     flex-direction: column;
     width: 100%;
     max-width: 1400px;
-    margin: 50px auto 0 auto;
+    margin: 90px auto 0 auto;
     gap: 50px;
     z-index: 3;
 }
