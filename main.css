@@ -7,7 +7,7 @@
 
 body {
     font-family: Inter, "Crimson Text";
-    background-color: var(--main-bg-color);
+    background-color: #101111;
     color: var(--content-color);
     overflow-y: auto;
 }
@@ -477,5 +477,77 @@ ul {
 .feature-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    gap: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 505px;
+    max-height: 505px;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(133deg, #191F4A 8.81%, #192146 23.9%, #0F172B 109.29%);
+    border: solid 1px #42457c;
+    transition: 
+        transform 0.3s ease,
+        border-color 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.icon-box {
+    position: relative;
+    display: flex;
+    background: #101111;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    margin-bottom: 24px;
+    padding: 8px;
+    border-radius: 17px;
+    border: solid 1px #42457c;
+    transition: 
+        transform 0.3s ease,
+        border-color 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.box-title {
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.box-description {
+    display: flex;
+    margin-bottom: 19px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.box-tags {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.box-tags .tags {
+    display: flex;
+    background: #212222;
+    font-size: 13px;
+    font-weight: 150;
+    padding: 4px 6px;
+    border-radius: 20px;
+    border: dashed 1px #42457c;
+}
+
+/* Hover Effects */
+.box:hover,
+.box:hover .icon-box {
+    transform: translateY(-6px);
+    border-color: #8088ED;
+    box-shadow: 0 20px 30px rgba(38, 0, 255, 0.25);
 }
