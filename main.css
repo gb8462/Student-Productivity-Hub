@@ -148,7 +148,7 @@ ul {
 
 /* Navigation Effects */
 .links:hover,
-.sign-in-container button:hover {
+.sign-in-container a:hover {
     background: #32355e;
     opacity: 0.8;
 }
@@ -189,7 +189,7 @@ ul {
     background: #2a348961;
     padding: 0 30px;
     border-radius: 30px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
@@ -301,7 +301,7 @@ ul {
     gap: 18px;
 }
 
-.buttons-container button {
+.buttons-container a {
     padding: 10px 8px;
     color: #fff;
     font-size: 17px;
