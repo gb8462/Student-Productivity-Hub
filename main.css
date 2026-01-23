@@ -634,8 +634,9 @@ ul {
     background: linear-gradient(100deg, #d85e4075 8.57%, #84356775 38.25%, #300c8e75 105.09%);
 }
 
-/* Top Bar Footer */
-.top-footer {
+/* Bar Footer */
+.top-footer,
+.bottom-footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
@@ -700,7 +701,33 @@ ul {
     opacity: 0.5;
 }
 
+/* Line */
+.app-footer hr {
+    opacity: 0.6;
+}
+
 /* Footer Bottom Bar */
+.bottom-footer span {
+    font-size: .9375rem;
+    font-weight: 300;
+}
+
+.bottom-footer a {
+    width: 2.125rem;
+    height: 2.125rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.bottom-footer a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-footer a:hover {
+    transform: translateY(-3px);
+}
 
 /* ================================
     Responsive Layout Section
