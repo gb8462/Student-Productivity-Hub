@@ -235,6 +235,7 @@ input {
     left: 15px;
     transform: translateY(-49%);
     transition: top 0.3s ease;
+    pointer-events: none;
 }
 
 /* Input Box Input Focus */
