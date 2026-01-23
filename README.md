@@ -32,8 +32,8 @@ This project was created as a student-level web development project to practice:
 
 ## 👥 Team
 
-- Joshie-Borrow: Front-End Design
-- Worms8462: Back-End Database
+- [Joshie-Borrow: Front-End Design](https://github.com/Nyxth-666)
+- [Worms8462: Back-End Database](https://github.com/gb8462)
 
 ## Project Folder Structure
 
@@ -94,6 +94,10 @@ student-productivity-hub/
 <br>
 
 <img src="assets/dark.png" alt="dark_mode">
+
+<br>
+
+<img src="assets/login.png" alt="dark_mode">
 
 ## 🌐 Live Demo
 
