@@ -556,3 +556,34 @@ ul {
     border-color: #8088ED;
     box-shadow: 0 1.25rem 1.875rem rgba(38, 0, 255, 0.25);
 }
+
+/* ================================
+    Responsive Layout Section
+================================ */
+
+/* Large Laptop */
+@media (max-width: 1220px) {
+    .title-container .logo-description {
+        display: none;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .navigation-links ul {
+        gap: 2rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .app-header-wrapper {
+        margin: 0 .75rem;
+    }
+
+    .app-navigation-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: .75rem 1rem;
+    }
+}
