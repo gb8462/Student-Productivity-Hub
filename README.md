@@ -45,11 +45,14 @@ student-productivity-hub/
 │
 ├── assets/
 │   ├── auth-button/
-│   │   ├── github-icon.svg
-│   │   └── google-icon.svg
+│   │   ├── github-icon
+│   │   └── google-icon
 │   │
-│   ├── logo.png
-│   └── profile.png
+│   ├── art-landing/
+│   │   ├── sign-in-art.png
+│   │   └── sign-up-art.png
+│   │
+│   └── logo.png
 │
 ├── src/
 │   ├── pages/
