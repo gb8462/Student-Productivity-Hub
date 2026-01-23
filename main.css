@@ -634,12 +634,14 @@ ul {
     background: linear-gradient(100deg, #d85e4075 8.57%, #84356775 38.25%, #300c8e75 105.09%);
 }
 
+/* Top Bar Footer */
 .top-footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
 }
 
+/* Web Title */
 .web-title {
     display: flex;
     align-items: center;
@@ -662,6 +664,43 @@ ul {
     object-fit: cover;
 }
 
+/* Web Links */
+.web-links {
+    display: flex;
+    gap: 2.3125rem;
+}
+
+.link-footer,
+.links-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-footer {
+    gap: .8125rem;
+}
+
+.link-footer span {
+    font-size: 1.0125rem;
+    font-weight: 600;
+}
+
+.links-column {
+    gap: .225rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.web-links a {
+    transition: opacity 0.3s ease;
+}
+
+.web-links a:hover {
+    opacity: 0.5;
+}
+
+/* Footer Bottom Bar */
 
 /* ================================
     Responsive Layout Section
