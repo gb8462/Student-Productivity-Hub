@@ -56,10 +56,16 @@ student-productivity-hub/
 │
 ├── src/
 │   ├── pages/
-│   │   └── authentication.html
+│   │   ├── dashboard.html
+│   │   ├── forgot-password-auth.html
+│   │   ├── login-auth.html
+│   │   ├── register-auth.html
+│   │   └── reset-password-auth.html
 │   │
 │   ├── script/
+│   │   ├── authentication.js
 │   │   ├── dashboard.js
+│   │   ├── overview.js
 │   │   ├── tasks.js
 │   │   └── theme-switch.js
 │   │
@@ -74,7 +80,7 @@ student-productivity-hub/
 │   └── main.js
 │
 ├── public/
-│   └── logo.png   ← optional (deployment/static)
+│   └── logo.png
 │
 └── README.md
 
