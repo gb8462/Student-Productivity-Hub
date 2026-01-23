@@ -43,24 +43,24 @@ student-productivity-hub/
 │
 ├── index.html
 │
-├── src /
-│   ├── assets /
-│   │   ├── auth-button /
-│   │   │   ├── github-icon
-│   │   │   └── google-icon
-│   │   │
-│   │   ├── logo.png 
-│   │   └── profile.png
+├── assets/
+│   ├── auth-button/
+│   │   ├── github-icon.svg
+│   │   └── google-icon.svg
 │   │
-│   ├── pages /
+│   ├── logo.png
+│   └── profile.png
+│
+├── src/
+│   ├── pages/
 │   │   └── authentication.html
 │   │
-│   ├── script /
+│   ├── script/
 │   │   ├── dashboard.js
 │   │   ├── tasks.js
 │   │   └── theme-switch.js
 │   │
-│   ├── style /
+│   ├── style/
 │   │   ├── authentication.css
 │   │   ├── dashboard.css
 │   │   ├── responsive.css
@@ -70,10 +70,11 @@ student-productivity-hub/
 │   ├── main.css
 │   └── main.js
 │
-├── public /
-│   └── logo.png
+├── public/
+│   └── logo.png   ← optional (deployment/static)
 │
 └── README.md
+
 ```
 
 ## 📸 Screenshots
