@@ -433,7 +433,7 @@ ul {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    padding: 8.625rem;
+    padding: 6rem 14.625rem;
     justify-content: center;
     box-shadow: 0 -0.625rem 1.875rem rgba(0, 0, 0, 1.555);
     background: #101111;
@@ -623,6 +623,44 @@ ul {
 /* ================================
             App Footer
 ================================ */
+
+/* App Footer */
+.app-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 14.625rem;
+    max-height: 15.625rem;
+    background: linear-gradient(100deg, #d85e4075 8.57%, #84356775 38.25%, #300c8e75 105.09%);
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.web-title {
+    display: flex;
+    align-items: center;
+}
+
+.web-title span {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.image-wrapper {
+    width: 6.25rem;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.app-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /* ================================
