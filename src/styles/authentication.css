@@ -13,7 +13,7 @@ body {
     background: #101111;
     min-height: 100vh;
     color: var(--tertiary-text-color);
-    font-size: clamp(14px, 1.2vw, 15px);
+    font-size: clamp(.875rem, 1.2vw, .9375rem);
     font-weight: 500;
 }
 
@@ -30,11 +30,11 @@ input {
 .link-path {
     color: var(--theme-color);
     font-weight: 700;
-    border-bottom: 2px solid transparent;
+    border-bottom: .125rem solid transparent;
 }
 
 .link-path:hover {
-    border-bottom: 2px solid var(--theme-color);
+    border-bottom: .125rem solid var(--theme-color);
 }
 
 /* Main Authentication Form Style */
@@ -43,7 +43,7 @@ input {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 
 /* Reset Password Layout */
@@ -56,7 +56,7 @@ input {
 .auth-header {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     overflow: visible;
     white-space: nowrap;
 }
@@ -66,8 +66,8 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 6rem;
-    margin: 25px 0;
+    height: 96px;
+    margin: 1.5625rem 0;
     padding: 0;
 }
 
@@ -83,27 +83,27 @@ input {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    width: min(400px, 90%);
-    gap: 12px;
+    width: min(25rem, 90%);
+    gap: .75rem;
 }
 
 /* Link Logo */
 .text-content img {
-    width: clamp(140px, 30vw, 190px);
+    width: clamp(8.75rem, 30vw, 11.875rem);
     height: auto;
 }
 
 /* Link Title */
 .text-content span {
-    font-size: 29px;
+    font-size: 1.8125rem;
     font-weight: 600;
-    border-bottom: solid 3px transparent;
+    border-bottom: solid .1875rem transparent;
     transition: border 0.3s ease;
 }
 
 /* Link Hover */
 .auth-header-wrapper a:hover .text-content span {
-    border-bottom: solid 3px var(--theme-color);
+    border-bottom: solid .1875rem var(--theme-color);
 }
 
 /* Authentication Form Login */
@@ -113,9 +113,9 @@ input {
     flex-direction: row;
     margin: 0 auto;
     width: 100%;
-    max-width: min(1100px, 100%);
-    border: 15px solid #0c0c0c;
-    border-radius: 20px;
+    max-width: min(68.75rem, 100%);
+    border: .9375rem solid #0c0c0c;
+    border-radius: 1.25rem;
     box-shadow: var(--box-shadow);
     overflow: hidden;
 }
@@ -123,7 +123,7 @@ input {
 /* Reset Password Authentication */
 .auth-form.auth-reset-pass {
     width: auto;
-    max-width: min(640px, 100%);
+    max-width: min(40rem, 100%);
 }
 
 /* Design Form */
@@ -157,10 +157,10 @@ input {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
-    min-width: 465px;
-    padding: 58px 41px;
+    min-width: 29.0625rem;
+    padding: 3.625rem 2.5625rem;
     background: #2b2b2b;
-    box-shadow: -3px 0 10.5px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: -0.1875rem 0 .6563rem 0 rgba(0, 0, 0, 0.35);
     z-index: 2;
 }
 
@@ -171,10 +171,10 @@ input {
 }
 
 .title h1 {
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
     text-align: center;
     font-family: 'Crimson text';
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(32px, 4vw, 48px);
     font-weight: 600;
 }
 
@@ -186,7 +186,7 @@ input {
 
 .title.pass-reset h1 {
     width: 100%;
-    max-width: 385px;
+    max-width: 24.0625rem;
 }
 
 /* MAIN Form */
@@ -196,20 +196,20 @@ input {
 
 .content-form.login div,
 .content-form.pass-reset div {
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
 }
 
 .content-form.register div {
-    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
 }
 
 .content-form input {
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 /* No Margin At Last Box */
 .content-form div.last {
-    margin-bottom: 15px !important;
+    margin-bottom: .9375rem !important;
 }
 
 /* Input Box Group */
@@ -223,8 +223,8 @@ input {
 /* Input Box */
 .auth-input-box input {
     width: 100%;
-    padding: 15px;
-    border: 2px solid transparent;
+    padding: .9375rem;
+    border: .125rem solid transparent;
     transition: border 0.4s ease;
 }
 
@@ -232,7 +232,7 @@ input {
 .auth-input-box label {
     position: absolute;
     top: 49%;
-    left: 15px;
+    left: .9375rem;
     transform: translateY(-49%);
     transition: top 0.3s ease;
     pointer-events: none;
@@ -240,13 +240,13 @@ input {
 
 /* Input Box Input Focus */
 .auth-input-box input:focus{
-    border: 2px solid var(--theme-color);
+    border: .125rem solid var(--theme-color);
 }
 
 /* Input Box Label Focus Animation */
 .auth-input-box input:focus + label,
 .auth-input-box input:valid + label {
-    top: -11px;
+    top: -0.6875rem;
     color: var(--tertiary-text-color);
 }
 
@@ -263,7 +263,7 @@ input {
 .terms-condition {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: .375rem;
     cursor: pointer;
     margin-bottom: 0 !important;
 }
@@ -281,7 +281,7 @@ input {
 .custom-checkbox-container {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: .375rem;
     cursor: pointer;
     user-select: none;
 }
@@ -296,11 +296,11 @@ input {
 /* CheckBox */
 .checkmark {
     display: flex;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    padding: 3px;
-    border: 2px solid #888;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .25rem;
+    padding: .1875rem;
+    border: .125rem solid #888;
     background: transparent;
     transition: all 0.2 ease;
     place-items: center;
@@ -309,10 +309,10 @@ input {
 /* Custom Check Mark */
 .checkmark::after {
     content: "";
-    width: 4px;
-    height: 7px;
+    width: .25rem;
+    height: .4375rem;
     border: solid #2b2b2b;
-    border-width: 0 2px 2px 0;
+    border-width: 0 .125rem .125rem 0;
     transform: rotate(45deg) scale(0);
     transition: transform 0.2s ease;
 }
@@ -335,7 +335,7 @@ input {
 /* Submit Button Input */
 .auth-submit-button input {
     width: 100%;
-    padding: 15px;
+    padding: .9375rem;
     cursor: pointer;
     border: none;
     background: var(--theme-color);
@@ -354,7 +354,7 @@ input {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 15px;
+    gap: .9375rem;
     align-items: center;
     justify-content: center;
 }
@@ -364,7 +364,7 @@ input {
 }
 
 .option-line span {
-    min-width: 105px;
+    min-width: 6.5625rem;
     text-align: center;
 }
 
@@ -373,29 +373,29 @@ input {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    min-height: 40px;
+    min-height: 2.5rem;
 }
 
 /* Continue Buttons */
 .auth-option-buttons-group button {
     display: flex;
-    width: clamp(140px, 45%, 184px);
+    width: clamp(8.75rem, 45%, 11.5rem);
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    padding: 8px;
+    gap: .3125rem;
+    padding: .5rem;
     background: var(--tertiary-text-color);
     color: var(--primary-text-color);
     font-weight: 700;
     border: none;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 1rem;
     transition: transform 0.2s ease;
 }
 
 .auth-option-buttons-group button img {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
 }
 
 /* Buttons Focus */
