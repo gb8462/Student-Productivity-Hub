@@ -51,11 +51,11 @@ ul {
 
 /* Sidebar States */
 .sidebar.expanded {
-    width: 250px;
+    width: 15.625rem;
 }
 
 .sidebar.collapsed {
-    width: 85px;
+    width: 5.3125rem;
 }
 
 /* Nav Structure Wrappers */
@@ -65,7 +65,7 @@ ul {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 10px 5px;
+    padding: .625rem .3125rem;
 }
 
 .nav-wrapper nav {
@@ -74,27 +74,27 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    padding: 7px 9px;
+    padding: .4375rem .5625rem;
 }
 
 .main-nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .link-wrapper,
 .setting-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .625rem;
 }
 
 .user-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: .625rem;
     margin-top: auto;
 }
 
@@ -108,8 +108,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding-bottom: 20px;
+    gap: .625rem;
+    padding-bottom: 1.25rem;
 }
 
 .logo-title {
@@ -118,15 +118,15 @@ ul {
 }
 
 .logo-title img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     object-fit: cover;
 }
 
 .nav-title {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
-    max-width: 150px;
+    max-width: 9.375rem;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -134,7 +134,7 @@ ul {
 /* Nav Links */
 .group-title {
     display: flex;
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 500;
 }
 
@@ -142,28 +142,28 @@ ul {
 .setting-wrapper ul {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: .375rem;
 }
 
 .nav-link {
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: .6875rem;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: .3125rem;
+    padding: .3125rem;
 }
 
 .nav-icon {
-    font-size: 26px;
-    min-width: 24px;
+    font-size: 1.625rem;
+    min-width: 1.5rem;
 }
 
 .nav-title {
-    font-size: 15px;
-    max-width: 150px;
+    font-size: .9375rem;
+    max-width: 9.375rem;
 }
 
 .nav-link.active {
@@ -174,8 +174,8 @@ ul {
 
 /* User Info */
 .user-img-container {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     border-radius: 50%;
     overflow: hidden;
     background: var(--primary-text-color);
@@ -191,19 +191,19 @@ ul {
 .user-quick-info {
     display: flex;
     flex-direction: column;
-    max-width: 150px;
+    max-width: 9.375rem;
     flex-shrink: 0;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .user-quick-info h2 {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 700;
 }
 
 .user-quick-info h3 {
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 400;
 }
 
@@ -211,16 +211,16 @@ ul {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--primary-text-color);
 }
 
 .mini-icon {
     display: flex;
-    padding: 7px;
+    padding: .4375rem;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: var(--tertiary-text-color);
     font-variation-settings: 'FILL' 35;
 }
@@ -230,15 +230,15 @@ ul {
 .setting-wrapper ul li:hover,
 .user-quick-info h3:hover {
     background: var(--hover-color);
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 /* Toggle Button */
 .toggle-sidebar {
     position: absolute;
-    top: 65px;
-    width: 30px;
-    height: 30px;
+    top: 4.0625rem;
+    width: 1.875rem;
+    height: 1.875rem;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -259,12 +259,12 @@ ul {
 
 /* Toggle Button States */
 .toggle-sidebar.active-toggle {
-    left: 205px;
+    left: 12.8125rem;
     background: var(--primary-text-color);
 }
 
 .toggle-sidebar.deactive-toggle {
-    left: 65px;
+    left: 4.0625rem;
     background-color: var(--theme-color);
     color: var(--primary-text-color);
 }
@@ -294,7 +294,7 @@ ul {
 .sidebar.collapsed .user-log {
     max-width: 0;
     opacity: 0;
-    transform: translateX(-8px);
+    transform: translateX(-0.5rem);
     pointer-events: none;
     transition: 
         opacity 0.2s ease,
@@ -307,7 +307,7 @@ ul {
 .sidebar.expanded .nav-label,
 .sidebar.expanded .user-img-container,
 .sidebar.expanded .user-log {
-    max-width: 150px;
+    max-width: 9.375rem;
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
@@ -329,14 +329,14 @@ ul {
 .main-header {
     position: relative;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 /* Containers */
 .cover-container {
     background: var(--highlight-text-color);
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
     overflow: hidden;
     box-shadow: var(--box-shadow);
 }
@@ -345,11 +345,11 @@ ul {
     position: absolute;
     background: var(--primary-text-color);
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    top: 110px;
-    left: 90px;
-    border: 5px solid var(--bg-color);
+    width: 8.125rem;
+    height: 8.125rem;
+    top: 6.875rem;
+    left: 5.625rem;
+    border: .3125rem solid var(--bg-color);
 }
 
 .img-container {
@@ -360,8 +360,8 @@ ul {
 
 .main-info-container {
     display: flex;
-    margin: 70px 0 5px 0;
-    padding: 0 clamp(16px, 5vw, 130px);
+    margin: 4.375rem 0 .3125rem 0;
+    padding: 0 clamp(1rem, 5vw, 8.125rem);
     text-align: center;
     align-items: center;
     align-self: stretch;
@@ -375,7 +375,7 @@ ul {
     inset: 0;
     pointer-events: none;
     z-index: 2;
-    box-shadow: inset 0 -5px 10px 2px rgba(0, 0, 0, 0.25)
+    box-shadow: inset 0 -0.3125rem .625rem .125rem rgba(0, 0, 0, 0.25)
 }
 
 /* Container Input */
@@ -402,10 +402,10 @@ ul {
 
 .user-icon {
     display: flex;
-    padding: 25px;
+    padding: 1.5625rem;
     align-items: center;
     justify-content: center;
-    font-size: 70px;
+    font-size: 4.375rem;
     color: var(--tertiary-text-color);
     font-variation-settings: 'FILL' 35;
 }
@@ -417,15 +417,15 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 125px;
-    right: 90px;
-    padding: 10px 11px;
-    gap: 11px;
-    border-radius: 10px;
+    top: 7.8125rem;
+    right: 5.625rem;
+    padding: .625rem .6875rem;
+    gap: .6875rem;
+    border-radius: .625rem;
     border: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 15px;
+    font-size: .9375rem;
     background: var(--tertiary-text-color);
     color: var(--primary-text-color);
     font-variation-settings: 'FILL' 35;
@@ -437,10 +437,10 @@ ul {
     background: var(--highlight-text-color);
     color: var(--tertiary-text-color);
     font-variation-settings: 'FILL' 35;
-    top: 80px;
+    top: 5rem;
     right: 0;
     border-radius: 50%;
-    padding: 5px;
+    padding: .3125rem;
     border: none;
     cursor: pointer;
     align-items: center;
@@ -453,12 +453,12 @@ ul {
     display: flex;
     flex-direction: column;
     background: var(--primary-text-color);
-    gap: 6px;
-    border-radius: 10px;
-    padding: 10px 17px;
-    width: 200px;
-    top: 169px;
-    right: 90px;
+    gap: .375rem;
+    border-radius: .625rem;
+    padding: .625rem 1.0625rem;
+    width: 12.5rem;
+    top: 10.5625rem;
+    right: 5.625rem;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -470,12 +470,12 @@ ul {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 210px;
+    width: 13.125rem;
     background: var(--primary-text-color);
-    top: 125px;
-    gap: 6px;
-    border-radius: 10px;
-    padding: 10px 17px;
+    top: 7.8125rem;
+    gap: .375rem;
+    border-radius: .625rem;
+    padding: .625rem 1.0625rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -487,14 +487,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 11px;
+    gap: .6875rem;
     color: var(--tertiary-text-color);
-    padding: 4px 5px;
+    padding: .25rem .3125rem;
     background: none;
     border: none;
     cursor: pointer;
     font-weight: 400;
-    font-size: 15px;
+    font-size: .9375rem;
     font-variation-settings: 'FILL' 25;
 }
 
@@ -503,14 +503,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11px;
+    gap: .6875rem;
     color: var(--tertiary-text-color);
-    padding: 4px 5px;
+    padding: .25rem .3125rem;
     background: none;
     border: none;
     cursor: pointer;
     font-weight: 400;
-    font-size: 15px;
+    font-size: .9375rem;
     font-variation-settings: 'FILL' 25;
 }
 
@@ -543,14 +543,14 @@ ul {
 .cover-option button:hover,
 .pfp-option button:hover {
     background: #585858;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 /* Switch Theme Toggle Button */
 .theme-switch {
     position: absolute;
-    top: 190px;
-    right: 90px;
+    top: 11.875rem;
+    right: 5.625rem;
 }
 
 /* The switch - the box around the slider */
@@ -584,7 +584,7 @@ ul {
     bottom: 0;
     background-color: #f4f4f5;
     transition: .4s;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .slider:before {
@@ -592,7 +592,7 @@ ul {
     content: "";
     height: var(--size-of-icon,1.4em);
     width: var(--size-of-icon,1.4em);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     left: var(--slider-offset,0.3em);
     top: 50%;
     transform: translateY(-50%);
@@ -608,31 +608,31 @@ input:checked + .slider:before {
     left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
     background: #303136;
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+    box-shadow: inset -0.1875rem -0.125rem .3125rem -0.125rem #8983f7, inset -0.625rem -0.25rem 0 0 #a3dafb;
 }
 
 /* Users Info */
 .username {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .username h1,
 .username .user-greet {
     font-family: "Crimson Text";
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 800;
 }
 
 .current-date {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     font-weight: 300;
 }
 
 .main-header hr {
     background: #7E7E7E;
-    height: 3px;
+    height: .1875rem;
     border: none;
 }
 
@@ -641,6 +641,6 @@ input:checked + .slider:before {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 clamp(16px, 5vw, 130px);
-    gap: 30px;
+    padding: 0 clamp(1rem, 5vw, 8.125rem);
+    gap: 1.875rem;
 }
