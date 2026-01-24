@@ -8,12 +8,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-height: 450px;
+    max-height: 28.125rem;
     border-radius: var(--border-radius);
     background: var(--content-color);
     box-shadow: var(--box-shadow);
-    padding: 18px 20px;
-    gap: 6px;
+    padding: 1.125rem 1.25rem;
+    gap: .375rem;
 }
 
 /* Left Content */
@@ -24,11 +24,11 @@
 .task-header {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .task-header h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -37,11 +37,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 9px;
+    gap: .5625rem;
 }
 
 .right-task h2 {
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 400;
 }
 
@@ -50,19 +50,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: .4375rem;
 }
 
 .action-buttons button {
     display: flex;
-    width: 53px;
-    height: 33px;
-    padding: 8px 6px;
+    width: 3.3125rem;
+    height: 2.0625rem;
+    padding: .5rem .375rem;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: .5rem;
     color: var(--tertiary-text-color);
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 600;
     cursor: pointer;
     border: none;
@@ -86,13 +86,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 27px;
-    padding: 10px 0;
+    gap: 1.6875rem;
+    padding: .625rem 0;
 }
 
 .task-progress span {
     text-align: end;
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 400;
 }
 
@@ -100,15 +100,15 @@
 .progress-bar {
     position: relative;
     flex: 1;
-    height: 10px;
-    border-radius: 5px;
+    height: .625rem;
+    border-radius: .3125rem;
     background: var(--box-color);
 }
 
 .progress-fill {
     position: absolute;
     height: 100%;
-    border-radius: 5px;
+    border-radius: .3125rem;
     background: #46E563;
 }
 
@@ -118,7 +118,7 @@
     flex-direction: column;
     width: 100%;
     overflow: hidden;
-    gap: 5px;
+    gap: .3125rem;
 }
 
 .input-wrapper {
@@ -129,24 +129,24 @@
 .task-input {
     display: flex;
     width: 100%;
-    height: 37px;
+    height: 2.3125rem;
     justify-content: flex-start;
-    border: 1px dashed var(--border-color);
+    border: .0625rem dashed var(--border-color);
     color: var(--input-color);
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 550;
-    border-radius: 7px;
-    padding: 9px 17px;
+    border-radius: .4375rem;
+    padding: .5625rem 1.0625rem;
     background: var(--box-color);
 }
 
 .input-wrapper label {
     position: absolute;
     top: 50%;
-    left: 17px;
+    left: 1.0625rem;
     transform: translateY(-50%);
     color: var(--input-color);
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 550;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -155,8 +155,8 @@
 .task-list {
     display: flex;
     flex-direction: column;
-    padding: 10px 10px 10px 0;
-    gap: 10px;
+    padding: .625rem .625rem .625rem 0;
+    gap: .625rem;
     width: 100%;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -165,16 +165,16 @@
 
 .task-item {
     display: flex;
-    gap: 15px;
-    padding: 6px 13px;
+    gap: .9375rem;
+    padding: .375rem .8125rem;
     justify-content: space-between;
-    border-bottom: 1px dashed var(--border-color);
+    border-bottom: .0625rem dashed var(--border-color);
 }
 
 .task-left {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: .875rem;
     flex: 1;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .task-left span {
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 400;
 }
 
@@ -205,21 +205,21 @@
 
 /* Task Input Effect */
 .task-input:focus {
-    border: 1px solid var(--border-color);
+    border: .0625rem solid var(--border-color);
     outline: none;
 }
 
 /* Task Input + Label Focus */
 .task-input:focus + label,
 .task-input:valid + label {
-    font-size: 10px;
+    font-size: .625rem;
     color: var(--special-bg-color);
     opacity: 0;
 }
 
 /* Task List Scrollbar */
 .task-list::-webkit-scrollbar {
-    width: 8px;
+    width: .5rem;
 }
 
 .task-list::-webkit-scrollbar-thumb {
