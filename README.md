@@ -94,6 +94,7 @@ student-productivity-hub/
 <br>
 
 <img src="assets/pages/login.png" alt="dark_mode">
+
 <br>
 
 <img src="assets/pages/light.png" alt="light_mode">
