@@ -1,34 +1,34 @@
 /* Responsive Breakpoints */
 
 /* PC BREAKPOINT */
-@media (max-width: 1440px) {
+@media (max-width: 90rem) {
     /* Main Content */
     .main-content {
-        padding: 0 clamp(24px, 5vw, 110px);
+        padding: 0 clamp(1.5rem, 5vw, 6.875rem);
     }
 
     /* Main Container */
     .main-info-container {
-        padding: 0 clamp(24px, 5vw, 110px);
+        padding: 0 clamp(1.5rem, 5vw, 6.875rem);
     }
 
     /* User Profile */ 
     .pfp-container {
-        left: 70px;
+        left: 4.375rem;
     }
 
     /* User Buttons */
     .cover-btn,
     .cover-option,
     .theme-switch {
-        right: 70px;
+        right: 4.375rem;
     }
 }
 
 /* LARGE LAPTOP BREAKPOINT */
-@media (max-width: 1220px) {
+@media (max-width: 76.25rem) {
     .toggle-sidebar.active-toggle {
-        left: 192px;
+        left: 12rem;
     }
 
     /* ============ AUTHENTICATION ============ */
@@ -40,43 +40,43 @@
 }
 
 /* LAPTOP BREAKPOINT */
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
     /* Expanded Sidebar */
     .sidebar.expanded {
-        width: 220px;
+        width: 13.75rem;
     }
 
     .toggle-sidebar.active-toggle {
-        left: 180px;
+        left: 11.25rem;
     }
 
     .nav-title,
     .nav-label,
     .user-quick-info {
-        max-width: 130px;
+        max-width: 8.125rem;
     }
 
     .main-content {
-        padding: 0 clamp(16px, 4vw, 70px);
+        padding: 0 clamp(1rem, 4vw, 4.375rem);
     }
 
     /* User Profile */
     .pfp-container {
-        left: 45px;
+        left: 2.8125rem;
     }
 
     /* User Buttons */
     .cover-btn,
     .cover-option,
     .theme-switch {
-        right: 45px;
+        right: 2.8125rem;
     }
 
     /* ============ AUTHENTICATION ============ */
 }
 
 /* TABLET BREAKPOINT */
-@media (max-width: 868px) {
+@media (max-width: 54.25rem) {
     /* Sidebar */
     .sidebar {
         position: fixed;
@@ -85,7 +85,7 @@
     }
 
     .sidebar.expanded {
-        width: 210px;
+        width: 13.125rem;
     }
 
     .sidebar.collapsed {
@@ -99,41 +99,41 @@
 
     /* Sidebar Toggle Btn */
     .toggle-sidebar {
-        top: 65px;
+        top: 4.0625rem;
     }
 
     .toggle-sidebar.active-toggle {
-        left: 195px;
+        left: 12.1875rem;
     }
 
     .toggle-sidebar.deactive-toggle {
-        left: 16px;
-        top: 16px;
+        left: 1rem;
+        top: 1rem;
     }
 
     /* Header Layout */
     .main-info-container {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
-        margin-top: 85px;
-        margin-bottom: 13px;
+        gap: .75rem;
+        margin-top: 5.3125rem;
+        margin-bottom: .8125rem;
     }
 
     .username h1 {
-        font-size: 2.3rem;
+        font-size: 36.8px;
     }
 
     /* Profile */
     .pfp-container {
-        width: 105px;
-        height: 105px;
-        top: 130px;
-        left: 16px;
+        width: 6.5625rem;
+        height: 6.5625rem;
+        top: 8.125rem;
+        left: 1rem;
     }
 
     .user-icon {
-        padding: 12px;
+        padding: .75rem;
     }
 
     .username {
@@ -142,43 +142,43 @@
 
     /* Buttons */
     .cover-btn {
-        top: 16px;
-        right: 16px;
-        font-size: 14px;
-        padding: 8px 10px;
+        top: 1rem;
+        right: 1rem;
+        font-size: .875rem;
+        padding: .5rem .625rem;
     }
 
     .pfp-btn {
-        padding: 2px;
-        top: 70px;
+        padding: .125rem;
+        top: 4.375rem;
     }
 
     .pfp-btn span {
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
 
     .cover-option,
     .pfp-option {
-        width: 180px;
+        width: 11.25rem;
     }
 
     .cover-option {
-        top: 60px;
-        right: 16px;
+        top: 3.75rem;
+        right: 1rem;
     }
 
     .pfp-option {
-        top: 105px;
-        left: 16px;
+        top: 6.5625rem;
+        left: 1rem;
     }
 
     /* Theme Switch */
     .theme-switch {
-        right: 16px;
+        right: 1rem;
     }
 
     .main-content {
-        padding: 0 16px;
+        padding: 0 1rem;
         height: auto;
     }
 
@@ -188,7 +188,7 @@
     .dashboard {
         flex-wrap: wrap;
         align-items: stretch;
-        padding: 16px;
+        padding: 1rem;
         min-height: unset;
     }
 
@@ -208,7 +208,7 @@
 
     /* Random Quote Box */
     .random-quote {
-        padding: 5px 10px;
+        padding: .3125rem .625rem;
         height: auto;
         white-space: normal;
         flex-wrap: wrap;
@@ -216,7 +216,7 @@
     }
 
     .random-quote blockquote {
-        font-size: 14px;
+        font-size: .875rem;
     }
 
     /* ============ AUTHENTICATION ============ */
@@ -224,7 +224,7 @@
     .auth-form {
         flex-direction: column;
         height: 100%;
-        border-width: 10px;
+        border-width: .625rem;
     }
 
     /* None Display Design */
@@ -238,7 +238,7 @@
 }
 
 /* Medium TABLET BREAKPOINT */
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
     /* ============ DASHBOARD ============ */
     /* Left Content */
     .left-dash {
@@ -252,18 +252,18 @@
 }
 
 /* SMALL TABLET BREAKPOINT */
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
     /* ============ DASHBOARD ============ */
     /* Main */
     .dashboard {
         flex-direction: column;
-        gap: 14px;
+        gap: .875rem;
     }
 
     /* Left Content */
     .left-dash {
         width: 100%;
-        gap: 6px;
+        gap: .375rem;
     }
 
     /* Right Content */
@@ -282,27 +282,27 @@
     .overview-stats {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: .5rem;
     }
 
     /* Box Config */
     .overview-box {
         height: auto;
-        padding: 6px 10px;
-        font-size: 13px;
+        padding: .375rem .625rem;
+        font-size: .8125rem;
     }
 
     /* ============ TASKS ============ */
     /* Main */
     .tasks {
-        gap: 15px !important;
+        gap: .9375rem !important;
     }
 
     /* Task Header */
     .task-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 4px !important;
+        gap: .25rem !important;
     }
 
     /* No display for h2 */
@@ -313,12 +313,12 @@
     /* ============ AUTHENTICATION ============ */
     /* Auth Layout */
     .auth-layout {
-        padding-top: 10px;
+        padding-top: .625rem;
     }
 
     /* Auth Header */
     .auth-header-wrapper {
-        margin: 10px 0;
+        margin: .625rem 0;
     }
 
     /* Auth Form */
@@ -329,7 +329,7 @@
 
     /* Auth Login */
     .auth-login {
-        padding: 32px 20px;
+        padding: 2rem 1.25rem;
         min-width: unset;
     }
 
@@ -343,14 +343,14 @@
     /* Option Buttons Group */
     .auth-option-buttons-group {
         justify-content: center;
-        gap: 10px;
+        gap: .625rem;
     }
 
     /* Option Buttons */
     .auth-option-buttons-group button {
-        width: 40px;
-        height: 40px;
-        padding: 6px;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: .375rem;
     }
 
     /* No Display For Label */
@@ -360,10 +360,10 @@
 }
 
 /* LARGE MOBILE BREAKPOINT */
-@media (max-width: 425px) {
+@media (max-width: 26.5625rem) {
     /* Sidebar */
     .sidebar.expanded {
-        width: 180px;
+        width: 11.25rem;
     }
 
     /* Mini Profile */
@@ -372,13 +372,13 @@
     }
 
     .user-img-container {
-        width: 35px;
-        height: 35px;
+        width: 2.1875rem;
+        height: 2.1875rem;
     }
 
     .mini-icon {
-        padding: 2px;
-        font-size: 30px;
+        padding: .125rem;
+        font-size: 1.875rem;
     }
 
     .user-log {
@@ -387,58 +387,58 @@
 
     /* Sidebar Button */
     .toggle-sidebar.active-toggle {
-        left: 165px;
+        left: 10.3125rem;
     }
 
     .nav-title,
     .nav-label,
     .user-quick-info {
-        font-size: 13px;
-        max-width: 110px;
+        font-size: .8125rem;
+        max-width: 6.875rem;
     }
 
     /* Profile */
     .pfp-container {
-        width: 100px;
-        height: 100px;
-        top: 140px;
+        width: 6.25rem;
+        height: 6.25rem;
+        top: 8.75rem;
     }
 
     .username h1 {
-        font-size: 1.9rem;
+        font-size: 30.4px;
     }
 
     .current-date {
-        font-size: 0.9rem;
+        font-size: 14.4px;
     }
 
     /* Buttons */
     .cover-btn {
-        font-size: 13px;
-        padding: 6px 8px;
+        font-size: .8125rem;
+        padding: .375rem .5rem;
     }
 
     .pfp-btn {
-        top: 60px;
+        top: 3.75rem;
     }
 
     .cover-option,
     .pfp-option {
-        width: 160px;
+        width: 10rem;
     }
 
     .cover-option {
-        top: 55px;
+        top: 3.4375rem;
     }
 
     .pfp-option {
-        top: 95px;
+        top: 5.9375rem;
     }
 
     /* ============ TASK ============ */
     .task-input,
     .input-wrapper label {
-        font-size: 13px !important;
+        font-size: .8125rem !important;
     }
 
      /* ============ AUTHENTICATION ============ */
@@ -455,7 +455,7 @@
 
     /* Title Config */
     .text-content span {
-        font-size: clamp(24px, 5vw, 29px);
+        font-size: clamp(1.5rem, 5vw, 1.8125rem);
     }
 
     /* None Display On Logo */
