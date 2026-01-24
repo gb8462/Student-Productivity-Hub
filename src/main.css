@@ -540,7 +540,7 @@ ul {
     flex-wrap: wrap;
 }
 
-.box-tags .tags {
+.box-tags span {
     display: flex;
     background: #212222;
     font-size: .8125rem;
